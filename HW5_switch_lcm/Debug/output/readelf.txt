@@ -1,0 +1,315 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           Andes Technology compact code size embedded RISC processor family
+  Version:                           0x1
+  Entry point address:               0x1a0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          101316 (bytes into file)
+  Flags:                             0x40010042, AABI, Andes ELF V1.4, Andes Star v3.0m, 16REG
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         3
+  Size of section headers:           40 (bytes)
+  Number of section headers:         22
+  Section header string table index: 19
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .nds32_vector     PROGBITS        00000000 001000 000100 00  AX  0   0 16
+  [ 2] .nds32_nmih       PROGBITS        00000100 001100 000004 00   A  0   0  4
+  [ 3] .nds32_wrh        PROGBITS        00000104 001104 000004 00   A  0   0  4
+  [ 4] .nds32_jmptbl     PROGBITS        00000108 001108 000040 00   A  0   0  4
+  [ 5] .nds32_isr        PROGBITS        00000148 001148 0000d8 00  AX  0   0  2
+  [ 6] .text             PROGBITS        00000220 001220 000aa8 00  AX  0   0  4
+  [ 7] .rodata           PROGBITS        00000cc8 001cc8 0000a8 00   A  0   0  4
+  [ 8] .data             PROGBITS        00100200 002200 00041c 00  WA  0   0  4
+  [ 9] .bss              NOBITS          0010061c 00261c 000038 00  WA  0   0  4
+  [10] .scommon_w        NOBITS          00100654 002654 00000c 00  WA  0   0  4
+  [11] .comment          PROGBITS        00000000 00261c 00002f 01  MS  0   0  1
+  [12] .debug_aranges    PROGBITS        00000000 002650 000240 00      0   0  8
+  [13] .debug_info       PROGBITS        00000000 002890 00294e 00      0   0  1
+  [14] .debug_abbrev     PROGBITS        00000000 0051de 000607 00      0   0  1
+  [15] .debug_line       PROGBITS        00000000 0057e5 0017c2 00      0   0  1
+  [16] .debug_frame      PROGBITS        00000000 006fa8 0003e0 00      0   0  4
+  [17] .debug_str        PROGBITS        00000000 007388 00ee42 01  MS  0   0  1
+  [18] .debug_macro      PROGBITS        00000000 0161ca 002918 00      0   0  1
+  [19] .shstrtab         STRTAB          00000000 018ae2 0000e0 00      0   0  1
+  [20] .symtab           SYMTAB          00000000 018f34 000f10 10     21 131  4
+  [21] .strtab           STRTAB          00000000 019e44 0006d3 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings)
+  I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x001000 0x00000000 0x00000000 0x00d70 0x00d70 R E 0x1000
+  LOAD           0x002200 0x00100200 0x00000d70 0x0041c 0x00454 RW  0x1000
+  LOAD           0x002654 0x00100654 0x0000118c 0x00000 0x0000c RW  0x1000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .nds32_vector .nds32_nmih .nds32_wrh .nds32_jmptbl .nds32_isr .text .rodata 
+   01     .data .bss 
+   02     .scommon_w 
+
+There is no dynamic section in this file.
+
+There are no relocations in this file.
+
+The decoding of unwind sections for machine type Andes Technology compact code size embedded RISC processor family is not currently supported.
+
+Symbol table '.symtab' contains 241 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 SECTION LOCAL  DEFAULT    1 
+     2: 00000100     0 SECTION LOCAL  DEFAULT    2 
+     3: 00000104     0 SECTION LOCAL  DEFAULT    3 
+     4: 00000108     0 SECTION LOCAL  DEFAULT    4 
+     5: 00000148     0 SECTION LOCAL  DEFAULT    5 
+     6: 00000220     0 SECTION LOCAL  DEFAULT    6 
+     7: 00000cc8     0 SECTION LOCAL  DEFAULT    7 
+     8: 00100200     0 SECTION LOCAL  DEFAULT    8 
+     9: 0010061c     0 SECTION LOCAL  DEFAULT    9 
+    10: 00100654     0 SECTION LOCAL  DEFAULT   10 
+    11: 00000000     0 SECTION LOCAL  DEFAULT   11 
+    12: 00000000     0 SECTION LOCAL  DEFAULT   12 
+    13: 00000000     0 SECTION LOCAL  DEFAULT   13 
+    14: 00000000     0 SECTION LOCAL  DEFAULT   14 
+    15: 00000000     0 SECTION LOCAL  DEFAULT   15 
+    16: 00000000     0 SECTION LOCAL  DEFAULT   16 
+    17: 00000000     0 SECTION LOCAL  DEFAULT   17 
+    18: 00000000     0 SECTION LOCAL  DEFAULT   18 
+    19: 00000000     0 FILE    LOCAL  DEFAULT  ABS interrupt-c-ext.c
+    20: 000002a0     0 NOTYPE  LOCAL  DEFAULT    6 $c
+    21: 00000000     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    22: 00000080     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    23: 00000090     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    24: 000000a0     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    25: 000000f0     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    26: 00000000     0 FILE    LOCAL  DEFAULT  ABS vec_vid01.o
+    27: 00000010     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    28: 00000000     0 FILE    LOCAL  DEFAULT  ABS vec_vid02.o
+    29: 00000020     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    30: 00000000     0 FILE    LOCAL  DEFAULT  ABS vec_vid03.o
+    31: 00000030     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    32: 00000000     0 FILE    LOCAL  DEFAULT  ABS vec_vid04.o
+    33: 00000040     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    34: 00000000     0 FILE    LOCAL  DEFAULT  ABS vec_vid05.o
+    35: 00000050     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    36: 00000000     0 FILE    LOCAL  DEFAULT  ABS vec_vid06.o
+    37: 00000060     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    38: 00000000     0 FILE    LOCAL  DEFAULT  ABS vec_vid07.o
+    39: 00000070     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    40: 00000000     0 FILE    LOCAL  DEFAULT  ABS vec_vid11.o
+    41: 000000b0     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    42: 00000000     0 FILE    LOCAL  DEFAULT  ABS vec_vid12.o
+    43: 000000c0     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    44: 00000000     0 FILE    LOCAL  DEFAULT  ABS vec_vid13.o
+    45: 000000d0     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    46: 00000000     0 FILE    LOCAL  DEFAULT  ABS vec_vid14.o
+    47: 000000e0     0 NOTYPE  LOCAL  DEFAULT    1 $c
+    48: 00000000     0 FILE    LOCAL  DEFAULT  ABS excp_isr_sa_nr.o
+    49: 00000148     0 NOTYPE  LOCAL  DEFAULT    5 $c
+    50: 00000000     0 FILE    LOCAL  DEFAULT  ABS intr_isr_ps_nn.o
+    51: 0000018a     0 NOTYPE  LOCAL  DEFAULT    5 $c
+    52: 00000000     0 FILE    LOCAL  DEFAULT  ABS reset.o
+    53: 000001a0     0 NOTYPE  LOCAL  DEFAULT    5 $c
+    54: 00000000     0 FILE    LOCAL  DEFAULT  ABS init-default.c
+    55: 00000220     2 FUNC    LOCAL  DEFAULT    6 Default_Handler
+    56: 00000220     0 NOTYPE  LOCAL  DEFAULT    6 $c
+    57: 00000000     0 FILE    LOCAL  DEFAULT  ABS init-soc.c
+    58: 0000028e     0 NOTYPE  LOCAL  DEFAULT    6 $c
+    59: 00000000     0 FILE    LOCAL  DEFAULT  ABS main.c
+    60: 00000340     0 NOTYPE  LOCAL  DEFAULT    6 $c
+    61: 000006fc     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    62: 00000700     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    63: 00000704     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    64: 00000708     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    65: 0000070c     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    66: 00000710     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    67: 00000714     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    68: 00000718     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    69: 0000071c     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    70: 00000720     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    71: 00000724     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    72: 00000728     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    73: 0000072c     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    74: 00000730     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    75: 00000734     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    76: 00000738     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    77: 0000073c     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    78: 00000740     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    79: 00000744     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    80: 00000748     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    81: 0000074c     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    82: 00000750     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    83: 00000754     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    84: 00000758     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    85: 0000075c     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    86: 00000760     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    87: 00000764     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    88: 00000768     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    89: 0000076c     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    90: 00000770     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    91: 00000774     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    92: 00000778     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    93: 0000077c     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    94: 00000780     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    95: 00000784     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    96: 00000788     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    97: 0000078c     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    98: 00000790     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+    99: 00000794     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   100: 00000798     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   101: 0000079c     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   102: 000007a0     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   103: 000007a4     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   104: 000007a8     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   105: 000007ac     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   106: 000007b0     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   107: 000007b4     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   108: 000007b8     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   109: 000007bc     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   110: 000007c0     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   111: 000007c4     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   112: 000007c8     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   113: 000007cc     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   114: 000007d0     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   115: 000007d4     0 NOTYPE  LOCAL  DEFAULT    6 $c
+   116: 00000b2c     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   117: 00000b30     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   118: 00000b34     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   119: 00000b38     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   120: 00000b3c     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   121: 00000b40     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   122: 00000b44     0 NOTYPE  LOCAL  DEFAULT    6 $d2
+   123: 00000b48     0 NOTYPE  LOCAL  DEFAULT    6 $c
+   124: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-memcpy.o
+   125: 00000c98     0 NOTYPE  LOCAL  DEFAULT    6 $c
+   126: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-memset.o
+   127: 00000cac     0 NOTYPE  LOCAL  DEFAULT    6 $c
+   128: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-strlen.o
+   129: 00000cbc     0 NOTYPE  LOCAL  DEFAULT    6 $c
+   130: 00000000     0 FILE    LOCAL  DEFAULT  ABS 
+   131: 00000220     2 FUNC    WEAK   DEFAULT    6 HW2_ISR
+   132: 000002f4    30 FUNC    GLOBAL DEFAULT    6 reset_handler
+   133: 000004a2   454 FUNC    GLOBAL DEFAULT    6 DRV_IntToStr
+   134: 00100208     2 OBJECT  GLOBAL DEFAULT    8 LCD_CursorBlink
+   135: 00100654     4 OBJECT  GLOBAL DEFAULT   10 ks
+   136: 000003d6    36 FUNC    GLOBAL DEFAULT    6 DRV_SysXtal
+   137: 00100214     2 OBJECT  GLOBAL DEFAULT    8 LCD_BusyFlag
+   138: 00000340    28 FUNC    GLOBAL DEFAULT    6 delay1
+   139: 0000012c     4 OBJECT  GLOBAL DEFAULT    4 _nds32_jmptbl_09
+   140: 000000d0     4 FUNC    WEAK   DEFAULT    1 _nds32_vector_13
+   141: 00100618     4 OBJECT  GLOBAL DEFAULT    8 show_cursor
+   142: 00000978    92 FUNC    GLOBAL DEFAULT    6 WriteIns
+   143: 0000018a    22 FUNC    GLOBAL DEFAULT    5 _nds32_i_ps_nn
+   144: 00000030     4 FUNC    WEAK   DEFAULT    1 _nds32_vector_03
+   145: 00000220     2 FUNC    WEAK   DEFAULT    6 tlb_exception_handler
+   146: 0000031e    10 FUNC    GLOBAL DEFAULT    6 HW1_ISR
+   147: 00000138     4 OBJECT  WEAK   DEFAULT    4 _nds32_jmptbl_12
+   148: 000002e0    20 FUNC    GLOBAL DEFAULT    6 clear_swi
+   149: 00000148    66 FUNC    GLOBAL DEFAULT    5 _nds32_e_sa_nr
+   150: 00000118     4 OBJECT  WEAK   DEFAULT    4 _nds32_jmptbl_04
+   151: 0010020e     2 OBJECT  GLOBAL DEFAULT    8 LCD_InstructionMode
+   152: 00000c98    18 FUNC    GLOBAL DEFAULT    6 memcpy
+   153: 00100202     2 OBJECT  GLOBAL DEFAULT    8 LCD_DisplayAutoShift
+   154: 000002a8     6 FUNC    GLOBAL DEFAULT    6 GIE_ENABLE
+   155: 00100206     2 OBJECT  GLOBAL DEFAULT    8 LCD_Cursor
+   156: 000002b8    32 FUNC    GLOBAL DEFAULT    6 gen_swi
+   157: 0000025c    50 FUNC    GLOBAL DEFAULT    6 __cpu_init
+   158: 00000220     2 FUNC    WEAK   DEFAULT    6 HW5_ISR
+   159: 00000220     2 FUNC    WEAK   DEFAULT    6 HW4_ISR
+   160: 00000124     4 OBJECT  WEAK   DEFAULT    4 _nds32_jmptbl_07
+   161: 0000091c    92 FUNC    GLOBAL DEFAULT    6 WriteData
+   162: 00000010     4 FUNC    WEAK   DEFAULT    1 _nds32_vector_01
+   163: 00000882   154 FUNC    GLOBAL DEFAULT    6 CheckBusy
+   164: 00000a3a   192 FUNC    GLOBAL DEFAULT    6 display_show
+   165: 00100204     2 OBJECT  GLOBAL DEFAULT    8 LCD_Display
+   166: 00000110     4 OBJECT  WEAK   DEFAULT    4 _nds32_jmptbl_02
+   167: 00000070     4 FUNC    WEAK   DEFAULT    1 _nds32_vector_07
+   168: 00000040     4 FUNC    WEAK   DEFAULT    1 _nds32_vector_04
+   169: 00100218  1024 OBJECT  GLOBAL DEFAULT    8 pattern
+   170: 00000144     4 OBJECT  GLOBAL DEFAULT    4 _nds32_jmptbl_15
+   171: 00100428     0 NOTYPE  WEAK   DEFAULT    8 _FP_BASE_
+   172: 00000412    94 FUNC    GLOBAL DEFAULT    6 DRV_PutChar
+   173: 000000e0     4 FUNC    WEAK   DEFAULT    1 _nds32_vector_14
+   174: 000001a0     0 NOTYPE  GLOBAL DEFAULT    5 _start
+   175: 000009d4   102 FUNC    GLOBAL DEFAULT    6 InitialLCD
+   176: 00100428     0 NOTYPE  WEAK   DEFAULT    8 _SDA_BASE_
+   177: 00000222     2 FUNC    GLOBAL DEFAULT    6 __null_function
+   178: 000002ae    10 FUNC    GLOBAL DEFAULT    6 GIE_DISABLE
+   179: 00100210     2 OBJECT  GLOBAL DEFAULT    8 LCD_NumLine
+   180: 0000031c     2 FUNC    GLOBAL DEFAULT    6 HW0_ISR
+   181: 0000013c     4 OBJECT  WEAK   DEFAULT    4 _nds32_jmptbl_13
+   182: 00000130     4 OBJECT  GLOBAL DEFAULT    4 _nds32_jmptbl_10
+   183: 000000b0     4 FUNC    WEAK   DEFAULT    1 _nds32_vector_11
+   184: 00000afa    20 FUNC    GLOBAL DEFAULT    6 clear_display
+   185: 0000035c    26 FUNC    GLOBAL DEFAULT    6 DRV_EnableHWInt
+   186: 0010020a     2 OBJECT  GLOBAL DEFAULT    8 LCD_ShiftMode
+   187: 000001a0   128 FUNC    GLOBAL DEFAULT    5 _nds32_reset
+   188: 00100212     2 OBJECT  GLOBAL DEFAULT    8 LCD_FontSize
+   189: 0000011c     4 OBJECT  WEAK   DEFAULT    4 _nds32_jmptbl_05
+   190: 00000220     2 FUNC    WEAK   DEFAULT    6 error_exception_handler
+   191: 0010061c     0 NOTYPE  GLOBAL DEFAULT    9 _lmaend
+   192: 00000000     0 NOTYPE  WEAK   DEFAULT    1 _RELAX_END_
+   193: 00000100     4 OBJECT  GLOBAL DEFAULT    2 _nds32_nmih
+   194: 00100658     4 OBJECT  GLOBAL DEFAULT   10 line1
+   195: 0010061c     0 NOTYPE  GLOBAL DEFAULT    9 __bss_start
+   196: 00000108     4 OBJECT  GLOBAL DEFAULT    4 _nds32_jmptbl_00
+   197: 00000cac    14 FUNC    GLOBAL DEFAULT    6 memset
+   198: 00100200     2 OBJECT  GLOBAL DEFAULT    8 LCD_ACShiftDirection
+   199: 00000bc2   214 FUNC    GLOBAL DEFAULT    6 main
+   200: 000003c0    22 FUNC    GLOBAL DEFAULT    6 DRV_IntInitial
+   201: 00000104     4 OBJECT  GLOBAL DEFAULT    3 _nds32_wrh
+   202: 00000090    16 FUNC    GLOBAL DEFAULT    1 _nds32_vector_09
+   203: 00000050     4 FUNC    WEAK   DEFAULT    1 _nds32_vector_05
+   204: 00000220     2 FUNC    WEAK   DEFAULT    6 HW3_ISR
+   205: 00000020     4 FUNC    WEAK   DEFAULT    1 _nds32_vector_02
+   206: 00000114     4 OBJECT  WEAK   DEFAULT    4 _nds32_jmptbl_03
+   207: 00000128     4 OBJECT  GLOBAL DEFAULT    4 _nds32_jmptbl_08
+   208: 000000c0     4 FUNC    WEAK   DEFAULT    1 _nds32_vector_12
+   209: 000002d8     8 FUNC    GLOBAL DEFAULT    6 initIntr_standby
+   210: 00000080    16 FUNC    GLOBAL DEFAULT    1 _nds32_vector_08
+   211: 0010065c     4 OBJECT  GLOBAL DEFAULT   10 line2
+   212: 0010061c    32 OBJECT  GLOBAL DEFAULT    9 buf
+   213: 00000328    22 FUNC    GLOBAL DEFAULT    6 SW0_ISR
+   214: 00000134     4 OBJECT  WEAK   DEFAULT    4 _nds32_jmptbl_11
+   215: 00000668   468 FUNC    GLOBAL DEFAULT    6 DRV_Printf
+   216: 00000d70     0 NOTYPE  GLOBAL DEFAULT  ABS __data_lmastart
+   217: 000000f0    16 FUNC    GLOBAL DEFAULT    1 _nds32_vector_15
+   218: 00000470    50 FUNC    GLOBAL DEFAULT    6 DRV_PutStr
+   219: 0010061c     0 NOTYPE  GLOBAL DEFAULT    9 _edata
+   220: 00100654     0 NOTYPE  GLOBAL DEFAULT    9 _end
+   221: 0000083c    70 FUNC    GLOBAL DEFAULT    6 setString
+   222: 000002a0     8 FUNC    GLOBAL DEFAULT    6 nmi_handler
+   223: 0010020c     2 OBJECT  GLOBAL DEFAULT    8 LCD_ShiftRight
+   224: 00000224    56 FUNC    GLOBAL DEFAULT    6 __c_init
+   225: 00000312    10 FUNC    GLOBAL DEFAULT    6 syscall_handler
+   226: 00000140     4 OBJECT  WEAK   DEFAULT    4 _nds32_jmptbl_14
+   227: 0000029e     2 FUNC    GLOBAL DEFAULT    6 __soc_init
+   228: 00000cbc    12 FUNC    GLOBAL DEFAULT    6 strlen
+   229: 00103000     0 NOTYPE  GLOBAL DEFAULT  ABS _stack
+   230: 00000376    74 FUNC    GLOBAL DEFAULT    6 DRV_BlockIntDisable
+   231: 00100200     0 NOTYPE  GLOBAL DEFAULT    8 __data_start
+   232: 000000a0    16 FUNC    GLOBAL DEFAULT    1 _nds32_vector_10
+   233: 0000028e    16 FUNC    GLOBAL DEFAULT    6 _nds32_init_mem
+   234: 0000010c     4 OBJECT  WEAK   DEFAULT    4 _nds32_jmptbl_01
+   235: 0010063c    24 OBJECT  GLOBAL DEFAULT    9 u8TxdBuf
+   236: 00000120     4 OBJECT  WEAK   DEFAULT    4 _nds32_jmptbl_06
+   237: 00000000     4 FUNC    GLOBAL DEFAULT    1 _nds32_vector_00
+   238: 00000b0e   180 FUNC    GLOBAL DEFAULT    6 key_logic
+   239: 000003fa    24 FUNC    GLOBAL DEFAULT    6 OS_PowerOnDriverInitial
+   240: 00000060     4 FUNC    WEAK   DEFAULT    1 _nds32_vector_06
+
+No version information found in this file.

@@ -1,0 +1,3 @@
+#Tue Jan 15 09:31:00 CST 2013
+RseFlashDriverModel=<?xml version\="1.0" encoding\="UTF-8" standalone\="yes"?><rseFlashDriverModel><eraseAll>false</eraseAll><flashDriver>IntelJ3</flashDriver><imageFile>F\:\\AndesWork\\20MCU_N8\\N8_Boot_58N032_Chip\\Debug\\output\\N8_Boot_58N032_Chip.bin</imageFile><lock>false</lock><miscArgs>--preserve</miscArgs><target>ag101p_16mb</target><unlock>false</unlock><verify>true</verify><relativeImageFile>${project_loc}\\Debug\\output\\N8_Boot_58N032_Chip.bin</relativeImageFile></rseFlashDriverModel>
+eclipse.preferences.version=1

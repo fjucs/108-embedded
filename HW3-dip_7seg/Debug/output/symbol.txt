@@ -1,0 +1,184 @@
+00000000 W _RELAX_END_
+00000000 T _nds32_vector_00
+00000010 W _nds32_vector_01	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid01.S:40
+00000020 W _nds32_vector_02	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid02.S:40
+00000030 W _nds32_vector_03	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid03.S:40
+00000040 W _nds32_vector_04	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid04.S:40
+00000050 W _nds32_vector_05	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid05.S:40
+00000060 W _nds32_vector_06	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid06.S:40
+00000070 W _nds32_vector_07	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid07.S:40
+00000080 T _nds32_vector_08
+00000090 T _nds32_vector_09
+000000a0 T _nds32_vector_10
+000000b0 W _nds32_vector_11	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid11.S:40
+000000c0 W _nds32_vector_12	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid12.S:40
+000000d0 W _nds32_vector_13	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid13.S:40
+000000e0 W _nds32_vector_14	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid14.S:40
+000000f0 T _nds32_vector_15
+00000100 R _nds32_nmih
+00000104 R _nds32_wrh
+00000108 R _nds32_jmptbl_00
+0000010c V _nds32_jmptbl_01
+00000110 V _nds32_jmptbl_02
+00000114 V _nds32_jmptbl_03
+00000118 V _nds32_jmptbl_04
+0000011c V _nds32_jmptbl_05
+00000120 V _nds32_jmptbl_06
+00000124 V _nds32_jmptbl_07
+00000128 R _nds32_jmptbl_08
+0000012c R _nds32_jmptbl_09
+00000130 R _nds32_jmptbl_10
+00000134 V _nds32_jmptbl_11
+00000138 V _nds32_jmptbl_12
+0000013c V _nds32_jmptbl_13
+00000140 V _nds32_jmptbl_14
+00000144 R _nds32_jmptbl_15
+00000148 T _nds32_e_sa_nr	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/excp_isr.S:101
+0000018a T _nds32_i_ps_nn	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/intr_isr.S:116
+000001a0 T _nds32_reset	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/reset.S:36
+000001a0 T _start	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/reset.S:36
+00000220 t Default_Handler	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../init-default.c:17
+00000220 W HW2_ISR	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../init-default.c:19
+00000220 W HW3_ISR	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../init-default.c:19
+00000220 W HW4_ISR	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../init-default.c:19
+00000220 W HW5_ISR	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../init-default.c:19
+00000220 W error_exception_handler	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../init-default.c:19
+00000220 W tlb_exception_handler	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../init-default.c:19
+00000222 T __null_function	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../init-default.c:22
+00000224 T __c_init	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../init-default.c:26
+0000025c T __cpu_init	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../init-default.c:49
+0000028e T _nds32_init_mem	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../init-soc.c:19
+0000029e T __soc_init	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../init-soc.c:26
+000002a0 T nmi_handler	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../interrupt-c-ext.c:5
+000002a8 T GIE_ENABLE	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../interrupt-c-ext.c:9
+000002ae T GIE_DISABLE	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../interrupt-c-ext.c:14
+000002b8 T gen_swi	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../interrupt-c-ext.c:21
+000002d8 T initIntr_standby	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../interrupt-c-ext.c:31
+000002e0 T clear_swi	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../interrupt-c-ext.c:40
+000002f4 T reset_handler	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../interrupt-c-ext.c:59
+00000312 T syscall_handler	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../interrupt-c-ext.c:71
+0000031c T HW0_ISR	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../interrupt-c-ext.c:85
+0000031e T HW1_ISR	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../interrupt-c-ext.c:94
+00000328 T SW0_ISR	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../interrupt-c-ext.c:102
+00000340 T delay1	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:6
+0000035c T DRV_EnableHWInt	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:32
+00000376 T DRV_BlockIntDisable	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:42
+000003c0 T DRV_IntInitial	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:53
+000003d6 T DRV_SysXtal	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:68
+000003fa T OS_PowerOnDriverInitial	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:94
+00000412 T DRV_PutChar	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:180
+00000470 T DRV_PutStr	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:202
+000004a2 T DRV_IntToStr	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:217
+00000668 T DRV_Printf	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:303
+0000083c T init	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:356
+000008bc T wait_clock	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:375
+000008e4 T render	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:386
+00000964 T dip_read	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:399
+00000974 T dip_check	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:404
+000009c0 T clean	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:418
+000009e6 T show_roy	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:426
+00000a56 T show_halloworld	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:440
+00000ac6 T main	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:454
+00000b10 T __assert_func
+00000b40 T __assert
+00000b4e T _fiprintf_r
+00000b6a T fiprintf
+00000b90 T memcpy
+00000ba4 T memset
+00000bb4 T __sprint_r
+00000bd2 T _vfiprintf_r
+00001496 T vfiprintf
+000014ac t __sbprintf
+00001516 T __swsetup_r
+000015c8 T abort
+000015d2 T __sflush_r
+000016fa T _fflush_r
+0000171e T fflush
+0000173a t __fp_lock
+0000173e t __fp_unlock
+00001742 T _cleanup_r
+0000174e T __sfmoreglue
+0000177e T _cleanup
+00001788 T __sinit
+00001862 T __sfp
+000018d8 T __sfp_lock_acquire
+000018da T __sfp_lock_release
+000018dc T __sinit_lock_acquire
+000018de T __sinit_lock_release
+000018e0 T __fp_lock_all
+000018ee T __fp_unlock_all
+000018fc T __sfvwrite_r
+00001bd0 T _fwalk
+00001c0a T _fwalk_reent
+00001c48 T __smakebuf_r
+00001d28 T memchr
+00001d40 T memmove
+00001d6c T _free_r
+00001de0 T _malloc_r
+00001e86 T _realloc_r
+00001ed0 T _sbrk_r
+00001eec T __sread
+00001f12 T __seofread
+00001f16 T __swrite
+00001f4e T __sseek
+00001f76 T __sclose
+00001f84 T strlen
+00001f90 T _write_r
+00001fb0 T _close_r
+00001fcc T _fclose_r
+00002052 T fclose
+00002060 T _fstat_r
+0000207e T _isatty_r
+0000209a T _lseek_r
+000020ba T _malloc_usable_size_r
+000020ce T _read_r
+000020f0 T _exit
+000020f8 T _close
+00002100 T _read
+00002108 T _write
+00002110 T _lseek
+00002118 T _fstat
+00002120 T _isatty
+00002134 T _sbrk
+00002164 T __syscall_error_handler
+00002174 T __udivdi3	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:812
+00002178 t fudiv_qrnnd	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:955
+000021d0 T __udivmoddi4	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:1143
+0000233c T __umoddi3	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:1733
+00002354 T __clzsi2	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/lib2src-mculib/_clzsi2.S:28
+00002374 T umul_ppmm	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:854
+0000245c R siz	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:411
+00002460 r __FUNCTION__.2407
+000024d4 r zeroes.4461
+000024e4 r blanks.4460
+000024f4 A __data_lmastart
+00100200 D __data_start
+00100200 D digit	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:351
+00100220 D num	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:352
+00100264 D clkLim	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:372
+00100268 D stu	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:410
+00100270 D _NDS32_REENT__stderr
+00100274 D _NDS32_REENT__stdout
+00100278 D _NDS32_REENT__stdin
+0010027c D _NDS32_REENT___sglue
+00100288 D _impure_ptr
+0010028c B __bss_start
+0010028c B _edata
+0010028c B _lmaend
+0010028c B clk	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:372
+00100290 B lim	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:424
+00100294 B _NDS32_REENT___cleanup
+00100298 B _NDS32_REENT___sdidinit
+0010029c B _NDS32_REENT__errno
+001002a0 b impure_data
+001002a4 B __malloc_sbrk_start
+001002a8 B __malloc_free_list
+001002ac b heap_end
+001002b0 B frame	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:354
+001002d0 B u8TxdBuf	/cygdrive/g/embedded/109-embedded/HW3-dip_7seg/Debug/../main.c:178
+001002e8 B _NDS32_REENT_(short, float)
+00100310 W _FP_BASE_
+00100310 W _SDA_BASE_
+00100420 B _end
+00100420 C errno
+00103000 A _stack

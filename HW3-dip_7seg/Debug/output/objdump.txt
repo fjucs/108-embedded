@@ -1,0 +1,3899 @@
+
+7segDip.adx:     file format elf32-nds32le
+7segDip.adx
+architecture: n1h_v3m, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x000001a0
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x000024f4 memsz 0x000024f4 flags r-x
+    LOAD off    0x00004200 vaddr 0x00100200 paddr 0x000024f4 align 2**12
+         filesz 0x0000008c memsz 0x00000220 flags rw-
+    LOAD off    0x00004420 vaddr 0x00100420 paddr 0x00002580 align 2**12
+         filesz 0x00000000 memsz 0x00000004 flags rw-
+private flags = 40010042: n1 instructions
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .nds32_vector 00000100  00000000  00000000  00001000  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .nds32_nmih   00000004  00000100  00000100  00001100  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .nds32_wrh    00000004  00000104  00000104  00001104  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .nds32_jmptbl 00000040  00000108  00000108  00001108  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .nds32_isr    000000d8  00000148  00000148  00001148  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  5 .text         00002184  00000220  00000220  00001220  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  6 .rodata       00000150  000023a4  000023a4  000033a4  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  7 .data         0000008c  00100200  000024f4  00004200  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  8 .bss          00000194  0010028c  00002580  0000428c  2**2
+                  ALLOC
+  9 .scommon_w    00000004  00100420  00002580  00004420  2**2
+                  ALLOC
+ 10 .comment      0000002f  00000000  00000000  0000428c  2**0
+                  CONTENTS, READONLY
+ 11 .debug_aranges 000002e0  00000000  00000000  000042c0  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_info   00002e5d  00000000  00000000  000045a0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_abbrev 000006ae  00000000  00000000  000073fd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_line   00001ef5  00000000  00000000  00007aab  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_frame  000003a4  00000000  00000000  000099a0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_str    0000e19e  00000000  00000000  00009d44  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .debug_macro  000025c5  00000000  00000000  00017ee2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+00000000 l    d  .nds32_vector	00000000 .nds32_vector
+00000100 l    d  .nds32_nmih	00000000 .nds32_nmih
+00000104 l    d  .nds32_wrh	00000000 .nds32_wrh
+00000108 l    d  .nds32_jmptbl	00000000 .nds32_jmptbl
+00000148 l    d  .nds32_isr	00000000 .nds32_isr
+00000220 l    d  .text	00000000 .text
+000023a4 l    d  .rodata	00000000 .rodata
+00100200 l    d  .data	00000000 .data
+0010028c l    d  .bss	00000000 .bss
+00100420 l    d  .scommon_w	00000000 .scommon_w
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    df *ABS*	00000000 interrupt-c-ext.c
+00000000 l    df *ABS*	00000000 vec_vid01.o
+00000000 l    df *ABS*	00000000 vec_vid02.o
+00000000 l    df *ABS*	00000000 vec_vid03.o
+00000000 l    df *ABS*	00000000 vec_vid04.o
+00000000 l    df *ABS*	00000000 vec_vid05.o
+00000000 l    df *ABS*	00000000 vec_vid06.o
+00000000 l    df *ABS*	00000000 vec_vid07.o
+00000000 l    df *ABS*	00000000 vec_vid11.o
+00000000 l    df *ABS*	00000000 vec_vid12.o
+00000000 l    df *ABS*	00000000 vec_vid13.o
+00000000 l    df *ABS*	00000000 vec_vid14.o
+00000000 l    df *ABS*	00000000 excp_isr_sa_nr.o
+00000000 l    df *ABS*	00000000 intr_isr_ps_nn.o
+00000000 l    df *ABS*	00000000 reset.o
+00000000 l    df *ABS*	00000000 init-default.c
+00000220 l     F .text	00000002 Default_Handler
+00000000 l    df *ABS*	00000000 init-soc.c
+00000000 l    df *ABS*	00000000 main.c
+00002460 l     O .rodata	0000000a __FUNCTION__.2407
+00000000 l    df *ABS*	00000000 assert.c
+00000000 l    df *ABS*	00000000 data-stdio.c
+00000000 l    df *ABS*	00000000 fiprintf.c
+00000000 l    df *ABS*	00000000 lib_a-memcpy.o
+00000000 l    df *ABS*	00000000 lib_a-memset.o
+00000000 l    df *ABS*	00000000 vfprintf.c
+000014ac l     F .text	0000006a __sbprintf
+000024e4 l     O .rodata	00000010 blanks.4460
+000024d4 l     O .rodata	00000010 zeroes.4461
+00000000 l    df *ABS*	00000000 wsetup.c
+00000000 l    df *ABS*	00000000 abort.c
+00000000 l    df *ABS*	00000000 data-findfp.c
+00000000 l    df *ABS*	00000000 fflush.c
+00000000 l    df *ABS*	00000000 findfp.c
+0000173a l     F .text	00000004 __fp_lock
+0000173e l     F .text	00000004 __fp_unlock
+00000000 l    df *ABS*	00000000 fvwrite.c
+00000000 l    df *ABS*	00000000 fwalk.c
+00000000 l    df *ABS*	00000000 impure.c
+001002a0 l     O .bss	00000004 impure_data
+00000000 l    df *ABS*	00000000 makebuf.c
+00000000 l    df *ABS*	00000000 lib_a-memchr.o
+00000000 l    df *ABS*	00000000 lib_a-memmove.o
+00000000 l    df *ABS*	00000000 nano-mallocr.c
+00000000 l    df *ABS*	00000000 nano-mallocr.c
+00000000 l    df *ABS*	00000000 nano-mallocr.c
+00000000 l    df *ABS*	00000000 sbrkr.c
+00000000 l    df *ABS*	00000000 stdio.c
+00000000 l    df *ABS*	00000000 lib_a-strlen.o
+00000000 l    df *ABS*	00000000 writer.c
+00000000 l    df *ABS*	00000000 closer.c
+00000000 l    df *ABS*	00000000 fclose.c
+00000000 l    df *ABS*	00000000 fstatr.c
+00000000 l    df *ABS*	00000000 isattyr.c
+00000000 l    df *ABS*	00000000 lseekr.c
+00000000 l    df *ABS*	00000000 nano-mallocr.c
+00000000 l    df *ABS*	00000000 readr.c
+00000000 l    df *ABS*	00000000 reent_errno.c
+00000000 l    df *ABS*	00000000 _exit.o
+00000000 l    df *ABS*	00000000 _close.o
+00000000 l    df *ABS*	00000000 _read.o
+00000000 l    df *ABS*	00000000 _write.o
+00000000 l    df *ABS*	00000000 _lseek.o
+00000000 l    df *ABS*	00000000 _fstat.o
+00000000 l    df *ABS*	00000000 _isatty.o
+00000000 l    df *ABS*	00000000 _sbrk.o
+001002ac l       .bss	00000000 heap_end
+00000000 l    df *ABS*	00000000 syscall_error_handler.o
+00000000 l    df *ABS*	00000000 _udivdi3.o
+00000000 l    df *ABS*	00000000 _udivmoddi4.o
+00002178 l     F .text	00000058 fudiv_qrnnd
+00000000 l    df *ABS*	00000000 _umoddi3.o
+00000000 l    df *ABS*	00000000 _clzsi2.o
+00000000 l    df *ABS*	00000000 _umul_ppmm.o
+00000000 l    df *ABS*	00000000 
+000020ba g     F .text	00000014 _malloc_usable_size_r
+00100200 g     O .data	00000020 digit
+0000207e g     F .text	0000001c _isatty_r
+00000220  w    F .text	00000002 HW2_ISR
+0000209a g     F .text	00000020 _lseek_r
+000002f4 g     F .text	0000001e reset_handler
+001002e8 g     O .bss	00000138 _NDS32_REENT_(short, float)
+000004a2 g     F .text	000001c6 DRV_IntToStr
+000003d6 g     F .text	00000024 DRV_SysXtal
+00001f4e g     F .text	00000028 __sseek
+00001788 g     F .text	000000da __sinit
+00000340 g     F .text	0000001c delay1
+0000012c g     O .nds32_jmptbl	00000004 _nds32_jmptbl_09
+00002164 g     F .text	00000010 .hidden __syscall_error_handler
+000000d0  w    F .nds32_vector	00000004 _nds32_vector_13
+0000174e g     F .text	00000030 __sfmoreglue
+00100298 g     O .bss	00000004 _NDS32_REENT___sdidinit
+0000018a g     F .nds32_isr	00000016 _nds32_i_ps_nn
+00000030  w    F .nds32_vector	00000004 _nds32_vector_03
+00001d40 g     F .text	0000002a memmove
+0000177e g     F .text	0000000a _cleanup
+00000220  w    F .text	00000002 tlb_exception_handler
+0000031e g     F .text	0000000a HW1_ISR
+00000138  w    O .nds32_jmptbl	00000004 _nds32_jmptbl_12
+000002e0 g     F .text	00000014 clear_swi
+00000148 g     F .nds32_isr	00000042 _nds32_e_sa_nr
+00002060 g     F .text	0000001e _fstat_r
+00100420 g     O .scommon_w	00000004 errno
+00001f12 g     F .text	00000004 __seofread
+00000118  w    O .nds32_jmptbl	00000004 _nds32_jmptbl_04
+00000964 g     F .text	00000010 dip_read
+00000b90 g     F .text	00000012 memcpy
+00100278 g     O .data	00000004 _NDS32_REENT__stdin
+00001742 g     F .text	0000000c _cleanup_r
+000002a8 g     F .text	00000006 GIE_ENABLE
+00002118 g     F .text	00000008 _fstat
+00000b10 g     F .text	00000030 __assert_func
+000002b8 g     F .text	00000020 gen_swi
+000018fc g     F .text	000002d4 __sfvwrite_r
+000021d0 g     F .text	0000016a .hidden __udivmoddi4
+00001ed0 g     F .text	0000001c _sbrk_r
+0000025c g     F .text	00000032 __cpu_init
+00000220  w    F .text	00000002 HW5_ISR
+000020ce g     F .text	00000020 _read_r
+00001fcc g     F .text	00000086 _fclose_r
+0000171e g     F .text	0000001c fflush
+00000220  w    F .text	00000002 HW4_ISR
+00000124  w    O .nds32_jmptbl	00000004 _nds32_jmptbl_07
+0000233c g     F .text	00000016 .hidden __umoddi3
+00002120 g     F .text	00000012 _isatty
+00001e86 g     F .text	0000004a _realloc_r
+00002174 g     F .text	00000004 .hidden __udivdi3
+000015c8 g     F .text	0000000a abort
+00000010  w    F .nds32_vector	00000004 _nds32_vector_01
+00002134 g     F .text	0000002e _sbrk
+000018e0 g     F .text	0000000e __fp_lock_all
+00000110  w    O .nds32_jmptbl	00000004 _nds32_jmptbl_02
+000009c0 g     F .text	00000026 clean
+0010028c g     O .bss	00000004 clk
+00000070  w    F .nds32_vector	00000004 _nds32_vector_07
+00000040  w    F .nds32_vector	00000004 _nds32_vector_04
+00100290 g     O .bss	00000004 lim
+00000144 g     O .nds32_jmptbl	00000004 _nds32_jmptbl_15
+00100310  w      .data	00000000 _FP_BASE_
+00002354 g     F .text	00000020 .hidden __clzsi2
+000018d8 g     F .text	00000002 __sfp_lock_acquire
+00100274 g     O .data	00000004 _NDS32_REENT__stdout
+00001d28 g     F .text	00000016 memchr
+00001d6c g     F .text	00000074 _free_r
+00000412 g     F .text	0000005e DRV_PutChar
+000000e0  w    F .nds32_vector	00000004 _nds32_vector_14
+000001a0 g       .nds32_isr	00000000 _start
+00100270 g     O .data	00000004 _NDS32_REENT__stderr
+00002110 g     F .text	00000008 _lseek
+00100310  w      .data	00000000 _SDA_BASE_
+000008e4 g     F .text	00000080 render
+00000222 g     F .text	00000002 __null_function
+000002ae g     F .text	0000000a GIE_DISABLE
+0000031c g     F .text	00000002 HW0_ISR
+0010027c g     O .data	0000000c _NDS32_REENT___sglue
+0000013c  w    O .nds32_jmptbl	00000004 _nds32_jmptbl_13
+00000a56 g     F .text	00000070 show_halloworld
+00000130 g     O .nds32_jmptbl	00000004 _nds32_jmptbl_10
+000000b0  w    F .nds32_vector	00000004 _nds32_vector_11
+00002374 g     F .text	00000030 .hidden umul_ppmm
+00001fb0 g     F .text	0000001c _close_r
+0000035c g     F .text	0000001a DRV_EnableHWInt
+000001a0 g     F .nds32_isr	00000080 _nds32_reset
+00001516 g     F .text	000000b2 __swsetup_r
+0000083c g     F .text	00000080 init
+00001862 g     F .text	00000076 __sfp
+0000011c  w    O .nds32_jmptbl	00000004 _nds32_jmptbl_05
+00000220  w    F .text	00000002 error_exception_handler
+000018de g     F .text	00000002 __sinit_lock_release
+0010028c g       .bss	00000000 _lmaend
+00001eec g     F .text	00000026 __sread
+000008bc g     F .text	00000028 wait_clock
+00100220 g     O .data	00000044 num
+000016fa g     F .text	00000024 _fflush_r
+00000000  w      .nds32_vector	00000000 _RELAX_END_
+00000100 g     O .nds32_nmih	00000004 _nds32_nmih
+0010028c g       .bss	00000000 __bss_start
+00000108 g     O .nds32_jmptbl	00000004 _nds32_jmptbl_00
+00000ba4 g     F .text	0000000e memset
+00100264 g     O .data	00000004 clkLim
+00000ac6 g     F .text	0000004a main
+000003c0 g     F .text	00000016 DRV_IntInitial
+00000104 g     O .nds32_wrh	00000004 _nds32_wrh
+00001f76 g     F .text	0000000c __sclose
+00002052 g     F .text	0000000e fclose
+00000090 g     F .nds32_vector	00000010 _nds32_vector_09
+00000050  w    F .nds32_vector	00000004 _nds32_vector_05
+00001de0 g     F .text	000000a6 _malloc_r
+00000220  w    F .text	00000002 HW3_ISR
+00000b4e g     F .text	0000001c _fiprintf_r
+00000020  w    F .nds32_vector	00000004 _nds32_vector_02
+00001bd0 g     F .text	0000003a _fwalk
+00100268 g     O .data	00000008 stu
+00100294 g     O .bss	00000004 _NDS32_REENT___cleanup
+0010029c g     O .bss	00000004 _NDS32_REENT__errno
+00001496 g     F .text	00000016 vfiprintf
+00000114  w    O .nds32_jmptbl	00000004 _nds32_jmptbl_03
+00000128 g     O .nds32_jmptbl	00000004 _nds32_jmptbl_08
+00001f90 g     F .text	00000020 _write_r
+000000c0  w    F .nds32_vector	00000004 _nds32_vector_12
+000002d8 g     F .text	00000008 initIntr_standby
+001002b0 g     O .bss	00000020 frame
+00100288 g     O .data	00000004 _impure_ptr
+00000080 g     F .nds32_vector	00000010 _nds32_vector_08
+000015d2 g     F .text	00000128 __sflush_r
+000018ee g     F .text	0000000e __fp_unlock_all
+00000328 g     F .text	00000016 SW0_ISR
+00000134  w    O .nds32_jmptbl	00000004 _nds32_jmptbl_11
+00000668 g     F .text	000001d4 DRV_Printf
+000024f4 g       *ABS*	00000000 __data_lmastart
+000000f0 g     F .nds32_vector	00000010 _nds32_vector_15
+00002108 g     F .text	00000008 _write
+00000470 g     F .text	00000032 DRV_PutStr
+00000974 g     F .text	0000004c dip_check
+0010028c g       .bss	00000000 _edata
+00100420 g       .bss	00000000 _end
+000002a0 g     F .text	00000008 nmi_handler
+00001f16 g     F .text	00000038 __swrite
+00000224 g     F .text	00000038 __c_init
+00000b6a g     F .text	00000024 fiprintf
+00000bd2 g     F .text	000008c4 _vfiprintf_r
+00001c0a g     F .text	0000003e _fwalk_reent
+000018da g     F .text	00000002 __sfp_lock_release
+00000312 g     F .text	0000000a syscall_handler
+00000140  w    O .nds32_jmptbl	00000004 _nds32_jmptbl_14
+00002100 g     F .text	00000008 _read
+0000245c g     O .rodata	00000004 siz
+000020f0 g     F .text	00000006 _exit
+00001c48 g     F .text	000000e0 __smakebuf_r
+0000029e g     F .text	00000002 __soc_init
+00001f84 g     F .text	0000000c strlen
+00103000 g       *ABS*	00000000 _stack
+001002a4 g     O .bss	00000004 __malloc_sbrk_start
+00000b40 g     F .text	0000000e __assert
+00000bb4 g     F .text	0000001e __sprint_r
+00000376 g     F .text	0000004a DRV_BlockIntDisable
+000009e6 g     F .text	00000070 show_roy
+00100200 g       .data	00000000 __data_start
+000000a0 g     F .nds32_vector	00000010 _nds32_vector_10
+001002a8 g     O .bss	00000004 __malloc_free_list
+0000028e g     F .text	00000010 _nds32_init_mem
+0000010c  w    O .nds32_jmptbl	00000004 _nds32_jmptbl_01
+001002d0 g     O .bss	00000018 u8TxdBuf
+00000120  w    O .nds32_jmptbl	00000004 _nds32_jmptbl_06
+00000000 g     F .nds32_vector	00000004 _nds32_vector_00
+000003fa g     F .text	00000018 OS_PowerOnDriverInitial
+00000060  w    F .nds32_vector	00000004 _nds32_vector_06
+000020f8 g     F .text	00000008 _close
+000018dc g     F .text	00000002 __sinit_lock_acquire
+
+
+
+Disassembly of section .nds32_vector:
+
+00000000 <_nds32_vector_00>:
+   0:	48 00 00 d0 	j 1a0 <_nds32_reset>
+   4:	40 00 00 09 	nop
+   8:	40 00 00 09 	nop
+   c:	40 00 00 09 	nop
+
+00000010 <_nds32_vector_01>:
+  10:	48 00 00 00 	j 10 <_nds32_vector_01>
+  14:	40 00 00 09 	nop
+  18:	40 00 00 09 	nop
+  1c:	40 00 00 09 	nop
+
+00000020 <_nds32_vector_02>:
+  20:	48 00 00 00 	j 20 <_nds32_vector_02>
+  24:	40 00 00 09 	nop
+  28:	40 00 00 09 	nop
+  2c:	40 00 00 09 	nop
+
+00000030 <_nds32_vector_03>:
+  30:	48 00 00 00 	j 30 <_nds32_vector_03>
+  34:	40 00 00 09 	nop
+  38:	40 00 00 09 	nop
+  3c:	40 00 00 09 	nop
+
+00000040 <_nds32_vector_04>:
+  40:	48 00 00 00 	j 40 <_nds32_vector_04>
+  44:	40 00 00 09 	nop
+  48:	40 00 00 09 	nop
+  4c:	40 00 00 09 	nop
+
+00000050 <_nds32_vector_05>:
+  50:	48 00 00 00 	j 50 <_nds32_vector_05>
+  54:	40 00 00 09 	nop
+  58:	40 00 00 09 	nop
+  5c:	40 00 00 09 	nop
+
+00000060 <_nds32_vector_06>:
+  60:	48 00 00 00 	j 60 <_nds32_vector_06>
+  64:	40 00 00 09 	nop
+  68:	40 00 00 09 	nop
+  6c:	40 00 00 09 	nop
+
+00000070 <_nds32_vector_07>:
+  70:	48 00 00 00 	j 70 <_nds32_vector_07>
+  74:	40 00 00 09 	nop
+  78:	40 00 00 09 	nop
+  7c:	40 00 00 09 	nop
+
+00000080 <_nds32_vector_08>:
+  80:	3a ff bf fc 	smw.adm $r15,[$sp],$r15,#0xf    ! {$r15, $fp, $gp, $lp, $sp}
+  84:	3a 0f a8 3c 	smw.adm $r0,[$sp],$r10,#0x0    ! {$r0~$r10}
+  88:	44 00 00 08 	movi $r0,#0x8
+  8c:	48 00 00 5e 	j 148 <_nds32_e_sa_nr>
+
+00000090 <_nds32_vector_09>:
+  90:	3a ff bc bc 	smw.adm $r15,[$sp],$r15,#0x2    ! {$r15, $lp}
+  94:	3a 0f 94 3c 	smw.adm $r0,[$sp],$r5,#0x0    ! {$r0~$r5}
+  98:	44 00 00 00 	movi $r0,#0x0
+  9c:	48 00 00 77 	j 18a <_nds32_i_ps_nn>
+
+000000a0 <_nds32_vector_10>:
+  a0:	3a ff bc bc 	smw.adm $r15,[$sp],$r15,#0x2    ! {$r15, $lp}
+  a4:	3a 0f 94 3c 	smw.adm $r0,[$sp],$r5,#0x0    ! {$r0~$r5}
+  a8:	44 00 00 01 	movi $r0,#0x1
+  ac:	48 00 00 6f 	j 18a <_nds32_i_ps_nn>
+
+000000b0 <_nds32_vector_11>:
+  b0:	48 00 00 00 	j b0 <_nds32_vector_11>
+  b4:	40 00 00 09 	nop
+  b8:	40 00 00 09 	nop
+  bc:	40 00 00 09 	nop
+
+000000c0 <_nds32_vector_12>:
+  c0:	48 00 00 00 	j c0 <_nds32_vector_12>
+  c4:	40 00 00 09 	nop
+  c8:	40 00 00 09 	nop
+  cc:	40 00 00 09 	nop
+
+000000d0 <_nds32_vector_13>:
+  d0:	48 00 00 00 	j d0 <_nds32_vector_13>
+  d4:	40 00 00 09 	nop
+  d8:	40 00 00 09 	nop
+  dc:	40 00 00 09 	nop
+
+000000e0 <_nds32_vector_14>:
+  e0:	48 00 00 00 	j e0 <_nds32_vector_14>
+  e4:	40 00 00 09 	nop
+  e8:	40 00 00 09 	nop
+  ec:	40 00 00 09 	nop
+
+000000f0 <_nds32_vector_15>:
+  f0:	3a ff bc bc 	smw.adm $r15,[$sp],$r15,#0x2    ! {$r15, $lp}
+  f4:	3a 0f 94 3c 	smw.adm $r0,[$sp],$r5,#0x0    ! {$r0~$r5}
+  f8:	44 00 00 06 	movi $r0,#0x6
+  fc:	48 00 00 47 	j 18a <_nds32_i_ps_nn>
+
+Disassembly of section .nds32_isr:
+
+00000148 <_nds32_e_sa_nr>:
+ 148:	64 12 a4 02 	mfsr $r1,$ipc
+ 14c:	64 22 04 02 	mfsr $r2,$ipsw
+ 150:	3a 1f 88 3c 	smw.adm $r1,[$sp],$r2,#0x0    ! {$r1~$r2}
+ 154:	80 3f       	mov55 $r1,$sp
+ 156:	44 20 01 08 	movi $r2,#0x108
+ 15a:	38 21 02 02 	lw $r2,[$r2+($r0<<#0x2)]
+ 15e:	64 32 00 02 	mfsr $r3,$psw
+ 162:	9e da       	subi333 $r3,$r3,#0x2
+ 164:	64 32 00 03 	mtsr $r3,$psw
+ 168:	dd 22       	jral5 $r2
+ 16a:	64 02 00 43 	setgie.d
+ 16e:	64 00 00 08 	dsb
+ 172:	3a 1f 88 04 	lmw.bim $r1,[$sp],$r2,#0x0    ! {$r1~$r2}
+ 176:	64 12 a4 03 	mtsr $r1,$ipc
+ 17a:	64 22 04 03 	mtsr $r2,$ipsw
+ 17e:	3a 0f a8 04 	lmw.bim $r0,[$sp],$r10,#0x0    ! {$r0~$r10}
+ 182:	3a ff bf c4 	lmw.bim $r15,[$sp],$r15,#0xf    ! {$r15, $fp, $gp, $lp, $sp}
+ 186:	64 00 00 04 	iret
+
+0000018a <_nds32_i_ps_nn>:
+ 18a:	44 20 01 2c 	movi $r2,#0x12c
+ 18e:	38 21 02 02 	lw $r2,[$r2+($r0<<#0x2)]
+ 192:	dd 22       	jral5 $r2
+ 194:	3a 0f 94 04 	lmw.bim $r0,[$sp],$r5,#0x0    ! {$r0~$r5}
+ 198:	3a ff bc 84 	lmw.bim $r15,[$sp],$r15,#0x2    ! {$r15, $lp}
+ 19c:	64 00 00 04 	iret
+
+000001a0 <_nds32_reset>:
+ 1a0:	4f f2 00 23 	beqz $sp,1e6 <_nds32_reset+0x46>
+ 1a4:	3a 0f a8 3c 	smw.adm $r0,[$sp],$r10,#0x0    ! {$r0~$r10}
+ 1a8:	3a ff bf fc 	smw.adm $r15,[$sp],$r15,#0xf    ! {$r15, $fp, $gp, $lp, $sp}
+ 1ac:	47 d0 01 00 	sethi $gp,#0x100
+ 1b0:	59 de 83 10 	ori $gp,$gp,#0x310
+ 1b4:	80 1f       	mov55 $r0,$sp
+ 1b6:	64 12 64 02 	mfsr $r1,$itype
+ 1ba:	96 5f       	fexti33 $r1,#0x3
+ 1bc:	9e 49       	subi333 $r1,$r1,#0x1
+ 1be:	c1 07       	beqz38 $r1,1cc <_nds32_reset+0x2c>
+ 1c0:	46 f0 00 00 	sethi $r15,#0x0
+ 1c4:	04 f7 80 40 	lwi $r15,[$r15+#0x100]
+ 1c8:	48 00 00 06 	j 1d4 <_nds32_reset+0x34>
+ 1cc:	46 f0 00 00 	sethi $r15,#0x0
+ 1d0:	04 f7 80 41 	lwi $r15,[$r15+#0x104]
+ 1d4:	e8 09       	beqzs8 1e6 <_nds32_reset+0x46>
+ 1d6:	dd 2f       	jral5 $r15
+ 1d8:	c8 07       	bnez38 $r0,1e6 <_nds32_reset+0x46>
+ 1da:	3a ff bf c4 	lmw.bim $r15,[$sp],$r15,#0xf    ! {$r15, $fp, $gp, $lp, $sp}
+ 1de:	3a 0f a8 04 	lmw.bim $r0,[$sp],$r10,#0x0    ! {$r0~$r10}
+ 1e2:	64 00 00 04 	iret
+ 1e6:	64 02 24 02 	mfsr $r0,$ivb
+ 1ea:	44 1f 3f ff 	movi $r1,#-49153
+ 1ee:	fe 0e       	and33 $r0,$r1
+ 1f0:	58 00 40 00 	ori $r0,$r0,#0x4000
+ 1f4:	64 02 24 03 	mtsr $r0,$ivb
+ 1f8:	64 00 00 08 	dsb
+ 1fc:	47 d0 01 00 	sethi $gp,#0x100
+ 200:	59 de 83 10 	ori $gp,$gp,#0x310
+ 204:	3f f8 2c f0 	addi.gp $sp,#0x2cf0
+ 208:	44 f0 02 8e 	movi $r15,#0x28e
+ 20c:	4e f2 00 03 	beqz $r15,212 <_nds32_reset+0x72>
+ 210:	dd 2f       	jral5 $r15
+ 212:	46 f0 00 00 	sethi $r15,#0x0
+ 216:	04 f7 80 42 	lwi $r15,[$r15+#0x108]
+ 21a:	dd 2f       	jral5 $r15
+ 21c:	64 0f ff ea 	break #0x7fff
+
+Disassembly of section .text:
+
+00000220 <HW2_ISR>:
+     220:	d5 00       	j8 220 <HW2_ISR>
+
+00000222 <__null_function>:
+     222:	dd 9e       	ret5 $lp
+
+00000224 <__c_init>:
+     224:	fc 01       	push25 $r6,#8    ! {$r6, $fp, $gp, $lp}
+     226:	3e 1f ff 7c 	addi.gp $r1,#-132
+     22a:	3e 0f fe f0 	addi.gp $r0,#-272
+     22e:	9a 08       	sub333 $r0,$r1,$r0
+     230:	f0 81       	swi37.sp $r0,[+#0x4]
+     232:	f2 01       	lwi37.sp $r2,[+#0x4]
+     234:	3e 0f fe f0 	addi.gp $r0,#-272
+     238:	44 10 24 f4 	movi $r1,#0x24f4
+     23c:	49 00 04 aa 	jal b90 <memcpy>
+     240:	3e 18 01 10 	addi.gp $r1,#0x110
+     244:	3e 0f ff 7c 	addi.gp $r0,#-132
+     248:	9a 08       	sub333 $r0,$r1,$r0
+     24a:	f0 81       	swi37.sp $r0,[+#0x4]
+     24c:	f1 01       	lwi37.sp $r1,[+#0x4]
+     24e:	3e 0f ff 7c 	addi.gp $r0,#-132
+     252:	80 41       	mov55 $r2,$r1
+     254:	84 20       	movi55 $r1,#0x0
+     256:	49 00 04 a7 	jal ba4 <memset>
+     25a:	fc 81       	pop25 $r6,#8    ! {$r6, $fp, $gp, $lp}
+
+0000025c <__cpu_init>:
+     25c:	84 40       	movi55 $r2,#0x0
+     25e:	64 25 e4 03 	mtsr $r2,$misc_ctl
+     262:	44 00 40 01 	movi $r0,#0x4001
+     266:	64 02 24 03 	mtsr $r0,$ivb
+     26a:	64 12 00 02 	mfsr $r1,$psw
+     26e:	84 19       	movi55 $r0,#-7
+     270:	fe 46       	and33 $r1,$r0
+     272:	44 07 00 08 	movi $r0,#0x70008
+     276:	fe 0f       	or33 $r0,$r1
+     278:	64 02 00 03 	mtsr $r0,$psw
+     27c:	64 00 00 08 	dsb
+     280:	64 22 28 03 	mtsr $r2,$int_ctrl
+     284:	44 00 00 e4 	movi $r0,#0xe4
+     288:	64 03 60 03 	mtsr $r0,$int_pri
+     28c:	dd 9e       	ret5 $lp
+
+0000028e <_nds32_init_mem>:
+     28e:	46 00 01 00 	sethi $r0,#0x100
+     292:	8c 03       	addi45 $r0,#0x3
+     294:	64 04 e0 03 	mtsr $r0,$dlmb
+     298:	64 00 00 08 	dsb
+     29c:	dd 9e       	ret5 $lp
+
+0000029e <__soc_init>:
+     29e:	dd 9e       	ret5 $lp
+
+000002a0 <nmi_handler>:
+     2a0:	ef f8       	addi10.sp #-8
+     2a2:	f0 81       	swi37.sp $r0,[+#0x4]
+     2a4:	ec 08       	addi10.sp #0x8
+     2a6:	dd 9e       	ret5 $lp
+
+000002a8 <GIE_ENABLE>:
+     2a8:	64 12 00 43 	setgie.e
+     2ac:	dd 9e       	ret5 $lp
+
+000002ae <GIE_DISABLE>:
+     2ae:	64 02 00 43 	setgie.d
+     2b2:	64 00 00 08 	dsb
+     2b6:	dd 9e       	ret5 $lp
+
+000002b8 <gen_swi>:
+     2b8:	ef f8       	addi10.sp #-8
+     2ba:	64 03 20 02 	mfsr $r0,$int_pend
+     2be:	f0 81       	swi37.sp $r0,[+#0x4]
+     2c0:	f1 01       	lwi37.sp $r1,[+#0x4]
+     2c2:	44 01 00 00 	movi $r0,#0x10000
+     2c6:	fe 0f       	or33 $r0,$r1
+     2c8:	f0 81       	swi37.sp $r0,[+#0x4]
+     2ca:	f0 01       	lwi37.sp $r0,[+#0x4]
+     2cc:	64 03 20 03 	mtsr $r0,$int_pend
+     2d0:	64 00 00 08 	dsb
+     2d4:	ec 08       	addi10.sp #0x8
+     2d6:	dd 9e       	ret5 $lp
+
+000002d8 <initIntr_standby>:
+     2d8:	84 02       	movi55 $r0,#0x2
+     2da:	64 03 00 03 	mtsr $r0,$int_mask
+     2de:	dd 9e       	ret5 $lp
+
+000002e0 <clear_swi>:
+     2e0:	ef f8       	addi10.sp #-8
+     2e2:	fa 00       	movpi45 $r0,#0x10
+     2e4:	f0 81       	swi37.sp $r0,[+#0x4]
+     2e6:	f0 01       	lwi37.sp $r0,[+#0x4]
+     2e8:	64 03 20 03 	mtsr $r0,$int_pend
+     2ec:	64 00 00 08 	dsb
+     2f0:	ec 08       	addi10.sp #0x8
+     2f2:	dd 9e       	ret5 $lp
+
+000002f4 <reset_handler>:
+     2f4:	3b ff fc bc 	smw.adm $sp,[$sp],$sp,#0x2    ! {$lp}
+     2f8:	ef fc       	addi10.sp #-4
+     2fa:	49 ff ff b1 	jal 25c <__cpu_init>
+     2fe:	49 ff ff 93 	jal 224 <__c_init>
+     302:	49 ff ff ce 	jal 29e <__soc_init>
+     306:	49 00 03 e0 	jal ac6 <main>
+     30a:	ec 04       	addi10.sp #0x4
+     30c:	3b ff fc 84 	lmw.bim $sp,[$sp],$sp,#0x2    ! {$lp}
+     310:	dd 9e       	ret5 $lp
+
+00000312 <syscall_handler>:
+     312:	ef f8       	addi10.sp #-8
+     314:	f0 81       	swi37.sp $r0,[+#0x4]
+     316:	b6 3f       	swi450 $r1,[$sp]
+     318:	ec 08       	addi10.sp #0x8
+     31a:	dd 9e       	ret5 $lp
+
+0000031c <HW0_ISR>:
+     31c:	dd 9e       	ret5 $lp
+
+0000031e <HW1_ISR>:
+     31e:	ef f8       	addi10.sp #-8
+     320:	f0 81       	swi37.sp $r0,[+#0x4]
+     322:	b6 3f       	swi450 $r1,[$sp]
+     324:	ec 08       	addi10.sp #0x8
+     326:	dd 9e       	ret5 $lp
+
+00000328 <SW0_ISR>:
+     328:	3b ff fc bc 	smw.adm $sp,[$sp],$sp,#0x2    ! {$lp}
+     32c:	ef f4       	addi10.sp #-12
+     32e:	f0 81       	swi37.sp $r0,[+#0x4]
+     330:	49 ff ff d8 	jal 2e0 <clear_swi>
+     334:	92 00       	nop16
+     336:	ec 0c       	addi10.sp #0xc
+     338:	3b ff fc 84 	lmw.bim $sp,[$sp],$sp,#0x2    ! {$lp}
+     33c:	dd 9e       	ret5 $lp
+	...
+
+00000340 <delay1>:
+     340:	ef f0       	addi10.sp #-16
+     342:	f0 81       	swi37.sp $r0,[+#0x4]
+     344:	84 00       	movi55 $r0,#0x0
+     346:	f0 83       	swi37.sp $r0,[+#0xc]
+     348:	d5 04       	j8 350 <delay1+0x10>
+     34a:	f0 03       	lwi37.sp $r0,[+#0xc]
+     34c:	8c 01       	addi45 $r0,#0x1
+     34e:	f0 83       	swi37.sp $r0,[+#0xc]
+     350:	f1 03       	lwi37.sp $r1,[+#0xc]
+     352:	f0 01       	lwi37.sp $r0,[+#0x4]
+     354:	e2 20       	slt45 $r1,$r0
+     356:	e9 fa       	bnezs8 34a <delay1+0xa>
+     358:	ec 10       	addi10.sp #0x10
+     35a:	dd 9e       	ret5 $lp
+
+0000035c <DRV_EnableHWInt>:
+     35c:	3b ff fc bc 	smw.adm $sp,[$sp],$sp,#0x2    ! {$lp}
+     360:	ef fc       	addi10.sp #-4
+     362:	44 01 00 03 	movi $r0,#0x10003
+     366:	64 03 00 03 	mtsr $r0,$int_mask
+     36a:	49 ff ff 9f 	jal 2a8 <GIE_ENABLE>
+     36e:	ec 04       	addi10.sp #0x4
+     370:	3b ff fc 84 	lmw.bim $sp,[$sp],$sp,#0x2    ! {$lp}
+     374:	dd 9e       	ret5 $lp
+
+00000376 <DRV_BlockIntDisable>:
+     376:	46 00 02 00 	sethi $r0,#0x200
+     37a:	50 00 0d 00 	addi $r0,$r0,#0xd00
+     37e:	84 20       	movi55 $r1,#0x0
+     380:	b6 20       	swi450 $r1,[$r0]
+     382:	46 00 02 00 	sethi $r0,#0x200
+     386:	50 00 0d 04 	addi $r0,$r0,#0xd04
+     38a:	84 20       	movi55 $r1,#0x0
+     38c:	b6 20       	swi450 $r1,[$r0]
+     38e:	46 00 02 00 	sethi $r0,#0x200
+     392:	50 00 0d 08 	addi $r0,$r0,#0xd08
+     396:	84 20       	movi55 $r1,#0x0
+     398:	b6 20       	swi450 $r1,[$r0]
+     39a:	46 00 02 00 	sethi $r0,#0x200
+     39e:	50 00 0d 10 	addi $r0,$r0,#0xd10
+     3a2:	84 20       	movi55 $r1,#0x0
+     3a4:	b6 20       	swi450 $r1,[$r0]
+     3a6:	46 00 02 00 	sethi $r0,#0x200
+     3aa:	50 00 0d 14 	addi $r0,$r0,#0xd14
+     3ae:	84 20       	movi55 $r1,#0x0
+     3b0:	b6 20       	swi450 $r1,[$r0]
+     3b2:	46 00 02 00 	sethi $r0,#0x200
+     3b6:	50 00 0d 18 	addi $r0,$r0,#0xd18
+     3ba:	84 20       	movi55 $r1,#0x0
+     3bc:	b6 20       	swi450 $r1,[$r0]
+     3be:	dd 9e       	ret5 $lp
+
+000003c0 <DRV_IntInitial>:
+     3c0:	3b ff fc bc 	smw.adm $sp,[$sp],$sp,#0x2    ! {$lp}
+     3c4:	ef fc       	addi10.sp #-4
+     3c6:	49 ff ff d8 	jal 376 <DRV_BlockIntDisable>
+     3ca:	49 ff ff c9 	jal 35c <DRV_EnableHWInt>
+     3ce:	ec 04       	addi10.sp #0x4
+     3d0:	3b ff fc 84 	lmw.bim $sp,[$sp],$sp,#0x2    ! {$lp}
+     3d4:	dd 9e       	ret5 $lp
+
+000003d6 <DRV_SysXtal>:
+     3d6:	ef f8       	addi10.sp #-8
+     3d8:	10 0f 80 07 	sbi $r0,[$sp+#0x7]
+     3dc:	46 00 02 00 	sethi $r0,#0x200
+     3e0:	8c 04       	addi45 $r0,#0x4
+     3e2:	46 10 02 00 	sethi $r1,#0x200
+     3e6:	8c 24       	addi45 $r1,#0x4
+     3e8:	b4 21       	lwi450 $r1,[$r1]
+     3ea:	92 28       	srli45 $r1,#0x8
+     3ec:	40 10 a0 08 	slli $r1,$r1,#0x8
+     3f0:	58 10 80 12 	ori $r1,$r1,#0x12
+     3f4:	b6 20       	swi450 $r1,[$r0]
+     3f6:	ec 08       	addi10.sp #0x8
+     3f8:	dd 9e       	ret5 $lp
+
+000003fa <OS_PowerOnDriverInitial>:
+     3fa:	3b ff fc bc 	smw.adm $sp,[$sp],$sp,#0x2    ! {$lp}
+     3fe:	ef fc       	addi10.sp #-4
+     400:	84 01       	movi55 $r0,#0x1
+     402:	49 ff ff ea 	jal 3d6 <DRV_SysXtal>
+     406:	49 ff ff dd 	jal 3c0 <DRV_IntInitial>
+     40a:	ec 04       	addi10.sp #0x4
+     40c:	3b ff fc 84 	lmw.bim $sp,[$sp],$sp,#0x2    ! {$lp}
+     410:	dd 9e       	ret5 $lp
+
+00000412 <DRV_PutChar>:
+     412:	ef f0       	addi10.sp #-16
+     414:	10 0f 80 07 	sbi $r0,[$sp+#0x7]
+     418:	46 00 02 0b 	sethi $r0,#0x20b
+     41c:	50 00 04 0c 	addi $r0,$r0,#0x40c
+     420:	20 1f 80 07 	lbsi $r1,[$sp+#0x7]
+     424:	b6 20       	swi450 $r1,[$r0]
+     426:	84 00       	movi55 $r0,#0x0
+     428:	12 0f 80 07 	shi $r0,[$sp+#0xe]
+     42c:	d5 0c       	j8 444 <DRV_PutChar+0x32>
+     42e:	02 0f 80 07 	lhi $r0,[$sp+#0xe]
+     432:	8c 01       	addi45 $r0,#0x1
+     434:	12 0f 80 07 	shi $r0,[$sp+#0xe]
+     438:	02 0f 80 07 	lhi $r0,[$sp+#0xe]
+     43c:	5c f0 03 e8 	slti $r15,$r0,#0x3e8
+     440:	e9 02       	bnezs8 444 <DRV_PutChar+0x32>
+     442:	d5 08       	j8 452 <DRV_PutChar+0x40>
+     444:	46 00 02 0b 	sethi $r0,#0x20b
+     448:	50 00 04 08 	addi $r0,$r0,#0x408
+     44c:	b4 00       	lwi450 $r0,[$r0]
+     44e:	96 2e       	bmski33 $r0,#0x5
+     450:	c0 ef       	beqz38 $r0,42e <DRV_PutChar+0x1c>
+     452:	46 00 02 0b 	sethi $r0,#0x20b
+     456:	50 00 04 08 	addi $r0,$r0,#0x408
+     45a:	46 10 02 0b 	sethi $r1,#0x20b
+     45e:	50 10 84 08 	addi $r1,$r1,#0x408
+     462:	b4 41       	lwi450 $r2,[$r1]
+     464:	44 1f ff df 	movi $r1,#-33
+     468:	fe 56       	and33 $r1,$r2
+     46a:	b6 20       	swi450 $r1,[$r0]
+     46c:	ec 10       	addi10.sp #0x10
+     46e:	dd 9e       	ret5 $lp
+
+00000470 <DRV_PutStr>:
+     470:	3b ff fc bc 	smw.adm $sp,[$sp],$sp,#0x2    ! {$lp}
+     474:	ef ec       	addi10.sp #-20
+     476:	f0 81       	swi37.sp $r0,[+#0x4]
+     478:	f0 01       	lwi37.sp $r0,[+#0x4]
+     47a:	20 00 00 00 	lbsi $r0,[$r0+#0x0]
+     47e:	10 0f 80 0f 	sbi $r0,[$sp+#0xf]
+     482:	00 0f 80 0f 	lbi $r0,[$sp+#0xf]
+     486:	c8 02       	bnez38 $r0,48a <DRV_PutStr+0x1a>
+     488:	d5 09       	j8 49a <DRV_PutStr+0x2a>
+     48a:	20 0f 80 0f 	lbsi $r0,[$sp+#0xf]
+     48e:	49 ff ff c2 	jal 412 <DRV_PutChar>
+     492:	f0 01       	lwi37.sp $r0,[+#0x4]
+     494:	8c 01       	addi45 $r0,#0x1
+     496:	f0 81       	swi37.sp $r0,[+#0x4]
+     498:	d5 f0       	j8 478 <DRV_PutStr+0x8>
+     49a:	ec 14       	addi10.sp #0x14
+     49c:	3b ff fc 84 	lmw.bim $sp,[$sp],$sp,#0x2    ! {$lp}
+     4a0:	dd 9e       	ret5 $lp
+
+000004a2 <DRV_IntToStr>:
+     4a2:	ef f0       	addi10.sp #-16
+     4a4:	80 81       	mov55 $r4,$r1
+     4a6:	b6 5f       	swi450 $r2,[$sp]
+     4a8:	80 23       	mov55 $r1,$r3
+     4aa:	12 0f 80 03 	shi $r0,[$sp+#0x6]
+     4ae:	80 04       	mov55 $r0,$r4
+     4b0:	10 0f 80 05 	sbi $r0,[$sp+#0x5]
+     4b4:	80 01       	mov55 $r0,$r1
+     4b6:	10 0f 80 04 	sbi $r0,[$sp+#0x4]
+     4ba:	84 00       	movi55 $r0,#0x0
+     4bc:	10 0f 80 0f 	sbi $r0,[$sp+#0xf]
+     4c0:	00 0f 80 04 	lbi $r0,[$sp+#0x4]
+     4c4:	8e 01       	subi45 $r0,#0x1
+     4c6:	10 0f 80 04 	sbi $r0,[$sp+#0x4]
+     4ca:	00 0f 80 05 	lbi $r0,[$sp+#0x5]
+     4ce:	5a 08 10 0a 	bnec $r0,#0x10,4e2 <DRV_IntToStr+0x40>
+     4d2:	00 0f 80 04 	lbi $r0,[$sp+#0x4]
+     4d6:	84 21       	movi55 $r1,#0x1
+     4d8:	40 00 80 0c 	sll $r0,$r1,$r0
+     4dc:	12 0f 80 05 	shi $r0,[$sp+#0xa]
+     4e0:	d5 11       	j8 502 <DRV_IntToStr+0x60>
+     4e2:	84 01       	movi55 $r0,#0x1
+     4e4:	12 0f 80 05 	shi $r0,[$sp+#0xa]
+     4e8:	d5 07       	j8 4f6 <DRV_IntToStr+0x54>
+     4ea:	02 1f 80 05 	lhi $r1,[$sp+#0xa]
+     4ee:	84 0a       	movi55 $r0,#0xa
+     4f0:	fe 0c       	mul33 $r0,$r1
+     4f2:	12 0f 80 05 	shi $r0,[$sp+#0xa]
+     4f6:	00 0f 80 04 	lbi $r0,[$sp+#0x4]
+     4fa:	9e 41       	subi333 $r1,$r0,#0x1
+     4fc:	10 1f 80 04 	sbi $r1,[$sp+#0x4]
+     500:	c8 f5       	bnez38 $r0,4ea <DRV_IntToStr+0x48>
+     502:	02 0f 80 03 	lhi $r0,[$sp+#0x6]
+     506:	c8 3c       	bnez38 $r0,57e <DRV_IntToStr+0xdc>
+     508:	00 0f 80 05 	lbi $r0,[$sp+#0x5]
+     50c:	5a 08 10 1b 	bnec $r0,#0x10,542 <DRV_IntToStr+0xa0>
+     510:	b4 1f       	lwi450 $r0,[$sp]
+     512:	44 10 00 30 	movi $r1,#0x30
+     516:	ae 40       	sbi333 $r1,[$r0+#0x0]
+     518:	b4 1f       	lwi450 $r0,[$sp]
+     51a:	8c 01       	addi45 $r0,#0x1
+     51c:	44 10 00 30 	movi $r1,#0x30
+     520:	ae 40       	sbi333 $r1,[$r0+#0x0]
+     522:	b4 1f       	lwi450 $r0,[$sp]
+     524:	8c 02       	addi45 $r0,#0x2
+     526:	44 10 00 30 	movi $r1,#0x30
+     52a:	ae 40       	sbi333 $r1,[$r0+#0x0]
+     52c:	b4 1f       	lwi450 $r0,[$sp]
+     52e:	8c 03       	addi45 $r0,#0x3
+     530:	44 10 00 30 	movi $r1,#0x30
+     534:	ae 40       	sbi333 $r1,[$r0+#0x0]
+     536:	b4 1f       	lwi450 $r0,[$sp]
+     538:	8c 04       	addi45 $r0,#0x4
+     53a:	84 20       	movi55 $r1,#0x0
+     53c:	ae 40       	sbi333 $r1,[$r0+#0x0]
+     53e:	48 00 00 93 	j 664 <DRV_IntToStr+0x1c2>
+     542:	b4 1f       	lwi450 $r0,[$sp]
+     544:	44 10 00 30 	movi $r1,#0x30
+     548:	ae 40       	sbi333 $r1,[$r0+#0x0]
+     54a:	b4 1f       	lwi450 $r0,[$sp]
+     54c:	8c 01       	addi45 $r0,#0x1
+     54e:	44 10 00 30 	movi $r1,#0x30
+     552:	ae 40       	sbi333 $r1,[$r0+#0x0]
+     554:	b4 1f       	lwi450 $r0,[$sp]
+     556:	8c 02       	addi45 $r0,#0x2
+     558:	44 10 00 30 	movi $r1,#0x30
+     55c:	ae 40       	sbi333 $r1,[$r0+#0x0]
+     55e:	b4 1f       	lwi450 $r0,[$sp]
+     560:	8c 03       	addi45 $r0,#0x3
+     562:	44 10 00 30 	movi $r1,#0x30
+     566:	ae 40       	sbi333 $r1,[$r0+#0x0]
+     568:	b4 1f       	lwi450 $r0,[$sp]
+     56a:	8c 04       	addi45 $r0,#0x4
+     56c:	44 10 00 30 	movi $r1,#0x30
+     570:	ae 40       	sbi333 $r1,[$r0+#0x0]
+     572:	b4 1f       	lwi450 $r0,[$sp]
+     574:	8c 05       	addi45 $r0,#0x5
+     576:	84 20       	movi55 $r1,#0x0
+     578:	ae 40       	sbi333 $r1,[$r0+#0x0]
+     57a:	48 00 00 75 	j 664 <DRV_IntToStr+0x1c2>
+     57e:	00 0f 80 05 	lbi $r0,[$sp+#0x5]
+     582:	5a 08 10 07 	bnec $r0,#0x10,590 <DRV_IntToStr+0xee>
+     586:	44 00 10 00 	movi $r0,#0x1000
+     58a:	12 0f 80 06 	shi $r0,[$sp+#0xc]
+     58e:	d5 05       	j8 598 <DRV_IntToStr+0xf6>
+     590:	44 00 27 10 	movi $r0,#0x2710
+     594:	12 0f 80 06 	shi $r0,[$sp+#0xc]
+     598:	48 00 00 60 	j 658 <DRV_IntToStr+0x1b6>
+     59c:	02 1f 80 03 	lhi $r1,[$sp+#0x6]
+     5a0:	02 0f 80 06 	lhi $r0,[$sp+#0xc]
+     5a4:	40 00 80 37 	divr $r0,$r1,$r1,$r0
+     5a8:	96 01       	zeh33 $r0,$r0
+     5aa:	10 0f 80 09 	sbi $r0,[$sp+#0x9]
+     5ae:	02 1f 80 03 	lhi $r1,[$sp+#0x6]
+     5b2:	02 0f 80 06 	lhi $r0,[$sp+#0xc]
+     5b6:	40 10 80 17 	divr $r1,$r0,$r1,$r0
+     5ba:	12 0f 80 03 	shi $r0,[$sp+#0x6]
+     5be:	02 1f 80 05 	lhi $r1,[$sp+#0xa]
+     5c2:	02 0f 80 06 	lhi $r0,[$sp+#0xc]
+     5c6:	4c 10 40 05 	bne $r1,$r0,5d0 <DRV_IntToStr+0x12e>
+     5ca:	84 01       	movi55 $r0,#0x1
+     5cc:	10 0f 80 0f 	sbi $r0,[$sp+#0xf]
+     5d0:	00 0f 80 09 	lbi $r0,[$sp+#0x9]
+     5d4:	c8 07       	bnez38 $r0,5e2 <DRV_IntToStr+0x140>
+     5d6:	00 0f 80 0f 	lbi $r0,[$sp+#0xf]
+     5da:	c8 04       	bnez38 $r0,5e2 <DRV_IntToStr+0x140>
+     5dc:	02 0f 80 06 	lhi $r0,[$sp+#0xc]
+     5e0:	c0 19       	beqz38 $r0,612 <DRV_IntToStr+0x170>
+     5e2:	00 0f 80 09 	lbi $r0,[$sp+#0x9]
+     5e6:	e6 0a       	slti45 $r0,#0xa
+     5e8:	e8 0a       	beqzs8 5fc <DRV_IntToStr+0x15a>
+     5ea:	00 0f 80 09 	lbi $r0,[$sp+#0x9]
+     5ee:	50 00 00 30 	addi $r0,$r0,#0x30
+     5f2:	96 00       	zeb33 $r0,$r0
+     5f4:	96 42       	seb33 $r1,$r0
+     5f6:	b4 1f       	lwi450 $r0,[$sp]
+     5f8:	ae 40       	sbi333 $r1,[$r0+#0x0]
+     5fa:	d5 09       	j8 60c <DRV_IntToStr+0x16a>
+     5fc:	00 0f 80 09 	lbi $r0,[$sp+#0x9]
+     600:	50 00 00 37 	addi $r0,$r0,#0x37
+     604:	96 00       	zeb33 $r0,$r0
+     606:	96 42       	seb33 $r1,$r0
+     608:	b4 1f       	lwi450 $r0,[$sp]
+     60a:	ae 40       	sbi333 $r1,[$r0+#0x0]
+     60c:	b4 1f       	lwi450 $r0,[$sp]
+     60e:	8c 01       	addi45 $r0,#0x1
+     610:	b6 1f       	swi450 $r0,[$sp]
+     612:	00 0f 80 05 	lbi $r0,[$sp+#0x5]
+     616:	5a 08 10 10 	bnec $r0,#0x10,636 <DRV_IntToStr+0x194>
+     61a:	02 0f 80 06 	lhi $r0,[$sp+#0xc]
+     61e:	92 04       	srli45 $r0,#0x4
+     620:	12 0f 80 06 	shi $r0,[$sp+#0xc]
+     624:	00 0f 80 0f 	lbi $r0,[$sp+#0xf]
+     628:	c0 18       	beqz38 $r0,658 <DRV_IntToStr+0x1b6>
+     62a:	02 0f 80 05 	lhi $r0,[$sp+#0xa]
+     62e:	92 04       	srli45 $r0,#0x4
+     630:	12 0f 80 05 	shi $r0,[$sp+#0xa]
+     634:	d5 12       	j8 658 <DRV_IntToStr+0x1b6>
+     636:	02 1f 80 06 	lhi $r1,[$sp+#0xc]
+     63a:	84 0a       	movi55 $r0,#0xa
+     63c:	40 00 80 37 	divr $r0,$r1,$r1,$r0
+     640:	12 0f 80 06 	shi $r0,[$sp+#0xc]
+     644:	00 0f 80 0f 	lbi $r0,[$sp+#0xf]
+     648:	c0 08       	beqz38 $r0,658 <DRV_IntToStr+0x1b6>
+     64a:	02 1f 80 05 	lhi $r1,[$sp+#0xa]
+     64e:	84 0a       	movi55 $r0,#0xa
+     650:	40 00 80 37 	divr $r0,$r1,$r1,$r0
+     654:	12 0f 80 05 	shi $r0,[$sp+#0xa]
+     658:	02 0f 80 06 	lhi $r0,[$sp+#0xc]
+     65c:	c8 a0       	bnez38 $r0,59c <DRV_IntToStr+0xfa>
+     65e:	b4 1f       	lwi450 $r0,[$sp]
+     660:	84 20       	movi55 $r1,#0x0
+     662:	ae 40       	sbi333 $r1,[$r0+#0x0]
+     664:	ec 10       	addi10.sp #0x10
+     666:	dd 9e       	ret5 $lp
+
+00000668 <DRV_Printf>:
+     668:	3b ff fc bc 	smw.adm $sp,[$sp],$sp,#0x2    ! {$lp}
+     66c:	ef ec       	addi10.sp #-20
+     66e:	f0 81       	swi37.sp $r0,[+#0x4]
+     670:	80 01       	mov55 $r0,$r1
+     672:	12 0f 80 01 	shi $r0,[$sp+#0x2]
+     676:	46 00 01 f6 	sethi $r0,#0x1f6
+     67a:	50 00 08 5c 	addi $r0,$r0,#0x85c
+     67e:	44 10 03 00 	movi $r1,#0x300
+     682:	b6 20       	swi450 $r1,[$r0]
+     684:	46 00 01 f6 	sethi $r0,#0x1f6
+     688:	50 00 08 58 	addi $r0,$r0,#0x858
+     68c:	84 20       	movi55 $r1,#0x0
+     68e:	b6 20       	swi450 $r1,[$r0]
+     690:	46 00 01 f6 	sethi $r0,#0x1f6
+     694:	50 00 08 48 	addi $r0,$r0,#0x848
+     698:	44 10 fe ff 	movi $r1,#0xfeff
+     69c:	b6 20       	swi450 $r1,[$r0]
+     69e:	46 00 01 f6 	sethi $r0,#0x1f6
+     6a2:	50 00 08 4c 	addi $r0,$r0,#0x84c
+     6a6:	84 20       	movi55 $r1,#0x0
+     6a8:	b6 20       	swi450 $r1,[$r0]
+     6aa:	46 00 02 0b 	sethi $r0,#0x20b
+     6ae:	50 00 04 00 	addi $r0,$r0,#0x400
+     6b2:	44 12 c0 52 	movi $r1,#0x2c052
+     6b6:	b6 20       	swi450 $r1,[$r0]
+     6b8:	46 00 02 0b 	sethi $r0,#0x20b
+     6bc:	50 00 04 14 	addi $r0,$r0,#0x414
+     6c0:	44 10 01 38 	movi $r1,#0x138
+     6c4:	b6 20       	swi450 $r1,[$r0]
+     6c6:	48 00 00 ac 	j 81e <DRV_Printf+0x1b6>
+     6ca:	00 0f 80 0f 	lbi $r0,[$sp+#0xf]
+     6ce:	5a 00 25 04 	beqc $r0,#0x25,6d6 <DRV_Printf+0x6e>
+     6d2:	48 00 00 a2 	j 816 <DRV_Printf+0x1ae>
+     6d6:	f0 01       	lwi37.sp $r0,[+#0x4]
+     6d8:	9c 41       	addi333 $r1,$r0,#0x1
+     6da:	f1 81       	swi37.sp $r1,[+#0x4]
+     6dc:	20 00 00 00 	lbsi $r0,[$r0+#0x0]
+     6e0:	80 20       	mov55 $r1,$r0
+     6e2:	44 0f ff bd 	movi $r0,#-67
+     6e6:	88 01       	add45 $r0,$r1
+     6e8:	5c f0 00 36 	slti $r15,$r0,#0x36
+     6ec:	4e f2 00 99 	beqz $r15,81e <DRV_Printf+0x1b6>
+     6f0:	44 f0 06 fc 	movi $r15,#0x6fc
+     6f4:	38 07 82 02 	lw $r0,[$r15+($r0<<#0x2)]
+     6f8:	4a 00 00 00 	jr $r0
+     6fc:	08 08 00 00 	.word	0x00000808
+     700:	1e 08 00 00 	.word	0x0000081e
+     704:	1e 08 00 00 	.word	0x0000081e
+     708:	1e 08 00 00 	.word	0x0000081e
+     70c:	1e 08 00 00 	.word	0x0000081e
+     710:	1e 08 00 00 	.word	0x0000081e
+     714:	1e 08 00 00 	.word	0x0000081e
+     718:	1e 08 00 00 	.word	0x0000081e
+     71c:	1e 08 00 00 	.word	0x0000081e
+     720:	1e 08 00 00 	.word	0x0000081e
+     724:	1e 08 00 00 	.word	0x0000081e
+     728:	1e 08 00 00 	.word	0x0000081e
+     72c:	1e 08 00 00 	.word	0x0000081e
+     730:	1e 08 00 00 	.word	0x0000081e
+     734:	1e 08 00 00 	.word	0x0000081e
+     738:	1e 08 00 00 	.word	0x0000081e
+     73c:	1e 08 00 00 	.word	0x0000081e
+     740:	1e 08 00 00 	.word	0x0000081e
+     744:	1e 08 00 00 	.word	0x0000081e
+     748:	1e 08 00 00 	.word	0x0000081e
+     74c:	1e 08 00 00 	.word	0x0000081e
+     750:	d4 07 00 00 	.word	0x000007d4
+     754:	1e 08 00 00 	.word	0x0000081e
+     758:	1e 08 00 00 	.word	0x0000081e
+     75c:	1e 08 00 00 	.word	0x0000081e
+     760:	1e 08 00 00 	.word	0x0000081e
+     764:	1e 08 00 00 	.word	0x0000081e
+     768:	1e 08 00 00 	.word	0x0000081e
+     76c:	1e 08 00 00 	.word	0x0000081e
+     770:	1e 08 00 00 	.word	0x0000081e
+     774:	1e 08 00 00 	.word	0x0000081e
+     778:	1e 08 00 00 	.word	0x0000081e
+     77c:	08 08 00 00 	.word	0x00000808
+     780:	ee 07 00 00 	.word	0x000007ee
+     784:	1e 08 00 00 	.word	0x0000081e
+     788:	1e 08 00 00 	.word	0x0000081e
+     78c:	1e 08 00 00 	.word	0x0000081e
+     790:	1e 08 00 00 	.word	0x0000081e
+     794:	ee 07 00 00 	.word	0x000007ee
+     798:	1e 08 00 00 	.word	0x0000081e
+     79c:	1e 08 00 00 	.word	0x0000081e
+     7a0:	1e 08 00 00 	.word	0x0000081e
+     7a4:	1e 08 00 00 	.word	0x0000081e
+     7a8:	1e 08 00 00 	.word	0x0000081e
+     7ac:	1e 08 00 00 	.word	0x0000081e
+     7b0:	1e 08 00 00 	.word	0x0000081e
+     7b4:	1e 08 00 00 	.word	0x0000081e
+     7b8:	1e 08 00 00 	.word	0x0000081e
+     7bc:	1e 08 00 00 	.word	0x0000081e
+     7c0:	1e 08 00 00 	.word	0x0000081e
+     7c4:	1e 08 00 00 	.word	0x0000081e
+     7c8:	1e 08 00 00 	.word	0x0000081e
+     7cc:	1e 08 00 00 	.word	0x0000081e
+     7d0:	d4 07 00 00 	.word	0x000007d4
+     7d4:	02 0f 80 01 	lhi $r0,[$sp+#0x2]
+     7d8:	fa 20       	movpi45 $r1,#0x10
+     7da:	3e 2f ff c0 	addi.gp $r2,#-64
+     7de:	84 62       	movi55 $r3,#0x2
+     7e0:	49 ff fe 61 	jal 4a2 <DRV_IntToStr>
+     7e4:	3e 0f ff c0 	addi.gp $r0,#-64
+     7e8:	49 ff fe 44 	jal 470 <DRV_PutStr>
+     7ec:	d5 14       	j8 814 <DRV_Printf+0x1ac>
+     7ee:	02 0f 80 01 	lhi $r0,[$sp+#0x2]
+     7f2:	84 2a       	movi55 $r1,#0xa
+     7f4:	3e 2f ff c0 	addi.gp $r2,#-64
+     7f8:	84 65       	movi55 $r3,#0x5
+     7fa:	49 ff fe 54 	jal 4a2 <DRV_IntToStr>
+     7fe:	3e 0f ff c0 	addi.gp $r0,#-64
+     802:	49 ff fe 37 	jal 470 <DRV_PutStr>
+     806:	d5 07       	j8 814 <DRV_Printf+0x1ac>
+     808:	02 0f 80 01 	lhi $r0,[$sp+#0x2]
+     80c:	96 02       	seb33 $r0,$r0
+     80e:	49 ff fe 02 	jal 412 <DRV_PutChar>
+     812:	92 00       	nop16
+     814:	d5 05       	j8 81e <DRV_Printf+0x1b6>
+     816:	20 0f 80 0f 	lbsi $r0,[$sp+#0xf]
+     81a:	49 ff fd fc 	jal 412 <DRV_PutChar>
+     81e:	f0 01       	lwi37.sp $r0,[+#0x4]
+     820:	9c 41       	addi333 $r1,$r0,#0x1
+     822:	f1 81       	swi37.sp $r1,[+#0x4]
+     824:	20 00 00 00 	lbsi $r0,[$r0+#0x0]
+     828:	10 0f 80 0f 	sbi $r0,[$sp+#0xf]
+     82c:	00 0f 80 0f 	lbi $r0,[$sp+#0xf]
+     830:	4e 03 ff 4d 	bnez $r0,6ca <DRV_Printf+0x62>
+     834:	ec 14       	addi10.sp #0x14
+     836:	3b ff fc 84 	lmw.bim $sp,[$sp],$sp,#0x2    ! {$lp}
+     83a:	dd 9e       	ret5 $lp
+
+0000083c <init>:
+     83c:	46 00 01 f6 	sethi $r0,#0x1f6
+     840:	50 00 08 08 	addi $r0,$r0,#0x808
+     844:	84 20       	movi55 $r1,#0x0
+     846:	b6 20       	swi450 $r1,[$r0]
+     848:	46 00 01 f6 	sethi $r0,#0x1f6
+     84c:	50 00 08 0c 	addi $r0,$r0,#0x80c
+     850:	84 20       	movi55 $r1,#0x0
+     852:	b6 20       	swi450 $r1,[$r0]
+     854:	46 00 01 f6 	sethi $r0,#0x1f6
+     858:	50 00 08 00 	addi $r0,$r0,#0x800
+     85c:	44 10 60 00 	movi $r1,#0x6000
+     860:	b6 20       	swi450 $r1,[$r0]
+     862:	46 00 01 f6 	sethi $r0,#0x1f6
+     866:	50 00 08 68 	addi $r0,$r0,#0x868
+     86a:	84 20       	movi55 $r1,#0x0
+     86c:	b6 20       	swi450 $r1,[$r0]
+     86e:	46 00 01 f6 	sethi $r0,#0x1f6
+     872:	50 00 08 6c 	addi $r0,$r0,#0x86c
+     876:	84 20       	movi55 $r1,#0x0
+     878:	b6 20       	swi450 $r1,[$r0]
+     87a:	46 00 01 f6 	sethi $r0,#0x1f6
+     87e:	50 00 08 60 	addi $r0,$r0,#0x860
+     882:	44 10 ff ff 	movi $r1,#0xffff
+     886:	b6 20       	swi450 $r1,[$r0]
+     888:	46 00 01 f6 	sethi $r0,#0x1f6
+     88c:	50 00 08 5c 	addi $r0,$r0,#0x85c
+     890:	84 20       	movi55 $r1,#0x0
+     892:	b6 20       	swi450 $r1,[$r0]
+     894:	46 00 01 f6 	sethi $r0,#0x1f6
+     898:	50 00 08 58 	addi $r0,$r0,#0x858
+     89c:	84 20       	movi55 $r1,#0x0
+     89e:	b6 20       	swi450 $r1,[$r0]
+     8a0:	46 00 01 f6 	sethi $r0,#0x1f6
+     8a4:	50 00 08 48 	addi $r0,$r0,#0x848
+     8a8:	44 10 ff ff 	movi $r1,#0xffff
+     8ac:	b6 20       	swi450 $r1,[$r0]
+     8ae:	46 00 01 f6 	sethi $r0,#0x1f6
+     8b2:	50 00 08 4c 	addi $r0,$r0,#0x84c
+     8b6:	84 20       	movi55 $r1,#0x0
+     8b8:	b6 20       	swi450 $r1,[$r0]
+     8ba:	dd 9e       	ret5 $lp
+
+000008bc <wait_clock>:
+     8bc:	ef f8       	addi10.sp #-8
+     8be:	84 01       	movi55 $r0,#0x1
+     8c0:	f0 81       	swi37.sp $r0,[+#0x4]
+     8c2:	3c 0d ff df 	lwi.gp $r0,[+#-132]
+     8c6:	9c 41       	addi333 $r1,$r0,#0x1
+     8c8:	3c 1f ff df 	swi.gp $r1,[+#-132]
+     8cc:	3c 1d ff d5 	lwi.gp $r1,[+#-172]
+     8d0:	e2 20       	slt45 $r1,$r0
+     8d2:	e8 06       	beqzs8 8de <wait_clock+0x22>
+     8d4:	84 00       	movi55 $r0,#0x0
+     8d6:	3c 0f ff df 	swi.gp $r0,[+#-132]
+     8da:	84 00       	movi55 $r0,#0x0
+     8dc:	f0 81       	swi37.sp $r0,[+#0x4]
+     8de:	f0 01       	lwi37.sp $r0,[+#0x4]
+     8e0:	ec 08       	addi10.sp #0x8
+     8e2:	dd 9e       	ret5 $lp
+
+000008e4 <render>:
+     8e4:	3b ff fc bc 	smw.adm $sp,[$sp],$sp,#0x2    ! {$lp}
+     8e8:	ef f4       	addi10.sp #-12
+     8ea:	84 00       	movi55 $r0,#0x0
+     8ec:	f0 81       	swi37.sp $r0,[+#0x4]
+     8ee:	d5 34       	j8 956 <render+0x72>
+     8f0:	f0 01       	lwi37.sp $r0,[+#0x4]
+     8f2:	94 42       	slli333 $r1,$r0,#0x2
+     8f4:	3e 0f ff a0 	addi.gp $r0,#-96
+     8f8:	88 01       	add45 $r0,$r1
+     8fa:	b4 00       	lwi450 $r0,[$r0]
+     8fc:	5a 0f ff 09 	bnec $r0,#-1,90e <render+0x2a>
+     900:	46 00 01 f6 	sethi $r0,#0x1f6
+     904:	50 00 08 60 	addi $r0,$r0,#0x860
+     908:	84 20       	movi55 $r1,#0x0
+     90a:	b6 20       	swi450 $r1,[$r0]
+     90c:	d5 11       	j8 92e <render+0x4a>
+     90e:	46 00 01 f6 	sethi $r0,#0x1f6
+     912:	50 00 08 60 	addi $r0,$r0,#0x860
+     916:	f1 01       	lwi37.sp $r1,[+#0x4]
+     918:	94 8a       	slli333 $r2,$r1,#0x2
+     91a:	3e 1f ff a0 	addi.gp $r1,#-96
+     91e:	88 22       	add45 $r1,$r2
+     920:	b4 21       	lwi450 $r1,[$r1]
+     922:	94 8a       	slli333 $r2,$r1,#0x2
+     924:	3e 1f ff 10 	addi.gp $r1,#-240
+     928:	88 22       	add45 $r1,$r2
+     92a:	b4 21       	lwi450 $r1,[$r1]
+     92c:	b6 20       	swi450 $r1,[$r0]
+     92e:	46 00 01 f6 	sethi $r0,#0x1f6
+     932:	50 00 08 00 	addi $r0,$r0,#0x800
+     936:	f1 01       	lwi37.sp $r1,[+#0x4]
+     938:	52 10 80 07 	subri $r1,$r1,#0x7
+     93c:	94 8a       	slli333 $r2,$r1,#0x2
+     93e:	3e 1f fe f0 	addi.gp $r1,#-272
+     942:	88 22       	add45 $r1,$r2
+     944:	b4 21       	lwi450 $r1,[$r1]
+     946:	b6 20       	swi450 $r1,[$r0]
+     948:	44 00 03 e8 	movi $r0,#0x3e8
+     94c:	49 ff fc fa 	jal 340 <delay1>
+     950:	f0 01       	lwi37.sp $r0,[+#0x4]
+     952:	8c 01       	addi45 $r0,#0x1
+     954:	f0 81       	swi37.sp $r0,[+#0x4]
+     956:	f0 01       	lwi37.sp $r0,[+#0x4]
+     958:	e4 08       	sltsi45 $r0,#0x8
+     95a:	e9 cb       	bnezs8 8f0 <render+0xc>
+     95c:	ec 0c       	addi10.sp #0xc
+     95e:	3b ff fc 84 	lmw.bim $sp,[$sp],$sp,#0x2    ! {$lp}
+     962:	dd 9e       	ret5 $lp
+
+00000964 <dip_read>:
+     964:	46 00 01 f6 	sethi $r0,#0x1f6
+     968:	50 00 08 44 	addi $r0,$r0,#0x844
+     96c:	b4 00       	lwi450 $r0,[$r0]
+     96e:	92 02       	srli45 $r0,#0x2
+     970:	96 00       	zeb33 $r0,$r0
+     972:	dd 9e       	ret5 $lp
+
+00000974 <dip_check>:
+     974:	3b ff fc bc 	smw.adm $sp,[$sp],$sp,#0x2    ! {$lp}
+     978:	ef f4       	addi10.sp #-12
+     97a:	f0 81       	swi37.sp $r0,[+#0x4]
+     97c:	f0 01       	lwi37.sp $r0,[+#0x4]
+     97e:	4e 05 00 05 	bltz $r0,988 <dip_check+0x14>
+     982:	f0 01       	lwi37.sp $r0,[+#0x4]
+     984:	e4 08       	sltsi45 $r0,#0x8
+     986:	e9 0c       	bnezs8 99e <dip_check+0x2a>
+     988:	44 00 24 24 	movi $r0,#0x2424
+     98c:	44 10 01 96 	movi $r1,#0x196
+     990:	44 20 24 60 	movi $r2,#0x2460
+     994:	44 30 24 30 	movi $r3,#0x2430
+     998:	49 00 00 bc 	jal b10 <__assert_func>
+     99c:	92 00       	nop16
+     99e:	49 ff ff e3 	jal 964 <dip_read>
+     9a2:	80 40       	mov55 $r2,$r0
+     9a4:	84 21       	movi55 $r1,#0x1
+     9a6:	f0 01       	lwi37.sp $r0,[+#0x4]
+     9a8:	40 00 80 0c 	sll $r0,$r1,$r0
+     9ac:	40 11 00 02 	and $r1,$r2,$r0
+     9b0:	f0 01       	lwi37.sp $r0,[+#0x4]
+     9b2:	40 00 80 0e 	sra $r0,$r1,$r0
+     9b6:	96 00       	zeb33 $r0,$r0
+     9b8:	ec 0c       	addi10.sp #0xc
+     9ba:	3b ff fc 84 	lmw.bim $sp,[$sp],$sp,#0x2    ! {$lp}
+     9be:	dd 9e       	ret5 $lp
+
+000009c0 <clean>:
+     9c0:	ef f8       	addi10.sp #-8
+     9c2:	84 00       	movi55 $r0,#0x0
+     9c4:	f0 81       	swi37.sp $r0,[+#0x4]
+     9c6:	d5 0b       	j8 9dc <clean+0x1c>
+     9c8:	f0 01       	lwi37.sp $r0,[+#0x4]
+     9ca:	94 42       	slli333 $r1,$r0,#0x2
+     9cc:	3e 0f ff a0 	addi.gp $r0,#-96
+     9d0:	88 01       	add45 $r0,$r1
+     9d2:	84 3f       	movi55 $r1,#-1
+     9d4:	b6 20       	swi450 $r1,[$r0]
+     9d6:	f0 01       	lwi37.sp $r0,[+#0x4]
+     9d8:	8c 01       	addi45 $r0,#0x1
+     9da:	f0 81       	swi37.sp $r0,[+#0x4]
+     9dc:	f0 01       	lwi37.sp $r0,[+#0x4]
+     9de:	e4 08       	sltsi45 $r0,#0x8
+     9e0:	e9 f4       	bnezs8 9c8 <clean+0x8>
+     9e2:	ec 08       	addi10.sp #0x8
+     9e4:	dd 9e       	ret5 $lp
+
+000009e6 <show_roy>:
+     9e6:	3b ff fc bc 	smw.adm $sp,[$sp],$sp,#0x2    ! {$lp}
+     9ea:	ef f4       	addi10.sp #-12
+     9ec:	49 ff ff ea 	jal 9c0 <clean>
+     9f0:	84 00       	movi55 $r0,#0x0
+     9f2:	f0 81       	swi37.sp $r0,[+#0x4]
+     9f4:	3c 0d ff e0 	lwi.gp $r0,[+#-128]
+     9f8:	52 00 00 07 	subri $r0,$r0,#0x7
+     9fc:	b6 1f       	swi450 $r0,[$sp]
+     9fe:	d5 15       	j8 a28 <show_roy+0x42>
+     a00:	3c 1d ff d6 	lwi.gp $r1,[+#-168]
+     a04:	f0 01       	lwi37.sp $r0,[+#0x4]
+     a06:	88 01       	add45 $r0,$r1
+     a08:	20 00 00 00 	lbsi $r0,[$r0+#0x0]
+     a0c:	50 10 7f d0 	addi $r1,$r0,#-48
+     a10:	b4 1f       	lwi450 $r0,[$sp]
+     a12:	94 82       	slli333 $r2,$r0,#0x2
+     a14:	3e 0f ff a0 	addi.gp $r0,#-96
+     a18:	88 02       	add45 $r0,$r2
+     a1a:	b6 20       	swi450 $r1,[$r0]
+     a1c:	f0 01       	lwi37.sp $r0,[+#0x4]
+     a1e:	8c 01       	addi45 $r0,#0x1
+     a20:	f0 81       	swi37.sp $r0,[+#0x4]
+     a22:	b4 1f       	lwi450 $r0,[$sp]
+     a24:	8c 01       	addi45 $r0,#0x1
+     a26:	b6 1f       	swi450 $r0,[$sp]
+     a28:	3c 1d ff e0 	lwi.gp $r1,[+#-128]
+     a2c:	f0 01       	lwi37.sp $r0,[+#0x4]
+     a2e:	e0 20       	slts45 $r1,$r0
+     a30:	e9 04       	bnezs8 a38 <show_roy+0x52>
+     a32:	b4 1f       	lwi450 $r0,[$sp]
+     a34:	e4 08       	sltsi45 $r0,#0x8
+     a36:	e9 e5       	bnezs8 a00 <show_roy+0x1a>
+     a38:	84 08       	movi55 $r0,#0x8
+     a3a:	8e 01       	subi45 $r0,#0x1
+     a3c:	3c 1d ff e0 	lwi.gp $r1,[+#-128]
+     a40:	e0 20       	slts45 $r1,$r0
+     a42:	e8 06       	beqzs8 a4e <show_roy+0x68>
+     a44:	3c 0d ff e0 	lwi.gp $r0,[+#-128]
+     a48:	8c 01       	addi45 $r0,#0x1
+     a4a:	3c 0f ff e0 	swi.gp $r0,[+#-128]
+     a4e:	ec 0c       	addi10.sp #0xc
+     a50:	3b ff fc 84 	lmw.bim $sp,[$sp],$sp,#0x2    ! {$lp}
+     a54:	dd 9e       	ret5 $lp
+
+00000a56 <show_halloworld>:
+     a56:	3b ff fc bc 	smw.adm $sp,[$sp],$sp,#0x2    ! {$lp}
+     a5a:	ef f4       	addi10.sp #-12
+     a5c:	49 ff ff b2 	jal 9c0 <clean>
+     a60:	3c 0d ff e0 	lwi.gp $r0,[+#-128]
+     a64:	52 00 00 07 	subri $r0,$r0,#0x7
+     a68:	f0 81       	swi37.sp $r0,[+#0x4]
+     a6a:	84 00       	movi55 $r0,#0x0
+     a6c:	b6 1f       	swi450 $r0,[$sp]
+     a6e:	d5 15       	j8 a98 <show_halloworld+0x42>
+     a70:	3c 1d ff d7 	lwi.gp $r1,[+#-164]
+     a74:	f0 01       	lwi37.sp $r0,[+#0x4]
+     a76:	88 01       	add45 $r0,$r1
+     a78:	20 00 00 00 	lbsi $r0,[$r0+#0x0]
+     a7c:	50 10 7f d0 	addi $r1,$r0,#-48
+     a80:	b4 1f       	lwi450 $r0,[$sp]
+     a82:	94 82       	slli333 $r2,$r0,#0x2
+     a84:	3e 0f ff a0 	addi.gp $r0,#-96
+     a88:	88 02       	add45 $r0,$r2
+     a8a:	b6 20       	swi450 $r1,[$r0]
+     a8c:	f0 01       	lwi37.sp $r0,[+#0x4]
+     a8e:	8c 01       	addi45 $r0,#0x1
+     a90:	f0 81       	swi37.sp $r0,[+#0x4]
+     a92:	b4 1f       	lwi450 $r0,[$sp]
+     a94:	8c 01       	addi45 $r0,#0x1
+     a96:	b6 1f       	swi450 $r0,[$sp]
+     a98:	f0 01       	lwi37.sp $r0,[+#0x4]
+     a9a:	e4 08       	sltsi45 $r0,#0x8
+     a9c:	e8 06       	beqzs8 aa8 <show_halloworld+0x52>
+     a9e:	3c 1d ff e0 	lwi.gp $r1,[+#-128]
+     aa2:	b4 1f       	lwi450 $r0,[$sp]
+     aa4:	e0 20       	slts45 $r1,$r0
+     aa6:	e8 e5       	beqzs8 a70 <show_halloworld+0x1a>
+     aa8:	84 08       	movi55 $r0,#0x8
+     aaa:	8e 01       	subi45 $r0,#0x1
+     aac:	3c 1d ff e0 	lwi.gp $r1,[+#-128]
+     ab0:	e0 20       	slts45 $r1,$r0
+     ab2:	e8 06       	beqzs8 abe <show_halloworld+0x68>
+     ab4:	3c 0d ff e0 	lwi.gp $r0,[+#-128]
+     ab8:	8c 01       	addi45 $r0,#0x1
+     aba:	3c 0f ff e0 	swi.gp $r0,[+#-128]
+     abe:	ec 0c       	addi10.sp #0xc
+     ac0:	3b ff fc 84 	lmw.bim $sp,[$sp],$sp,#0x2    ! {$lp}
+     ac4:	dd 9e       	ret5 $lp
+
+00000ac6 <main>:
+     ac6:	3a 6f 98 bc 	smw.adm $r6,[$sp],$r6,#0x2    ! {$r6, $lp}
+     aca:	49 ff fc 98 	jal 3fa <OS_PowerOnDriverInitial>
+     ace:	49 ff fe b7 	jal 83c <init>
+     ad2:	84 00       	movi55 $r0,#0x0
+     ad4:	49 ff ff 50 	jal 974 <dip_check>
+     ad8:	80 c0       	mov55 $r6,$r0
+     ada:	84 01       	movi55 $r0,#0x1
+     adc:	49 ff ff 4c 	jal 974 <dip_check>
+     ae0:	4c 60 00 0c 	beq $r6,$r0,af8 <main+0x32>
+     ae4:	84 00       	movi55 $r0,#0x0
+     ae6:	49 ff ff 47 	jal 974 <dip_check>
+     aea:	c0 04       	beqz38 $r0,af2 <main+0x2c>
+     aec:	49 ff ff 7d 	jal 9e6 <show_roy>
+     af0:	d5 09       	j8 b02 <main+0x3c>
+     af2:	49 ff ff b2 	jal a56 <show_halloworld>
+     af6:	d5 09       	j8 b08 <main+0x42>
+     af8:	84 00       	movi55 $r0,#0x0
+     afa:	3c 0f ff e0 	swi.gp $r0,[+#-128]
+     afe:	49 ff ff 61 	jal 9c0 <clean>
+     b02:	d5 03       	j8 b08 <main+0x42>
+     b04:	49 ff fe f0 	jal 8e4 <render>
+     b08:	49 ff fe da 	jal 8bc <wait_clock>
+     b0c:	c8 fc       	bnez38 $r0,b04 <main+0x3e>
+     b0e:	d5 e2       	j8 ad2 <main+0xc>
+
+00000b10 <__assert_func>:
+     b10:	fc 03       	push25 $r6,#24    ! {$r6, $fp, $gp, $lp}
+     b12:	f0 83       	swi37.sp $r0,[+#0xc]
+     b14:	f1 84       	swi37.sp $r1,[+#0x10]
+     b16:	f3 85       	swi37.sp $r3,[+#0x14]
+     b18:	3c 0d ff d8 	lwi.gp $r0,[+#-160]
+     b1c:	ca 05       	bnez38 $r2,b26 <__assert_func+0x16>
+     b1e:	44 50 24 78 	movi $r5,#0x2478
+     b22:	80 45       	mov55 $r2,$r5
+     b24:	d5 03       	j8 b2a <__assert_func+0x1a>
+     b26:	44 50 24 6c 	movi $r5,#0x246c
+     b2a:	b6 5f       	swi450 $r2,[$sp]
+     b2c:	44 10 24 7c 	movi $r1,#0x247c
+     b30:	f2 05       	lwi37.sp $r2,[+#0x14]
+     b32:	f3 03       	lwi37.sp $r3,[+#0xc]
+     b34:	f4 04       	lwi37.sp $r4,[+#0x10]
+     b36:	49 00 00 1a 	jal b6a <fiprintf>
+     b3a:	49 00 05 47 	jal 15c8 <abort>
+     b3e:	92 00       	nop16
+
+00000b40 <__assert>:
+     b40:	fc 01       	push25 $r6,#8    ! {$r6, $fp, $gp, $lp}
+     b42:	f2 81       	swi37.sp $r2,[+#0x4]
+     b44:	f3 01       	lwi37.sp $r3,[+#0x4]
+     b46:	84 40       	movi55 $r2,#0x0
+     b48:	49 ff ff e4 	jal b10 <__assert_func>
+     b4c:	92 00       	nop16
+
+00000b4e <_fiprintf_r>:
+     b4e:	3a 3f 94 3c 	smw.adm $r3,[$sp],$r5,#0x0    ! {$r3~$r5}
+     b52:	ef fc       	addi10.sp #-4
+     b54:	3b ff fc bc 	smw.adm $sp,[$sp],$sp,#0x2    ! {$lp}
+     b58:	ef fc       	addi10.sp #-4
+     b5a:	b0 c3       	addri36.sp $r3,#0xc
+     b5c:	49 00 00 3b 	jal bd2 <_vfiprintf_r>
+     b60:	ec 04       	addi10.sp #0x4
+     b62:	3b ff fc 84 	lmw.bim $sp,[$sp],$sp,#0x2    ! {$lp}
+     b66:	ec 10       	addi10.sp #0x10
+     b68:	dd 9e       	ret5 $lp
+
+00000b6a <fiprintf>:
+     b6a:	3a 2f 94 3c 	smw.adm $r2,[$sp],$r5,#0x0    ! {$r2~$r5}
+     b6e:	3b ff fc bc 	smw.adm $sp,[$sp],$sp,#0x2    ! {$lp}
+     b72:	ef f4       	addi10.sp #-12
+     b74:	b0 c4       	addri36.sp $r3,#0x10
+     b76:	b6 1f       	swi450 $r0,[$sp]
+     b78:	f1 81       	swi37.sp $r1,[+#0x4]
+     b7a:	f2 01       	lwi37.sp $r2,[+#0x4]
+     b7c:	b4 3f       	lwi450 $r1,[$sp]
+     b7e:	84 00       	movi55 $r0,#0x0
+     b80:	49 00 00 29 	jal bd2 <_vfiprintf_r>
+     b84:	ec 0c       	addi10.sp #0xc
+     b86:	3b ff fc 84 	lmw.bim $sp,[$sp],$sp,#0x2    ! {$lp}
+     b8a:	ec 10       	addi10.sp #0x10
+     b8c:	dd 9e       	ret5 $lp
+	...
+
+00000b90 <memcpy>:
+     b90:	80 60       	mov55 $r3,$r0
+     b92:	c2 07       	beqz38 $r2,ba0 <memcpy+0x10>
+     b94:	99 4a       	add333 $r5,$r1,$r2
+     b96:	08 40 80 01 	lbi.bi $r4,[$r1],#0x1
+     b9a:	18 41 80 01 	sbi.bi $r4,[$r3],#0x1
+     b9e:	d9 fc       	bnes38 $r1,b96 <memcpy+0x6>
+     ba0:	dd 9e       	ret5 $lp
+     ba2:	92 00       	nop16
+
+00000ba4 <memset>:
+     ba4:	80 60       	mov55 $r3,$r0
+     ba6:	99 5a       	add333 $r5,$r3,$r2
+     ba8:	d3 04       	beqs38 $r3,bb0 <memset+0xc>
+     baa:	18 11 80 01 	sbi.bi $r1,[$r3],#0x1
+     bae:	d5 fd       	j8 ba8 <memset+0x4>
+     bb0:	dd 9e       	ret5 $lp
+     bb2:	92 00       	nop16
+
+00000bb4 <__sprint_r>:
+     bb4:	fc 01       	push25 $r6,#8    ! {$r6, $fp, $gp, $lp}
+     bb6:	a1 12       	lwi333 $r4,[$r2+#0x8]
+     bb8:	cc 04       	bnez38 $r4,bc0 <__sprint_r+0xc>
+     bba:	a9 11       	swi333 $r4,[$r2+#0x4]
+     bbc:	f4 81       	swi37.sp $r4,[+#0x4]
+     bbe:	d5 08       	j8 bce <__sprint_r+0x1a>
+     bc0:	80 c2       	mov55 $r6,$r2
+     bc2:	49 00 06 9d 	jal 18fc <__sfvwrite_r>
+     bc6:	84 20       	movi55 $r1,#0x0
+     bc8:	a8 72       	swi333 $r1,[$r6+#0x8]
+     bca:	a8 71       	swi333 $r1,[$r6+#0x4]
+     bcc:	f0 81       	swi37.sp $r0,[+#0x4]
+     bce:	f0 01       	lwi37.sp $r0,[+#0x4]
+     bd0:	fc 81       	pop25 $r6,#8    ! {$r6, $fp, $gp, $lp}
+
+00000bd2 <_vfiprintf_r>:
+     bd2:	fc 56       	push25 $r10,#176    ! {$r6~$r10, $fp, $gp, $lp}
+     bd4:	81 01       	mov55 $r8,$r1
+     bd6:	3c 1d ff e2 	lwi.gp $r1,[+#-120]
+     bda:	f0 82       	swi37.sp $r0,[+#0x8]
+     bdc:	f2 83       	swi37.sp $r2,[+#0xc]
+     bde:	81 23       	mov55 $r9,$r3
+     be0:	c9 03       	bnez38 $r1,be6 <_vfiprintf_r+0x14>
+     be2:	49 00 05 d3 	jal 1788 <__sinit>
+     be6:	02 04 00 06 	lhi $r0,[$r8+#0xc]
+     bea:	96 1e       	bmski33 $r0,#0x3
+     bec:	c0 0b       	beqz38 $r0,c02 <_vfiprintf_r+0x30>
+     bee:	04 04 00 04 	lwi $r0,[$r8+#0x10]
+     bf2:	c0 08       	beqz38 $r0,c02 <_vfiprintf_r+0x30>
+     bf4:	02 04 00 06 	lhi $r0,[$r8+#0xc]
+     bf8:	54 00 00 1a 	andi $r0,$r0,#0x1a
+     bfc:	5a 08 0a 17 	bnec $r0,#0xa,c2a <_vfiprintf_r+0x58>
+     c00:	d5 09       	j8 c12 <_vfiprintf_r+0x40>
+     c02:	f0 02       	lwi37.sp $r0,[+#0x8]
+     c04:	80 28       	mov55 $r1,$r8
+     c06:	49 00 04 88 	jal 1516 <__swsetup_r>
+     c0a:	c0 f5       	beqz38 $r0,bf4 <_vfiprintf_r+0x22>
+     c0c:	84 1f       	movi55 $r0,#-1
+     c0e:	48 00 04 43 	j 1494 <_vfiprintf_r+0x8c2>
+     c12:	22 04 00 07 	lhsi $r0,[$r8+#0xe]
+     c16:	4e 05 00 0a 	bltz $r0,c2a <_vfiprintf_r+0x58>
+     c1a:	f0 02       	lwi37.sp $r0,[+#0x8]
+     c1c:	80 28       	mov55 $r1,$r8
+     c1e:	f2 03       	lwi37.sp $r2,[+#0xc]
+     c20:	80 69       	mov55 $r3,$r9
+     c22:	49 00 04 45 	jal 14ac <__sbprintf>
+     c26:	48 00 04 37 	j 1494 <_vfiprintf_r+0x8c2>
+     c2a:	84 00       	movi55 $r0,#0x0
+     c2c:	b1 9c       	addri36.sp $r6,#0x70
+     c2e:	f6 8f       	swi37.sp $r6,[+#0x3c]
+     c30:	f0 91       	swi37.sp $r0,[+#0x44]
+     c32:	f0 90       	swi37.sp $r0,[+#0x40]
+     c34:	f0 87       	swi37.sp $r0,[+#0x1c]
+     c36:	f0 85       	swi37.sp $r0,[+#0x14]
+     c38:	f0 03       	lwi37.sp $r0,[+#0xc]
+     c3a:	80 e0       	mov55 $r7,$r0
+     c3c:	28 10 00 01 	lbsi.bi $r1,[$r0],#0x1
+     c40:	c9 07       	bnez38 $r1,c4e <_vfiprintf_r+0x7c>
+     c42:	f0 03       	lwi37.sp $r0,[+#0xc]
+     c44:	40 a3 80 01 	sub $r10,$r7,$r0
+     c48:	4e a3 00 06 	bnez $r10,c54 <_vfiprintf_r+0x82>
+     c4c:	d5 1d       	j8 c86 <_vfiprintf_r+0xb4>
+     c4e:	5a 18 25 f6 	bnec $r1,#0x25,c3a <_vfiprintf_r+0x68>
+     c52:	d5 f8       	j8 c42 <_vfiprintf_r+0x70>
+     c54:	f0 03       	lwi37.sp $r0,[+#0xc]
+     c56:	14 a3 00 01 	swi $r10,[$r6+#0x4]
+     c5a:	b6 06       	swi450 $r0,[$r6]
+     c5c:	f0 11       	lwi37.sp $r0,[+#0x44]
+     c5e:	88 0a       	add45 $r0,$r10
+     c60:	f0 91       	swi37.sp $r0,[+#0x44]
+     c62:	f0 10       	lwi37.sp $r0,[+#0x40]
+     c64:	8c 01       	addi45 $r0,#0x1
+     c66:	e4 08       	sltsi45 $r0,#0x8
+     c68:	f0 90       	swi37.sp $r0,[+#0x40]
+     c6a:	e8 03       	beqzs8 c70 <_vfiprintf_r+0x9e>
+     c6c:	8c c8       	addi45 $r6,#0x8
+     c6e:	d5 09       	j8 c80 <_vfiprintf_r+0xae>
+     c70:	f0 02       	lwi37.sp $r0,[+#0x8]
+     c72:	80 28       	mov55 $r1,$r8
+     c74:	b0 8f       	addri36.sp $r2,#0x3c
+     c76:	49 ff ff 9f 	jal bb4 <__sprint_r>
+     c7a:	4e 03 04 00 	bnez $r0,147a <_vfiprintf_r+0x8a8>
+     c7e:	b1 9c       	addri36.sp $r6,#0x70
+     c80:	f0 05       	lwi37.sp $r0,[+#0x14]
+     c82:	88 0a       	add45 $r0,$r10
+     c84:	f0 85       	swi37.sp $r0,[+#0x14]
+     c86:	20 03 80 00 	lbsi $r0,[$r7+#0x0]
+     c8a:	4e 02 03 f1 	beqz $r0,146c <_vfiprintf_r+0x89a>
+     c8e:	84 20       	movi55 $r1,#0x0
+     c90:	84 00       	movi55 $r0,#0x0
+     c92:	8c e1       	addi45 $r7,#0x1
+     c94:	10 0f 80 37 	sbi $r0,[$sp+#0x37]
+     c98:	84 bf       	movi55 $r5,#-1
+     c9a:	f1 84       	swi37.sp $r1,[+#0x10]
+     c9c:	83 81       	mov55 $fp,$r1
+     c9e:	84 6a       	movi55 $r3,#0xa
+     ca0:	9c 39       	addi333 $r0,$r7,#0x1
+     ca2:	f0 83       	swi37.sp $r0,[+#0xc]
+     ca4:	20 03 80 00 	lbsi $r0,[$r7+#0x0]
+     ca8:	5a 08 58 04 	bnec $r0,#0x58,cb0 <_vfiprintf_r+0xde>
+     cac:	48 00 00 9c 	j de4 <_vfiprintf_r+0x212>
+     cb0:	5e f0 00 59 	sltsi $r15,$r0,#0x59
+     cb4:	e8 45       	beqzs8 d3e <_vfiprintf_r+0x16c>
+     cb6:	5a 08 2e 04 	bnec $r0,#0x2e,cbe <_vfiprintf_r+0xec>
+     cba:	48 00 00 b0 	j e1a <_vfiprintf_r+0x248>
+     cbe:	5e f0 00 2f 	sltsi $r15,$r0,#0x2f
+     cc2:	e8 1e       	beqzs8 cfe <_vfiprintf_r+0x12c>
+     cc4:	5a 08 2a 04 	bnec $r0,#0x2a,ccc <_vfiprintf_r+0xfa>
+     cc8:	48 00 00 99 	j dfa <_vfiprintf_r+0x228>
+     ccc:	5e f0 00 2b 	sltsi $r15,$r0,#0x2b
+     cd0:	e8 0d       	beqzs8 cea <_vfiprintf_r+0x118>
+     cd2:	5a 08 20 04 	bnec $r0,#0x20,cda <_vfiprintf_r+0x108>
+     cd6:	48 00 00 8e 	j df2 <_vfiprintf_r+0x220>
+     cda:	5a 00 23 04 	beqc $r0,#0x23,ce2 <_vfiprintf_r+0x110>
+     cde:	48 00 02 53 	j 1184 <_vfiprintf_r+0x5b2>
+     ce2:	59 ce 00 01 	ori $fp,$fp,#0x1
+     ce6:	f7 03       	lwi37.sp $r7,[+#0xc]
+     ce8:	d5 dc       	j8 ca0 <_vfiprintf_r+0xce>
+     cea:	5a 08 2b 04 	bnec $r0,#0x2b,cf2 <_vfiprintf_r+0x120>
+     cee:	80 20       	mov55 $r1,$r0
+     cf0:	d5 fb       	j8 ce6 <_vfiprintf_r+0x114>
+     cf2:	5a 08 2d 04 	bnec $r0,#0x2d,cfa <_vfiprintf_r+0x128>
+     cf6:	48 00 00 8e 	j e12 <_vfiprintf_r+0x240>
+     cfa:	48 00 02 45 	j 1184 <_vfiprintf_r+0x5b2>
+     cfe:	5e f0 00 3a 	sltsi $r15,$r0,#0x3a
+     d02:	e8 0c       	beqzs8 d1a <_vfiprintf_r+0x148>
+     d04:	5e f0 00 31 	sltsi $r15,$r0,#0x31
+     d08:	4e f2 00 ab 	beqz $r15,e5e <_vfiprintf_r+0x28c>
+     d0c:	5a 00 30 04 	beqc $r0,#0x30,d14 <_vfiprintf_r+0x142>
+     d10:	48 00 02 3a 	j 1184 <_vfiprintf_r+0x5b2>
+     d14:	59 ce 00 80 	ori $fp,$fp,#0x80
+     d18:	d5 e7       	j8 ce6 <_vfiprintf_r+0x114>
+     d1a:	5a 08 4f 04 	bnec $r0,#0x4f,d22 <_vfiprintf_r+0x150>
+     d1e:	48 00 01 1c 	j f56 <_vfiprintf_r+0x384>
+     d22:	5a 08 55 04 	bnec $r0,#0x55,d2a <_vfiprintf_r+0x158>
+     d26:	48 00 01 5a 	j fda <_vfiprintf_r+0x408>
+     d2a:	5a 00 44 04 	beqc $r0,#0x44,d32 <_vfiprintf_r+0x160>
+     d2e:	48 00 02 2b 	j 1184 <_vfiprintf_r+0x5b2>
+     d32:	10 1f 80 37 	sbi $r1,[$sp+#0x37]
+     d36:	59 ce 00 10 	ori $fp,$fp,#0x10
+     d3a:	48 00 00 c3 	j ec0 <_vfiprintf_r+0x2ee>
+     d3e:	5a 08 6e 04 	bnec $r0,#0x6e,d46 <_vfiprintf_r+0x174>
+     d42:	48 00 00 ec 	j f1a <_vfiprintf_r+0x348>
+     d46:	5e f0 00 6f 	sltsi $r15,$r0,#0x6f
+     d4a:	e8 18       	beqzs8 d7a <_vfiprintf_r+0x1a8>
+     d4c:	5a 08 68 04 	bnec $r0,#0x68,d54 <_vfiprintf_r+0x182>
+     d50:	48 00 00 99 	j e82 <_vfiprintf_r+0x2b0>
+     d54:	5e f0 00 69 	sltsi $r15,$r0,#0x69
+     d58:	e8 09       	beqzs8 d6a <_vfiprintf_r+0x198>
+     d5a:	5a 08 63 04 	bnec $r0,#0x63,d62 <_vfiprintf_r+0x190>
+     d5e:	48 00 00 a7 	j eac <_vfiprintf_r+0x2da>
+     d62:	5a 00 64 3e 	beqc $r0,#0x64,dde <_vfiprintf_r+0x20c>
+     d66:	48 00 02 0f 	j 1184 <_vfiprintf_r+0x5b2>
+     d6a:	5a 00 69 3a 	beqc $r0,#0x69,dde <_vfiprintf_r+0x20c>
+     d6e:	5a 08 6c 04 	bnec $r0,#0x6c,d76 <_vfiprintf_r+0x1a4>
+     d72:	48 00 00 8c 	j e8a <_vfiprintf_r+0x2b8>
+     d76:	48 00 02 07 	j 1184 <_vfiprintf_r+0x5b2>
+     d7a:	5a 08 71 04 	bnec $r0,#0x71,d82 <_vfiprintf_r+0x1b0>
+     d7e:	48 00 00 93 	j ea4 <_vfiprintf_r+0x2d2>
+     d82:	5e f0 00 72 	sltsi $r15,$r0,#0x72
+     d86:	e8 1a       	beqzs8 dba <_vfiprintf_r+0x1e8>
+     d88:	5a 00 6f 28 	beqc $r0,#0x6f,dd8 <_vfiprintf_r+0x206>
+     d8c:	5a 00 70 04 	beqc $r0,#0x70,d94 <_vfiprintf_r+0x1c2>
+     d90:	48 00 01 fa 	j 1184 <_vfiprintf_r+0x5b2>
+     d94:	44 00 00 30 	movi $r0,#0x30
+     d98:	10 0f 80 38 	sbi $r0,[$sp+#0x38]
+     d9c:	44 00 00 78 	movi $r0,#0x78
+     da0:	10 0f 80 39 	sbi $r0,[$sp+#0x39]
+     da4:	44 00 24 c0 	movi $r0,#0x24c0
+     da8:	50 a4 80 04 	addi $r10,$r9,#0x4
+     dac:	84 e0       	movi55 $r7,#0x0
+     dae:	b5 29       	lwi450 $r9,[$r9]
+     db0:	58 2e 00 02 	ori $r2,$fp,#0x2
+     db4:	f0 87       	swi37.sp $r0,[+#0x1c]
+     db6:	48 00 01 66 	j 1082 <_vfiprintf_r+0x4b0>
+     dba:	5a 00 75 0c 	beqc $r0,#0x75,dd2 <_vfiprintf_r+0x200>
+     dbe:	5a 08 78 04 	bnec $r0,#0x78,dc6 <_vfiprintf_r+0x1f4>
+     dc2:	48 00 01 2e 	j 101e <_vfiprintf_r+0x44c>
+     dc6:	5a 00 73 04 	beqc $r0,#0x73,dce <_vfiprintf_r+0x1fc>
+     dca:	48 00 01 dd 	j 1184 <_vfiprintf_r+0x5b2>
+     dce:	48 00 00 e7 	j f9c <_vfiprintf_r+0x3ca>
+     dd2:	80 5c       	mov55 $r2,$fp
+     dd4:	48 00 01 05 	j fde <_vfiprintf_r+0x40c>
+     dd8:	80 5c       	mov55 $r2,$fp
+     dda:	48 00 00 c0 	j f5a <_vfiprintf_r+0x388>
+     dde:	10 1f 80 37 	sbi $r1,[$sp+#0x37]
+     de2:	d5 6f       	j8 ec0 <_vfiprintf_r+0x2ee>
+     de4:	10 1f 80 37 	sbi $r1,[$sp+#0x37]
+     de8:	80 5c       	mov55 $r2,$fp
+     dea:	44 10 24 ac 	movi $r1,#0x24ac
+     dee:	48 00 01 1d 	j 1028 <_vfiprintf_r+0x456>
+     df2:	40 10 04 1a 	cmovz $r1,$r0,$r1
+     df6:	48 ff ff 78 	j ce6 <_vfiprintf_r+0x114>
+     dfa:	b4 49       	lwi450 $r2,[$r9]
+     dfc:	50 04 80 04 	addi $r0,$r9,#0x4
+     e00:	f2 84       	swi37.sp $r2,[+#0x10]
+     e02:	4e 25 00 05 	bltz $r2,e0c <_vfiprintf_r+0x23a>
+     e06:	81 20       	mov55 $r9,$r0
+     e08:	48 ff ff 6f 	j ce6 <_vfiprintf_r+0x114>
+     e0c:	fe 92       	neg33 $r2,$r2
+     e0e:	f2 84       	swi37.sp $r2,[+#0x10]
+     e10:	81 20       	mov55 $r9,$r0
+     e12:	59 ce 00 04 	ori $fp,$fp,#0x4
+     e16:	48 ff ff 68 	j ce6 <_vfiprintf_r+0x114>
+     e1a:	f0 03       	lwi37.sp $r0,[+#0xc]
+     e1c:	9c 81       	addi333 $r2,$r0,#0x1
+     e1e:	20 00 00 00 	lbsi $r0,[$r0+#0x0]
+     e22:	5a 00 2a 04 	beqc $r0,#0x2a,e2a <_vfiprintf_r+0x258>
+     e26:	84 a0       	movi55 $r5,#0x0
+     e28:	d5 0b       	j8 e3e <_vfiprintf_r+0x26c>
+     e2a:	b4 a9       	lwi450 $r5,[$r9]
+     e2c:	f2 83       	swi37.sp $r2,[+#0xc]
+     e2e:	50 04 80 04 	addi $r0,$r9,#0x4
+     e32:	4e 54 ff ea 	bgez $r5,e06 <_vfiprintf_r+0x234>
+     e36:	81 20       	mov55 $r9,$r0
+     e38:	84 bf       	movi55 $r5,#-1
+     e3a:	48 ff ff 56 	j ce6 <_vfiprintf_r+0x114>
+     e3e:	50 70 7f d0 	addi $r7,$r0,#-48
+     e42:	e6 ea       	slti45 $r7,#0xa
+     e44:	e8 07       	beqzs8 e52 <_vfiprintf_r+0x280>
+     e46:	42 72 8c 73 	maddr32 $r7,$r5,$r3
+     e4a:	80 a7       	mov55 $r5,$r7
+     e4c:	28 01 00 01 	lbsi.bi $r0,[$r2],#0x1
+     e50:	d5 f7       	j8 e3e <_vfiprintf_r+0x26c>
+     e52:	4e 54 00 03 	bgez $r5,e58 <_vfiprintf_r+0x286>
+     e56:	84 bf       	movi55 $r5,#-1
+     e58:	f2 83       	swi37.sp $r2,[+#0xc]
+     e5a:	48 ff ff 27 	j ca8 <_vfiprintf_r+0xd6>
+     e5e:	84 40       	movi55 $r2,#0x0
+     e60:	f2 84       	swi37.sp $r2,[+#0x10]
+     e62:	f2 04       	lwi37.sp $r2,[+#0x10]
+     e64:	50 00 7f d0 	addi $r0,$r0,#-48
+     e68:	42 01 0c 73 	maddr32 $r0,$r2,$r3
+     e6c:	f2 03       	lwi37.sp $r2,[+#0xc]
+     e6e:	f0 84       	swi37.sp $r0,[+#0x10]
+     e70:	28 01 00 01 	lbsi.bi $r0,[$r2],#0x1
+     e74:	f2 83       	swi37.sp $r2,[+#0xc]
+     e76:	50 20 7f d0 	addi $r2,$r0,#-48
+     e7a:	e6 4a       	slti45 $r2,#0xa
+     e7c:	e9 f3       	bnezs8 e62 <_vfiprintf_r+0x290>
+     e7e:	48 ff ff 15 	j ca8 <_vfiprintf_r+0xd6>
+     e82:	59 ce 00 40 	ori $fp,$fp,#0x40
+     e86:	48 ff ff 30 	j ce6 <_vfiprintf_r+0x114>
+     e8a:	f0 03       	lwi37.sp $r0,[+#0xc]
+     e8c:	20 00 00 00 	lbsi $r0,[$r0+#0x0]
+     e90:	5a 08 6c 06 	bnec $r0,#0x6c,e9c <_vfiprintf_r+0x2ca>
+     e94:	f0 03       	lwi37.sp $r0,[+#0xc]
+     e96:	8c 01       	addi45 $r0,#0x1
+     e98:	f0 83       	swi37.sp $r0,[+#0xc]
+     e9a:	d5 05       	j8 ea4 <_vfiprintf_r+0x2d2>
+     e9c:	59 ce 00 10 	ori $fp,$fp,#0x10
+     ea0:	48 ff ff 23 	j ce6 <_vfiprintf_r+0x114>
+     ea4:	59 ce 00 20 	ori $fp,$fp,#0x20
+     ea8:	48 ff ff 1f 	j ce6 <_vfiprintf_r+0x114>
+     eac:	b4 09       	lwi450 $r0,[$r9]
+     eae:	50 a4 80 04 	addi $r10,$r9,#0x4
+     eb2:	10 0f 80 48 	sbi $r0,[$sp+#0x48]
+     eb6:	84 00       	movi55 $r0,#0x0
+     eb8:	10 0f 80 37 	sbi $r0,[$sp+#0x37]
+     ebc:	48 00 01 6e 	j 1198 <_vfiprintf_r+0x5c6>
+     ec0:	54 0e 00 20 	andi $r0,$fp,#0x20
+     ec4:	c0 0a       	beqz38 $r0,ed8 <_vfiprintf_r+0x306>
+     ec6:	50 34 80 07 	addi $r3,$r9,#0x7
+     eca:	84 18       	movi55 $r0,#-8
+     ecc:	fe c6       	and33 $r3,$r0
+     ece:	50 a1 80 08 	addi $r10,$r3,#0x8
+     ed2:	b5 23       	lwi450 $r9,[$r3]
+     ed4:	a1 d9       	lwi333 $r7,[$r3+#0x4]
+     ed6:	d5 14       	j8 efe <_vfiprintf_r+0x32c>
+     ed8:	54 0e 00 10 	andi $r0,$fp,#0x10
+     edc:	50 24 80 04 	addi $r2,$r9,#0x4
+     ee0:	c0 04       	beqz38 $r0,ee8 <_vfiprintf_r+0x316>
+     ee2:	81 42       	mov55 $r10,$r2
+     ee4:	b5 29       	lwi450 $r9,[$r9]
+     ee6:	d5 0a       	j8 efa <_vfiprintf_r+0x328>
+     ee8:	54 1e 00 40 	andi $r1,$fp,#0x40
+     eec:	b4 09       	lwi450 $r0,[$r9]
+     eee:	81 42       	mov55 $r10,$r2
+     ef0:	c1 04       	beqz38 $r1,ef8 <_vfiprintf_r+0x326>
+     ef2:	40 90 00 11 	seh $r9,$r0
+     ef6:	d5 02       	j8 efa <_vfiprintf_r+0x328>
+     ef8:	81 20       	mov55 $r9,$r0
+     efa:	40 74 fc 0a 	srai $r7,$r9,#0x1f
+     efe:	4e 74 00 c8 	bgez $r7,108e <_vfiprintf_r+0x4bc>
+     f02:	52 04 80 00 	subri $r0,$r9,#0x0
+     f06:	84 20       	movi55 $r1,#0x0
+     f08:	e2 20       	slt45 $r1,$r0
+     f0a:	ff fa       	neg33 $r7,$r7
+     f0c:	81 20       	mov55 $r9,$r0
+     f0e:	fa 1d       	movpi45 $r0,#0x2d
+     f10:	8a ef       	sub45 $r7,$r15
+     f12:	10 0f 80 37 	sbi $r0,[$sp+#0x37]
+     f16:	48 00 00 bc 	j 108e <_vfiprintf_r+0x4bc>
+     f1a:	10 1f 80 37 	sbi $r1,[$sp+#0x37]
+     f1e:	54 1e 00 20 	andi $r1,$fp,#0x20
+     f22:	50 04 80 04 	addi $r0,$r9,#0x4
+     f26:	c1 07       	beqz38 $r1,f34 <_vfiprintf_r+0x362>
+     f28:	b4 29       	lwi450 $r1,[$r9]
+     f2a:	f2 05       	lwi37.sp $r2,[+#0x14]
+     f2c:	b6 41       	swi450 $r2,[$r1]
+     f2e:	90 5f       	srai45 $r2,#0x1f
+     f30:	a8 89       	swi333 $r2,[$r1+#0x4]
+     f32:	d5 0f       	j8 f50 <_vfiprintf_r+0x37e>
+     f34:	54 1e 00 10 	andi $r1,$fp,#0x10
+     f38:	c9 09       	bnez38 $r1,f4a <_vfiprintf_r+0x378>
+     f3a:	54 4e 00 40 	andi $r4,$fp,#0x40
+     f3e:	c4 06       	beqz38 $r4,f4a <_vfiprintf_r+0x378>
+     f40:	b4 29       	lwi450 $r1,[$r9]
+     f42:	02 2f 80 0a 	lhi $r2,[$sp+#0x14]
+     f46:	ac 88       	shi333 $r2,[$r1+#0x0]
+     f48:	d5 04       	j8 f50 <_vfiprintf_r+0x37e>
+     f4a:	b4 29       	lwi450 $r1,[$r9]
+     f4c:	f2 05       	lwi37.sp $r2,[+#0x14]
+     f4e:	b6 41       	swi450 $r2,[$r1]
+     f50:	81 20       	mov55 $r9,$r0
+     f52:	48 ff fe 73 	j c38 <_vfiprintf_r+0x66>
+     f56:	58 2e 00 10 	ori $r2,$fp,#0x10
+     f5a:	54 71 00 20 	andi $r7,$r2,#0x20
+     f5e:	c7 0c       	beqz38 $r7,f76 <_vfiprintf_r+0x3a4>
+     f60:	50 34 80 07 	addi $r3,$r9,#0x7
+     f64:	84 18       	movi55 $r0,#-8
+     f66:	fe c6       	and33 $r3,$r0
+     f68:	50 a1 80 08 	addi $r10,$r3,#0x8
+     f6c:	b5 23       	lwi450 $r9,[$r3]
+     f6e:	a1 d9       	lwi333 $r7,[$r3+#0x4]
+     f70:	84 00       	movi55 $r0,#0x0
+     f72:	48 00 00 89 	j 1084 <_vfiprintf_r+0x4b2>
+     f76:	54 11 00 10 	andi $r1,$r2,#0x10
+     f7a:	50 34 80 04 	addi $r3,$r9,#0x4
+     f7e:	c1 04       	beqz38 $r1,f86 <_vfiprintf_r+0x3b4>
+     f80:	81 43       	mov55 $r10,$r3
+     f82:	b5 29       	lwi450 $r9,[$r9]
+     f84:	d5 f6       	j8 f70 <_vfiprintf_r+0x39e>
+     f86:	54 01 00 40 	andi $r0,$r2,#0x40
+     f8a:	81 43       	mov55 $r10,$r3
+     f8c:	c0 05       	beqz38 $r0,f96 <_vfiprintf_r+0x3c4>
+     f8e:	02 94 80 00 	lhi $r9,[$r9+#0x0]
+     f92:	80 e1       	mov55 $r7,$r1
+     f94:	d5 ee       	j8 f70 <_vfiprintf_r+0x39e>
+     f96:	b5 29       	lwi450 $r9,[$r9]
+     f98:	80 e0       	mov55 $r7,$r0
+     f9a:	d5 eb       	j8 f70 <_vfiprintf_r+0x39e>
+     f9c:	b4 09       	lwi450 $r0,[$r9]
+     f9e:	80 e5       	mov55 $r7,$r5
+     fa0:	f0 81       	swi37.sp $r0,[+#0x4]
+     fa2:	84 00       	movi55 $r0,#0x0
+     fa4:	10 0f 80 37 	sbi $r0,[$sp+#0x37]
+     fa8:	50 a4 80 04 	addi $r10,$r9,#0x4
+     fac:	f0 01       	lwi37.sp $r0,[+#0x4]
+     fae:	4e 55 00 10 	bltz $r5,fce <_vfiprintf_r+0x3fc>
+     fb2:	84 20       	movi55 $r1,#0x0
+     fb4:	80 45       	mov55 $r2,$r5
+     fb6:	f5 86       	swi37.sp $r5,[+#0x18]
+     fb8:	49 00 06 b8 	jal 1d28 <memchr>
+     fbc:	4e 02 00 f3 	beqz $r0,11a2 <_vfiprintf_r+0x5d0>
+     fc0:	f1 01       	lwi37.sp $r1,[+#0x4]
+     fc2:	f5 06       	lwi37.sp $r5,[+#0x18]
+     fc4:	9b c1       	sub333 $r7,$r0,$r1
+     fc6:	e0 a7       	slts45 $r5,$r7
+     fc8:	40 72 bc 1b 	cmovn $r7,$r5,$r15
+     fcc:	d5 04       	j8 fd4 <_vfiprintf_r+0x402>
+     fce:	49 00 07 db 	jal 1f84 <strlen>
+     fd2:	80 e0       	mov55 $r7,$r0
+     fd4:	84 a0       	movi55 $r5,#0x0
+     fd6:	48 00 00 e7 	j 11a4 <_vfiprintf_r+0x5d2>
+     fda:	58 2e 00 10 	ori $r2,$fp,#0x10
+     fde:	54 71 00 20 	andi $r7,$r2,#0x20
+     fe2:	c7 0a       	beqz38 $r7,ff6 <_vfiprintf_r+0x424>
+     fe4:	50 34 80 07 	addi $r3,$r9,#0x7
+     fe8:	84 18       	movi55 $r0,#-8
+     fea:	fe c6       	and33 $r3,$r0
+     fec:	50 a1 80 08 	addi $r10,$r3,#0x8
+     ff0:	b5 23       	lwi450 $r9,[$r3]
+     ff2:	a1 d9       	lwi333 $r7,[$r3+#0x4]
+     ff4:	d5 10       	j8 1014 <_vfiprintf_r+0x442>
+     ff6:	54 11 00 10 	andi $r1,$r2,#0x10
+     ffa:	50 34 80 04 	addi $r3,$r9,#0x4
+     ffe:	c1 04       	beqz38 $r1,1006 <_vfiprintf_r+0x434>
+    1000:	81 43       	mov55 $r10,$r3
+    1002:	b5 29       	lwi450 $r9,[$r9]
+    1004:	d5 08       	j8 1014 <_vfiprintf_r+0x442>
+    1006:	54 01 00 40 	andi $r0,$r2,#0x40
+    100a:	81 43       	mov55 $r10,$r3
+    100c:	c0 06       	beqz38 $r0,1018 <_vfiprintf_r+0x446>
+    100e:	02 94 80 00 	lhi $r9,[$r9+#0x0]
+    1012:	80 e1       	mov55 $r7,$r1
+    1014:	84 01       	movi55 $r0,#0x1
+    1016:	d5 37       	j8 1084 <_vfiprintf_r+0x4b2>
+    1018:	b5 29       	lwi450 $r9,[$r9]
+    101a:	80 e0       	mov55 $r7,$r0
+    101c:	d5 fc       	j8 1014 <_vfiprintf_r+0x442>
+    101e:	10 1f 80 37 	sbi $r1,[$sp+#0x37]
+    1022:	80 5c       	mov55 $r2,$fp
+    1024:	44 10 24 c0 	movi $r1,#0x24c0
+    1028:	54 7e 00 20 	andi $r7,$fp,#0x20
+    102c:	f1 87       	swi37.sp $r1,[+#0x1c]
+    102e:	c7 0a       	beqz38 $r7,1042 <_vfiprintf_r+0x470>
+    1030:	50 34 80 07 	addi $r3,$r9,#0x7
+    1034:	84 38       	movi55 $r1,#-8
+    1036:	fe ce       	and33 $r3,$r1
+    1038:	50 a1 80 08 	addi $r10,$r3,#0x8
+    103c:	b5 23       	lwi450 $r9,[$r3]
+    103e:	a1 d9       	lwi333 $r7,[$r3+#0x4]
+    1040:	d5 13       	j8 1066 <_vfiprintf_r+0x494>
+    1042:	54 3e 00 10 	andi $r3,$fp,#0x10
+    1046:	50 44 80 04 	addi $r4,$r9,#0x4
+    104a:	c3 04       	beqz38 $r3,1052 <_vfiprintf_r+0x480>
+    104c:	81 44       	mov55 $r10,$r4
+    104e:	b5 29       	lwi450 $r9,[$r9]
+    1050:	d5 0b       	j8 1066 <_vfiprintf_r+0x494>
+    1052:	54 1e 00 40 	andi $r1,$fp,#0x40
+    1056:	81 44       	mov55 $r10,$r4
+    1058:	c1 05       	beqz38 $r1,1062 <_vfiprintf_r+0x490>
+    105a:	02 94 80 00 	lhi $r9,[$r9+#0x0]
+    105e:	80 e3       	mov55 $r7,$r3
+    1060:	d5 03       	j8 1066 <_vfiprintf_r+0x494>
+    1062:	b5 29       	lwi450 $r9,[$r9]
+    1064:	80 e1       	mov55 $r7,$r1
+    1066:	54 1e 00 01 	andi $r1,$fp,#0x1
+    106a:	c1 0c       	beqz38 $r1,1082 <_vfiprintf_r+0x4b0>
+    106c:	40 14 9c 04 	or $r1,$r9,$r7
+    1070:	c1 09       	beqz38 $r1,1082 <_vfiprintf_r+0x4b0>
+    1072:	44 10 00 30 	movi $r1,#0x30
+    1076:	10 1f 80 38 	sbi $r1,[$sp+#0x38]
+    107a:	10 0f 80 39 	sbi $r0,[$sp+#0x39]
+    107e:	58 2e 00 02 	ori $r2,$fp,#0x2
+    1082:	84 02       	movi55 $r0,#0x2
+    1084:	84 20       	movi55 $r1,#0x0
+    1086:	10 1f 80 37 	sbi $r1,[$sp+#0x37]
+    108a:	83 82       	mov55 $fp,$r2
+    108c:	d5 02       	j8 1090 <_vfiprintf_r+0x4be>
+    108e:	84 01       	movi55 $r0,#0x1
+    1090:	4e 55 00 06 	bltz $r5,109c <_vfiprintf_r+0x4ca>
+    1094:	44 1f ff 7f 	movi $r1,#-129
+    1098:	41 ce 04 02 	and $fp,$fp,$r1
+    109c:	40 14 9c 04 	or $r1,$r9,$r7
+    10a0:	c9 04       	bnez38 $r1,10a8 <_vfiprintf_r+0x4d6>
+    10a2:	4e 53 01 f3 	bnez $r5,1488 <_vfiprintf_r+0x8b6>
+    10a6:	d5 5e       	j8 1162 <_vfiprintf_r+0x590>
+    10a8:	5a 00 01 23 	beqc $r0,#0x1,10ee <_vfiprintf_r+0x51c>
+    10ac:	5a 00 02 47 	beqc $r0,#0x2,113a <_vfiprintf_r+0x568>
+    10b0:	50 2f 80 6f 	addi $r2,$sp,#0x6f
+    10b4:	40 03 f4 08 	slli $r0,$r7,#0x1d
+    10b8:	54 14 80 07 	andi $r1,$r9,#0x7
+    10bc:	93 23       	srli45 $r9,#0x3
+    10be:	50 10 80 30 	addi $r1,$r1,#0x30
+    10c2:	40 90 24 04 	or $r9,$r0,$r9
+    10c6:	92 e3       	srli45 $r7,#0x3
+    10c8:	96 4a       	seb33 $r1,$r1
+    10ca:	40 04 9c 04 	or $r0,$r9,$r7
+    10ce:	80 62       	mov55 $r3,$r2
+    10d0:	18 11 7f ff 	sbi.bi $r1,[$r2],#-1
+    10d4:	c8 f0       	bnez38 $r0,10b4 <_vfiprintf_r+0x4e2>
+    10d6:	54 0e 00 01 	andi $r0,$fp,#0x1
+    10da:	f3 81       	swi37.sp $r3,[+#0x4]
+    10dc:	c0 50       	beqz38 $r0,117c <_vfiprintf_r+0x5aa>
+    10de:	5a 10 30 4f 	beqc $r1,#0x30,117c <_vfiprintf_r+0x5aa>
+    10e2:	44 00 00 30 	movi $r0,#0x30
+    10e6:	f2 81       	swi37.sp $r2,[+#0x4]
+    10e8:	10 01 ff ff 	sbi $r0,[$r3+#-1]
+    10ec:	d5 48       	j8 117c <_vfiprintf_r+0x5aa>
+    10ee:	cf 08       	bnez38 $r7,10fe <_vfiprintf_r+0x52c>
+    10f0:	e7 2a       	slti45 $r9,#0xa
+    10f2:	e8 06       	beqzs8 10fe <_vfiprintf_r+0x52c>
+    10f4:	50 94 80 30 	addi $r9,$r9,#0x30
+    10f8:	10 9f 80 6f 	sbi $r9,[$sp+#0x6f]
+    10fc:	d5 3b       	j8 1172 <_vfiprintf_r+0x5a0>
+    10fe:	50 0f 80 6f 	addi $r0,$sp,#0x6f
+    1102:	f0 86       	swi37.sp $r0,[+#0x18]
+    1104:	f0 06       	lwi37.sp $r0,[+#0x18]
+    1106:	80 27       	mov55 $r1,$r7
+    1108:	f0 81       	swi37.sp $r0,[+#0x4]
+    110a:	84 4a       	movi55 $r2,#0xa
+    110c:	80 09       	mov55 $r0,$r9
+    110e:	84 60       	movi55 $r3,#0x0
+    1110:	f5 88       	swi37.sp $r5,[+#0x20]
+    1112:	49 00 09 15 	jal 233c <__umoddi3>
+    1116:	f1 06       	lwi37.sp $r1,[+#0x18]
+    1118:	50 00 00 30 	addi $r0,$r0,#0x30
+    111c:	84 4a       	movi55 $r2,#0xa
+    111e:	18 00 ff ff 	sbi.bi $r0,[$r1],#-1
+    1122:	f1 86       	swi37.sp $r1,[+#0x18]
+    1124:	80 09       	mov55 $r0,$r9
+    1126:	80 27       	mov55 $r1,$r7
+    1128:	84 60       	movi55 $r3,#0x0
+    112a:	49 00 08 25 	jal 2174 <__udivdi3>
+    112e:	81 20       	mov55 $r9,$r0
+    1130:	fe 0f       	or33 $r0,$r1
+    1132:	80 e1       	mov55 $r7,$r1
+    1134:	f5 08       	lwi37.sp $r5,[+#0x20]
+    1136:	c8 e7       	bnez38 $r0,1104 <_vfiprintf_r+0x532>
+    1138:	d5 22       	j8 117c <_vfiprintf_r+0x5aa>
+    113a:	50 1f 80 6f 	addi $r1,$sp,#0x6f
+    113e:	f2 07       	lwi37.sp $r2,[+#0x1c]
+    1140:	54 04 80 0f 	andi $r0,$r9,#0xf
+    1144:	f1 81       	swi37.sp $r1,[+#0x4]
+    1146:	38 01 00 00 	lb $r0,[$r2+($r0<<#0x0)]
+    114a:	93 24       	srli45 $r9,#0x4
+    114c:	18 00 ff ff 	sbi.bi $r0,[$r1],#-1
+    1150:	40 03 f0 08 	slli $r0,$r7,#0x1c
+    1154:	40 90 24 04 	or $r9,$r0,$r9
+    1158:	92 e4       	srli45 $r7,#0x4
+    115a:	40 04 9c 04 	or $r0,$r9,$r7
+    115e:	c8 f0       	bnez38 $r0,113e <_vfiprintf_r+0x56c>
+    1160:	d5 0e       	j8 117c <_vfiprintf_r+0x5aa>
+    1162:	c8 0b       	bnez38 $r0,1178 <_vfiprintf_r+0x5a6>
+    1164:	54 0e 00 01 	andi $r0,$fp,#0x1
+    1168:	c0 08       	beqz38 $r0,1178 <_vfiprintf_r+0x5a6>
+    116a:	44 00 00 30 	movi $r0,#0x30
+    116e:	10 0f 80 6f 	sbi $r0,[$sp+#0x6f]
+    1172:	50 0f 80 6f 	addi $r0,$sp,#0x6f
+    1176:	d5 02       	j8 117a <_vfiprintf_r+0x5a8>
+    1178:	b0 1c       	addri36.sp $r0,#0x70
+    117a:	f0 81       	swi37.sp $r0,[+#0x4]
+    117c:	f0 01       	lwi37.sp $r0,[+#0x4]
+    117e:	b1 dc       	addri36.sp $r7,#0x70
+    1180:	8a e0       	sub45 $r7,$r0
+    1182:	d5 11       	j8 11a4 <_vfiprintf_r+0x5d2>
+    1184:	10 1f 80 37 	sbi $r1,[$sp+#0x37]
+    1188:	4e 02 01 72 	beqz $r0,146c <_vfiprintf_r+0x89a>
+    118c:	10 0f 80 48 	sbi $r0,[$sp+#0x48]
+    1190:	84 00       	movi55 $r0,#0x0
+    1192:	10 0f 80 37 	sbi $r0,[$sp+#0x37]
+    1196:	81 49       	mov55 $r10,$r9
+    1198:	b0 12       	addri36.sp $r0,#0x48
+    119a:	84 e1       	movi55 $r7,#0x1
+    119c:	84 a0       	movi55 $r5,#0x0
+    119e:	f0 81       	swi37.sp $r0,[+#0x4]
+    11a0:	d5 02       	j8 11a4 <_vfiprintf_r+0x5d2>
+    11a2:	80 a0       	mov55 $r5,$r0
+    11a4:	e0 e5       	slts45 $r7,$r5
+    11a6:	80 05       	mov55 $r0,$r5
+    11a8:	40 03 bc 1a 	cmovz $r0,$r7,$r15
+    11ac:	f0 86       	swi37.sp $r0,[+#0x18]
+    11ae:	20 0f 80 37 	lbsi $r0,[$sp+#0x37]
+    11b2:	c0 04       	beqz38 $r0,11ba <_vfiprintf_r+0x5e8>
+    11b4:	f0 06       	lwi37.sp $r0,[+#0x18]
+    11b6:	8c 01       	addi45 $r0,#0x1
+    11b8:	f0 86       	swi37.sp $r0,[+#0x18]
+    11ba:	54 0e 00 02 	andi $r0,$fp,#0x2
+    11be:	f0 88       	swi37.sp $r0,[+#0x20]
+    11c0:	c0 04       	beqz38 $r0,11c8 <_vfiprintf_r+0x5f6>
+    11c2:	f0 06       	lwi37.sp $r0,[+#0x18]
+    11c4:	8c 02       	addi45 $r0,#0x2
+    11c6:	f0 86       	swi37.sp $r0,[+#0x18]
+    11c8:	54 0e 00 84 	andi $r0,$fp,#0x84
+    11cc:	f0 89       	swi37.sp $r0,[+#0x24]
+    11ce:	c8 3d       	bnez38 $r0,1248 <_vfiprintf_r+0x676>
+    11d0:	f0 04       	lwi37.sp $r0,[+#0x10]
+    11d2:	f1 06       	lwi37.sp $r1,[+#0x18]
+    11d4:	40 90 04 01 	sub $r9,$r0,$r1
+    11d8:	4e 97 00 38 	blez $r9,1248 <_vfiprintf_r+0x676>
+    11dc:	fa 60       	movpi45 $r3,#0x10
+    11de:	44 00 24 e4 	movi $r0,#0x24e4
+    11e2:	e5 31       	sltsi45 $r9,#0x11
+    11e4:	b6 06       	swi450 $r0,[$r6]
+    11e6:	e9 1a       	bnezs8 121a <_vfiprintf_r+0x648>
+    11e8:	f0 11       	lwi37.sp $r0,[+#0x44]
+    11ea:	a8 f1       	swi333 $r3,[$r6+#0x4]
+    11ec:	8c 10       	addi45 $r0,#0x10
+    11ee:	f0 91       	swi37.sp $r0,[+#0x44]
+    11f0:	f0 10       	lwi37.sp $r0,[+#0x40]
+    11f2:	8c 01       	addi45 $r0,#0x1
+    11f4:	e4 08       	sltsi45 $r0,#0x8
+    11f6:	f0 90       	swi37.sp $r0,[+#0x40]
+    11f8:	e8 03       	beqzs8 11fe <_vfiprintf_r+0x62c>
+    11fa:	8c c8       	addi45 $r6,#0x8
+    11fc:	d5 0d       	j8 1216 <_vfiprintf_r+0x644>
+    11fe:	f0 02       	lwi37.sp $r0,[+#0x8]
+    1200:	80 28       	mov55 $r1,$r8
+    1202:	b0 8f       	addri36.sp $r2,#0x3c
+    1204:	f3 8b       	swi37.sp $r3,[+#0x2c]
+    1206:	f5 8a       	swi37.sp $r5,[+#0x28]
+    1208:	49 ff fc d6 	jal bb4 <__sprint_r>
+    120c:	4e 03 01 37 	bnez $r0,147a <_vfiprintf_r+0x8a8>
+    1210:	b1 9c       	addri36.sp $r6,#0x70
+    1212:	f3 0b       	lwi37.sp $r3,[+#0x2c]
+    1214:	f5 0a       	lwi37.sp $r5,[+#0x28]
+    1216:	8f 30       	subi45 $r9,#0x10
+    1218:	d5 e3       	j8 11de <_vfiprintf_r+0x60c>
+    121a:	f0 11       	lwi37.sp $r0,[+#0x44]
+    121c:	14 93 00 01 	swi $r9,[$r6+#0x4]
+    1220:	89 20       	add45 $r9,$r0
+    1222:	f0 10       	lwi37.sp $r0,[+#0x40]
+    1224:	14 9f 80 11 	swi $r9,[$sp+#0x44]
+    1228:	8c 01       	addi45 $r0,#0x1
+    122a:	e4 08       	sltsi45 $r0,#0x8
+    122c:	f0 90       	swi37.sp $r0,[+#0x40]
+    122e:	e8 03       	beqzs8 1234 <_vfiprintf_r+0x662>
+    1230:	8c c8       	addi45 $r6,#0x8
+    1232:	d5 0b       	j8 1248 <_vfiprintf_r+0x676>
+    1234:	f0 02       	lwi37.sp $r0,[+#0x8]
+    1236:	80 28       	mov55 $r1,$r8
+    1238:	b0 8f       	addri36.sp $r2,#0x3c
+    123a:	f5 8a       	swi37.sp $r5,[+#0x28]
+    123c:	49 ff fc bc 	jal bb4 <__sprint_r>
+    1240:	4e 03 01 1d 	bnez $r0,147a <_vfiprintf_r+0x8a8>
+    1244:	b1 9c       	addri36.sp $r6,#0x70
+    1246:	f5 0a       	lwi37.sp $r5,[+#0x28]
+    1248:	20 0f 80 37 	lbsi $r0,[$sp+#0x37]
+    124c:	c0 1a       	beqz38 $r0,1280 <_vfiprintf_r+0x6ae>
+    124e:	50 0f 80 37 	addi $r0,$sp,#0x37
+    1252:	b6 06       	swi450 $r0,[$r6]
+    1254:	84 01       	movi55 $r0,#0x1
+    1256:	a8 31       	swi333 $r0,[$r6+#0x4]
+    1258:	f0 11       	lwi37.sp $r0,[+#0x44]
+    125a:	8c 01       	addi45 $r0,#0x1
+    125c:	f0 91       	swi37.sp $r0,[+#0x44]
+    125e:	f0 10       	lwi37.sp $r0,[+#0x40]
+    1260:	8c 01       	addi45 $r0,#0x1
+    1262:	e4 08       	sltsi45 $r0,#0x8
+    1264:	f0 90       	swi37.sp $r0,[+#0x40]
+    1266:	e8 03       	beqzs8 126c <_vfiprintf_r+0x69a>
+    1268:	8c c8       	addi45 $r6,#0x8
+    126a:	d5 0b       	j8 1280 <_vfiprintf_r+0x6ae>
+    126c:	f0 02       	lwi37.sp $r0,[+#0x8]
+    126e:	80 28       	mov55 $r1,$r8
+    1270:	b0 8f       	addri36.sp $r2,#0x3c
+    1272:	f5 8a       	swi37.sp $r5,[+#0x28]
+    1274:	49 ff fc a0 	jal bb4 <__sprint_r>
+    1278:	4e 03 01 01 	bnez $r0,147a <_vfiprintf_r+0x8a8>
+    127c:	b1 9c       	addri36.sp $r6,#0x70
+    127e:	f5 0a       	lwi37.sp $r5,[+#0x28]
+    1280:	f0 08       	lwi37.sp $r0,[+#0x20]
+    1282:	c0 19       	beqz38 $r0,12b4 <_vfiprintf_r+0x6e2>
+    1284:	b0 0e       	addri36.sp $r0,#0x38
+    1286:	b6 06       	swi450 $r0,[$r6]
+    1288:	84 02       	movi55 $r0,#0x2
+    128a:	a8 31       	swi333 $r0,[$r6+#0x4]
+    128c:	f0 11       	lwi37.sp $r0,[+#0x44]
+    128e:	8c 02       	addi45 $r0,#0x2
+    1290:	f0 91       	swi37.sp $r0,[+#0x44]
+    1292:	f0 10       	lwi37.sp $r0,[+#0x40]
+    1294:	8c 01       	addi45 $r0,#0x1
+    1296:	e4 08       	sltsi45 $r0,#0x8
+    1298:	f0 90       	swi37.sp $r0,[+#0x40]
+    129a:	e8 03       	beqzs8 12a0 <_vfiprintf_r+0x6ce>
+    129c:	8c c8       	addi45 $r6,#0x8
+    129e:	d5 0b       	j8 12b4 <_vfiprintf_r+0x6e2>
+    12a0:	f0 02       	lwi37.sp $r0,[+#0x8]
+    12a2:	80 28       	mov55 $r1,$r8
+    12a4:	b0 8f       	addri36.sp $r2,#0x3c
+    12a6:	f5 88       	swi37.sp $r5,[+#0x20]
+    12a8:	49 ff fc 86 	jal bb4 <__sprint_r>
+    12ac:	4e 03 00 e7 	bnez $r0,147a <_vfiprintf_r+0x8a8>
+    12b0:	b1 9c       	addri36.sp $r6,#0x70
+    12b2:	f5 08       	lwi37.sp $r5,[+#0x20]
+    12b4:	f0 09       	lwi37.sp $r0,[+#0x24]
+    12b6:	5a 08 80 43 	bnec $r0,#0x80,133c <_vfiprintf_r+0x76a>
+    12ba:	f0 04       	lwi37.sp $r0,[+#0x10]
+    12bc:	f1 06       	lwi37.sp $r1,[+#0x18]
+    12be:	40 90 04 01 	sub $r9,$r0,$r1
+    12c2:	4e 97 00 3d 	blez $r9,133c <_vfiprintf_r+0x76a>
+    12c6:	44 30 24 d4 	movi $r3,#0x24d4
+    12ca:	fa 80       	movpi45 $r4,#0x10
+    12cc:	e5 31       	sltsi45 $r9,#0x11
+    12ce:	e9 1d       	bnezs8 1308 <_vfiprintf_r+0x736>
+    12d0:	f0 11       	lwi37.sp $r0,[+#0x44]
+    12d2:	b6 66       	swi450 $r3,[$r6]
+    12d4:	8c 10       	addi45 $r0,#0x10
+    12d6:	f0 91       	swi37.sp $r0,[+#0x44]
+    12d8:	f0 10       	lwi37.sp $r0,[+#0x40]
+    12da:	a9 31       	swi333 $r4,[$r6+#0x4]
+    12dc:	8c 01       	addi45 $r0,#0x1
+    12de:	e4 08       	sltsi45 $r0,#0x8
+    12e0:	f0 90       	swi37.sp $r0,[+#0x40]
+    12e2:	e8 03       	beqzs8 12e8 <_vfiprintf_r+0x716>
+    12e4:	8c c8       	addi45 $r6,#0x8
+    12e6:	d5 0f       	j8 1304 <_vfiprintf_r+0x732>
+    12e8:	f0 02       	lwi37.sp $r0,[+#0x8]
+    12ea:	80 28       	mov55 $r1,$r8
+    12ec:	b0 8f       	addri36.sp $r2,#0x3c
+    12ee:	f4 8a       	swi37.sp $r4,[+#0x28]
+    12f0:	f3 89       	swi37.sp $r3,[+#0x24]
+    12f2:	f5 88       	swi37.sp $r5,[+#0x20]
+    12f4:	49 ff fc 60 	jal bb4 <__sprint_r>
+    12f8:	4e 03 00 c1 	bnez $r0,147a <_vfiprintf_r+0x8a8>
+    12fc:	b1 9c       	addri36.sp $r6,#0x70
+    12fe:	f4 0a       	lwi37.sp $r4,[+#0x28]
+    1300:	f3 09       	lwi37.sp $r3,[+#0x24]
+    1302:	f5 08       	lwi37.sp $r5,[+#0x20]
+    1304:	8f 30       	subi45 $r9,#0x10
+    1306:	d5 e3       	j8 12cc <_vfiprintf_r+0x6fa>
+    1308:	44 00 24 d4 	movi $r0,#0x24d4
+    130c:	b6 06       	swi450 $r0,[$r6]
+    130e:	f0 11       	lwi37.sp $r0,[+#0x44]
+    1310:	14 93 00 01 	swi $r9,[$r6+#0x4]
+    1314:	89 20       	add45 $r9,$r0
+    1316:	f0 10       	lwi37.sp $r0,[+#0x40]
+    1318:	14 9f 80 11 	swi $r9,[$sp+#0x44]
+    131c:	8c 01       	addi45 $r0,#0x1
+    131e:	e4 08       	sltsi45 $r0,#0x8
+    1320:	f0 90       	swi37.sp $r0,[+#0x40]
+    1322:	e8 03       	beqzs8 1328 <_vfiprintf_r+0x756>
+    1324:	8c c8       	addi45 $r6,#0x8
+    1326:	d5 0b       	j8 133c <_vfiprintf_r+0x76a>
+    1328:	f0 02       	lwi37.sp $r0,[+#0x8]
+    132a:	80 28       	mov55 $r1,$r8
+    132c:	b0 8f       	addri36.sp $r2,#0x3c
+    132e:	f5 88       	swi37.sp $r5,[+#0x20]
+    1330:	49 ff fc 42 	jal bb4 <__sprint_r>
+    1334:	4e 03 00 a3 	bnez $r0,147a <_vfiprintf_r+0x8a8>
+    1338:	b1 9c       	addri36.sp $r6,#0x70
+    133a:	f5 08       	lwi37.sp $r5,[+#0x20]
+    133c:	40 92 9c 01 	sub $r9,$r5,$r7
+    1340:	4e 97 00 37 	blez $r9,13ae <_vfiprintf_r+0x7dc>
+    1344:	44 40 24 d4 	movi $r4,#0x24d4
+    1348:	fa 60       	movpi45 $r3,#0x10
+    134a:	e5 31       	sltsi45 $r9,#0x11
+    134c:	e9 1b       	bnezs8 1382 <_vfiprintf_r+0x7b0>
+    134e:	f0 11       	lwi37.sp $r0,[+#0x44]
+    1350:	b6 86       	swi450 $r4,[$r6]
+    1352:	8c 10       	addi45 $r0,#0x10
+    1354:	f0 91       	swi37.sp $r0,[+#0x44]
+    1356:	f0 10       	lwi37.sp $r0,[+#0x40]
+    1358:	a8 f1       	swi333 $r3,[$r6+#0x4]
+    135a:	8c 01       	addi45 $r0,#0x1
+    135c:	e4 08       	sltsi45 $r0,#0x8
+    135e:	f0 90       	swi37.sp $r0,[+#0x40]
+    1360:	e8 03       	beqzs8 1366 <_vfiprintf_r+0x794>
+    1362:	8c c8       	addi45 $r6,#0x8
+    1364:	d5 0d       	j8 137e <_vfiprintf_r+0x7ac>
+    1366:	f0 02       	lwi37.sp $r0,[+#0x8]
+    1368:	80 28       	mov55 $r1,$r8
+    136a:	b0 8f       	addri36.sp $r2,#0x3c
+    136c:	f3 89       	swi37.sp $r3,[+#0x24]
+    136e:	f4 88       	swi37.sp $r4,[+#0x20]
+    1370:	49 ff fc 22 	jal bb4 <__sprint_r>
+    1374:	4e 03 00 83 	bnez $r0,147a <_vfiprintf_r+0x8a8>
+    1378:	b1 9c       	addri36.sp $r6,#0x70
+    137a:	f3 09       	lwi37.sp $r3,[+#0x24]
+    137c:	f4 08       	lwi37.sp $r4,[+#0x20]
+    137e:	8f 30       	subi45 $r9,#0x10
+    1380:	d5 e5       	j8 134a <_vfiprintf_r+0x778>
+    1382:	44 00 24 d4 	movi $r0,#0x24d4
+    1386:	b6 06       	swi450 $r0,[$r6]
+    1388:	f0 10       	lwi37.sp $r0,[+#0x40]
+    138a:	f5 11       	lwi37.sp $r5,[+#0x44]
+    138c:	8c 01       	addi45 $r0,#0x1
+    138e:	88 a9       	add45 $r5,$r9
+    1390:	e4 08       	sltsi45 $r0,#0x8
+    1392:	14 93 00 01 	swi $r9,[$r6+#0x4]
+    1396:	f5 91       	swi37.sp $r5,[+#0x44]
+    1398:	f0 90       	swi37.sp $r0,[+#0x40]
+    139a:	e8 03       	beqzs8 13a0 <_vfiprintf_r+0x7ce>
+    139c:	8c c8       	addi45 $r6,#0x8
+    139e:	d5 08       	j8 13ae <_vfiprintf_r+0x7dc>
+    13a0:	f0 02       	lwi37.sp $r0,[+#0x8]
+    13a2:	80 28       	mov55 $r1,$r8
+    13a4:	b0 8f       	addri36.sp $r2,#0x3c
+    13a6:	49 ff fc 07 	jal bb4 <__sprint_r>
+    13aa:	c8 68       	bnez38 $r0,147a <_vfiprintf_r+0x8a8>
+    13ac:	b1 9c       	addri36.sp $r6,#0x70
+    13ae:	f0 01       	lwi37.sp $r0,[+#0x4]
+    13b0:	a9 f1       	swi333 $r7,[$r6+#0x4]
+    13b2:	b6 06       	swi450 $r0,[$r6]
+    13b4:	f0 11       	lwi37.sp $r0,[+#0x44]
+    13b6:	88 e0       	add45 $r7,$r0
+    13b8:	f0 10       	lwi37.sp $r0,[+#0x40]
+    13ba:	f7 91       	swi37.sp $r7,[+#0x44]
+    13bc:	8c 01       	addi45 $r0,#0x1
+    13be:	e4 08       	sltsi45 $r0,#0x8
+    13c0:	f0 90       	swi37.sp $r0,[+#0x40]
+    13c2:	e8 03       	beqzs8 13c8 <_vfiprintf_r+0x7f6>
+    13c4:	8c c8       	addi45 $r6,#0x8
+    13c6:	d5 08       	j8 13d6 <_vfiprintf_r+0x804>
+    13c8:	f0 02       	lwi37.sp $r0,[+#0x8]
+    13ca:	80 28       	mov55 $r1,$r8
+    13cc:	b0 8f       	addri36.sp $r2,#0x3c
+    13ce:	49 ff fb f3 	jal bb4 <__sprint_r>
+    13d2:	c8 54       	bnez38 $r0,147a <_vfiprintf_r+0x8a8>
+    13d4:	b1 9c       	addri36.sp $r6,#0x70
+    13d6:	54 4e 00 04 	andi $r4,$fp,#0x4
+    13da:	cc 0d       	bnez38 $r4,13f4 <_vfiprintf_r+0x822>
+    13dc:	f0 06       	lwi37.sp $r0,[+#0x18]
+    13de:	f1 04       	lwi37.sp $r1,[+#0x10]
+    13e0:	e0 01       	slts45 $r0,$r1
+    13e2:	40 00 bc 1b 	cmovn $r0,$r1,$r15
+    13e6:	81 e0       	mov55 $r15,$r0
+    13e8:	f0 05       	lwi37.sp $r0,[+#0x14]
+    13ea:	88 0f       	add45 $r0,$r15
+    13ec:	f0 85       	swi37.sp $r0,[+#0x14]
+    13ee:	f0 11       	lwi37.sp $r0,[+#0x44]
+    13f0:	c0 38       	beqz38 $r0,1460 <_vfiprintf_r+0x88e>
+    13f2:	d5 31       	j8 1454 <_vfiprintf_r+0x882>
+    13f4:	f0 04       	lwi37.sp $r0,[+#0x10]
+    13f6:	f1 06       	lwi37.sp $r1,[+#0x18]
+    13f8:	9b c1       	sub333 $r7,$r0,$r1
+    13fa:	4e 77 ff f1 	blez $r7,13dc <_vfiprintf_r+0x80a>
+    13fe:	fb 20       	movpi45 $r9,#0x10
+    1400:	44 00 24 e4 	movi $r0,#0x24e4
+    1404:	e4 f1       	sltsi45 $r7,#0x11
+    1406:	b6 06       	swi450 $r0,[$r6]
+    1408:	e9 16       	bnezs8 1434 <_vfiprintf_r+0x862>
+    140a:	f0 11       	lwi37.sp $r0,[+#0x44]
+    140c:	14 93 00 01 	swi $r9,[$r6+#0x4]
+    1410:	8c 10       	addi45 $r0,#0x10
+    1412:	f0 91       	swi37.sp $r0,[+#0x44]
+    1414:	f0 10       	lwi37.sp $r0,[+#0x40]
+    1416:	8c 01       	addi45 $r0,#0x1
+    1418:	e4 08       	sltsi45 $r0,#0x8
+    141a:	f0 90       	swi37.sp $r0,[+#0x40]
+    141c:	e8 03       	beqzs8 1422 <_vfiprintf_r+0x850>
+    141e:	8c c8       	addi45 $r6,#0x8
+    1420:	d5 08       	j8 1430 <_vfiprintf_r+0x85e>
+    1422:	f0 02       	lwi37.sp $r0,[+#0x8]
+    1424:	80 28       	mov55 $r1,$r8
+    1426:	b0 8f       	addri36.sp $r2,#0x3c
+    1428:	49 ff fb c6 	jal bb4 <__sprint_r>
+    142c:	c8 27       	bnez38 $r0,147a <_vfiprintf_r+0x8a8>
+    142e:	b1 9c       	addri36.sp $r6,#0x70
+    1430:	8e f0       	subi45 $r7,#0x10
+    1432:	d5 e7       	j8 1400 <_vfiprintf_r+0x82e>
+    1434:	f0 11       	lwi37.sp $r0,[+#0x44]
+    1436:	a9 f1       	swi333 $r7,[$r6+#0x4]
+    1438:	88 e0       	add45 $r7,$r0
+    143a:	f0 10       	lwi37.sp $r0,[+#0x40]
+    143c:	f7 91       	swi37.sp $r7,[+#0x44]
+    143e:	8c 01       	addi45 $r0,#0x1
+    1440:	e4 08       	sltsi45 $r0,#0x8
+    1442:	f0 90       	swi37.sp $r0,[+#0x40]
+    1444:	e9 cc       	bnezs8 13dc <_vfiprintf_r+0x80a>
+    1446:	f0 02       	lwi37.sp $r0,[+#0x8]
+    1448:	80 28       	mov55 $r1,$r8
+    144a:	b0 8f       	addri36.sp $r2,#0x3c
+    144c:	49 ff fb b4 	jal bb4 <__sprint_r>
+    1450:	c0 c6       	beqz38 $r0,13dc <_vfiprintf_r+0x80a>
+    1452:	d5 14       	j8 147a <_vfiprintf_r+0x8a8>
+    1454:	f0 02       	lwi37.sp $r0,[+#0x8]
+    1456:	80 28       	mov55 $r1,$r8
+    1458:	b0 8f       	addri36.sp $r2,#0x3c
+    145a:	49 ff fb ad 	jal bb4 <__sprint_r>
+    145e:	c8 0e       	bnez38 $r0,147a <_vfiprintf_r+0x8a8>
+    1460:	84 00       	movi55 $r0,#0x0
+    1462:	f0 90       	swi37.sp $r0,[+#0x40]
+    1464:	81 2a       	mov55 $r9,$r10
+    1466:	b1 9c       	addri36.sp $r6,#0x70
+    1468:	48 ff fb e8 	j c38 <_vfiprintf_r+0x66>
+    146c:	f0 11       	lwi37.sp $r0,[+#0x44]
+    146e:	c0 06       	beqz38 $r0,147a <_vfiprintf_r+0x8a8>
+    1470:	f0 02       	lwi37.sp $r0,[+#0x8]
+    1472:	80 28       	mov55 $r1,$r8
+    1474:	b0 8f       	addri36.sp $r2,#0x3c
+    1476:	49 ff fb 9f 	jal bb4 <__sprint_r>
+    147a:	02 04 00 06 	lhi $r0,[$r8+#0xc]
+    147e:	96 36       	bmski33 $r0,#0x6
+    1480:	4e 03 fb c6 	bnez $r0,c0c <_vfiprintf_r+0x3a>
+    1484:	f0 05       	lwi37.sp $r0,[+#0x14]
+    1486:	d5 07       	j8 1494 <_vfiprintf_r+0x8c2>
+    1488:	5a 00 01 04 	beqc $r0,#0x1,1490 <_vfiprintf_r+0x8be>
+    148c:	48 ff fe 10 	j 10ac <_vfiprintf_r+0x4da>
+    1490:	48 ff fe 32 	j 10f4 <_vfiprintf_r+0x522>
+    1494:	fc d6       	pop25 $r10,#176    ! {$r6~$r10, $fp, $gp, $lp}
+
+00001496 <vfiprintf>:
+    1496:	fc 02       	push25 $r6,#16    ! {$r6, $fp, $gp, $lp}
+    1498:	f0 81       	swi37.sp $r0,[+#0x4]
+    149a:	f1 82       	swi37.sp $r1,[+#0x8]
+    149c:	f2 83       	swi37.sp $r2,[+#0xc]
+    149e:	f1 01       	lwi37.sp $r1,[+#0x4]
+    14a0:	f2 02       	lwi37.sp $r2,[+#0x8]
+    14a2:	f3 03       	lwi37.sp $r3,[+#0xc]
+    14a4:	84 00       	movi55 $r0,#0x0
+    14a6:	49 ff fb 96 	jal bd2 <_vfiprintf_r>
+    14aa:	fc 82       	pop25 $r6,#16    ! {$r6, $fp, $gp, $lp}
+
+000014ac <__sbprintf>:
+    14ac:	fc 20       	push25 $r8,#0    ! {$r6~$r8, $fp, $gp, $lp}
+    14ae:	51 ff fb 90 	addi $sp,$sp,#-1136
+    14b2:	80 c1       	mov55 $r6,$r1
+    14b4:	a5 0e       	lhi333 $r4,[$r1+#0xc]
+    14b6:	83 86       	mov55 $fp,$r6
+    14b8:	84 3d       	movi55 $r1,#-3
+    14ba:	fe 66       	and33 $r1,$r4
+    14bc:	12 1f 80 0a 	shi $r1,[$sp+#0x14]
+    14c0:	b9 19       	lwi37 $r1,[$fp+#0x64]
+    14c2:	f0 81       	swi37.sp $r0,[+#0x4]
+    14c4:	f1 9b       	swi37.sp $r1,[+#0x6c]
+    14c6:	a4 77       	lhi333 $r1,[$r6+#0xe]
+    14c8:	12 1f 80 0b 	shi $r1,[$sp+#0x16]
+    14cc:	a0 77       	lwi333 $r1,[$r6+#0x1c]
+    14ce:	f1 89       	swi37.sp $r1,[+#0x24]
+    14d0:	b9 09       	lwi37 $r1,[$fp+#0x24]
+    14d2:	f1 8b       	swi37.sp $r1,[+#0x2c]
+    14d4:	b0 5c       	addri36.sp $r1,#0x70
+    14d6:	f1 82       	swi37.sp $r1,[+#0x8]
+    14d8:	f1 86       	swi37.sp $r1,[+#0x18]
+    14da:	44 10 04 00 	movi $r1,#0x400
+    14de:	f1 84       	swi37.sp $r1,[+#0x10]
+    14e0:	f1 87       	swi37.sp $r1,[+#0x1c]
+    14e2:	84 20       	movi55 $r1,#0x0
+    14e4:	f1 88       	swi37.sp $r1,[+#0x20]
+    14e6:	b0 42       	addri36.sp $r1,#0x8
+    14e8:	49 ff fb 75 	jal bd2 <_vfiprintf_r>
+    14ec:	80 e0       	mov55 $r7,$r0
+    14ee:	4e 05 00 08 	bltz $r0,14fe <__sbprintf+0x52>
+    14f2:	f0 01       	lwi37.sp $r0,[+#0x4]
+    14f4:	b0 42       	addri36.sp $r1,#0x8
+    14f6:	49 00 01 02 	jal 16fa <_fflush_r>
+    14fa:	c0 02       	beqz38 $r0,14fe <__sbprintf+0x52>
+    14fc:	84 ff       	movi55 $r7,#-1
+    14fe:	02 0f 80 0a 	lhi $r0,[$sp+#0x14]
+    1502:	96 36       	bmski33 $r0,#0x6
+    1504:	c0 05       	beqz38 $r0,150e <__sbprintf+0x62>
+    1506:	a4 36       	lhi333 $r0,[$r6+#0xc]
+    1508:	58 00 00 40 	ori $r0,$r0,#0x40
+    150c:	ac 36       	shi333 $r0,[$r6+#0xc]
+    150e:	80 07       	mov55 $r0,$r7
+    1510:	51 ff 84 70 	addi $sp,$sp,#0x470
+    1514:	fc a0       	pop25 $r8,#0    ! {$r6~$r8, $fp, $gp, $lp}
+
+00001516 <__swsetup_r>:
+    1516:	fc 01       	push25 $r6,#8    ! {$r6, $fp, $gp, $lp}
+    1518:	f0 81       	swi37.sp $r0,[+#0x4]
+    151a:	3c 0d ff e2 	lwi.gp $r0,[+#-120]
+    151e:	80 c1       	mov55 $r6,$r1
+    1520:	c8 03       	bnez38 $r0,1526 <__swsetup_r+0x10>
+    1522:	49 00 01 33 	jal 1788 <__sinit>
+    1526:	22 13 00 06 	lhsi $r1,[$r6+#0xc]
+    152a:	96 09       	zeh33 $r0,$r1
+    152c:	54 20 00 08 	andi $r2,$r0,#0x8
+    1530:	ca 24       	bnez38 $r2,1578 <__swsetup_r+0x62>
+    1532:	54 20 00 10 	andi $r2,$r0,#0x10
+    1536:	ca 05       	bnez38 $r2,1540 <__swsetup_r+0x2a>
+    1538:	84 09       	movi55 $r0,#0x9
+    153a:	3c 0f ff e3 	swi.gp $r0,[+#-116]
+    153e:	d5 3e       	j8 15ba <__swsetup_r+0xa4>
+    1540:	96 16       	bmski33 $r0,#0x2
+    1542:	c0 17       	beqz38 $r0,1570 <__swsetup_r+0x5a>
+    1544:	04 13 00 0c 	lwi $r1,[$r6+#0x30]
+    1548:	c1 0b       	beqz38 $r1,155e <__swsetup_r+0x48>
+    154a:	50 03 00 40 	addi $r0,$r6,#0x40
+    154e:	4c 10 00 05 	beq $r1,$r0,1558 <__swsetup_r+0x42>
+    1552:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1554:	49 00 04 0c 	jal 1d6c <_free_r>
+    1558:	84 00       	movi55 $r0,#0x0
+    155a:	14 03 00 0c 	swi $r0,[$r6+#0x30]
+    155e:	a4 76       	lhi333 $r1,[$r6+#0xc]
+    1560:	44 0f ff db 	movi $r0,#-37
+    1564:	fe 0e       	and33 $r0,$r1
+    1566:	ac 36       	shi333 $r0,[$r6+#0xc]
+    1568:	84 00       	movi55 $r0,#0x0
+    156a:	a8 31       	swi333 $r0,[$r6+#0x4]
+    156c:	a0 34       	lwi333 $r0,[$r6+#0x10]
+    156e:	b6 06       	swi450 $r0,[$r6]
+    1570:	a4 36       	lhi333 $r0,[$r6+#0xc]
+    1572:	58 00 00 08 	ori $r0,$r0,#0x8
+    1576:	ac 36       	shi333 $r0,[$r6+#0xc]
+    1578:	a0 34       	lwi333 $r0,[$r6+#0x10]
+    157a:	c8 0a       	bnez38 $r0,158e <__swsetup_r+0x78>
+    157c:	a4 36       	lhi333 $r0,[$r6+#0xc]
+    157e:	54 00 02 80 	andi $r0,$r0,#0x280
+    1582:	5a 02 00 06 	beqc $r0,#0x200,158e <__swsetup_r+0x78>
+    1586:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1588:	80 26       	mov55 $r1,$r6
+    158a:	49 00 03 5f 	jal 1c48 <__smakebuf_r>
+    158e:	a4 76       	lhi333 $r1,[$r6+#0xc]
+    1590:	54 00 80 01 	andi $r0,$r1,#0x1
+    1594:	c0 07       	beqz38 $r0,15a2 <__swsetup_r+0x8c>
+    1596:	84 00       	movi55 $r0,#0x0
+    1598:	a8 32       	swi333 $r0,[$r6+#0x8]
+    159a:	a0 35       	lwi333 $r0,[$r6+#0x14]
+    159c:	fe 02       	neg33 $r0,$r0
+    159e:	a8 36       	swi333 $r0,[$r6+#0x18]
+    15a0:	d5 05       	j8 15aa <__swsetup_r+0x94>
+    15a2:	96 4e       	bmski33 $r1,#0x1
+    15a4:	c9 02       	bnez38 $r1,15a8 <__swsetup_r+0x92>
+    15a6:	a0 35       	lwi333 $r0,[$r6+#0x14]
+    15a8:	a8 32       	swi333 $r0,[$r6+#0x8]
+    15aa:	a0 34       	lwi333 $r0,[$r6+#0x10]
+    15ac:	c8 0c       	bnez38 $r0,15c4 <__swsetup_r+0xae>
+    15ae:	22 13 00 06 	lhsi $r1,[$r6+#0xc]
+    15b2:	54 00 80 80 	andi $r0,$r1,#0x80
+    15b6:	96 01       	zeh33 $r0,$r0
+    15b8:	c0 07       	beqz38 $r0,15c6 <__swsetup_r+0xb0>
+    15ba:	58 10 80 40 	ori $r1,$r1,#0x40
+    15be:	ac 76       	shi333 $r1,[$r6+#0xc]
+    15c0:	84 1f       	movi55 $r0,#-1
+    15c2:	d5 02       	j8 15c6 <__swsetup_r+0xb0>
+    15c4:	84 00       	movi55 $r0,#0x0
+    15c6:	fc 81       	pop25 $r6,#8    ! {$r6, $fp, $gp, $lp}
+
+000015c8 <abort>:
+    15c8:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    15ca:	84 01       	movi55 $r0,#0x1
+    15cc:	49 00 05 92 	jal 20f0 <_exit>
+    15d0:	92 00       	nop16
+
+000015d2 <__sflush_r>:
+    15d2:	fc 41       	push25 $r10,#8    ! {$r6~$r10, $fp, $gp, $lp}
+    15d4:	3f cf ff 8c 	addi.gp $fp,#-116
+    15d8:	22 20 80 06 	lhsi $r2,[$r1+#0xc]
+    15dc:	f0 81       	swi37.sp $r0,[+#0x4]
+    15de:	96 11       	zeh33 $r0,$r2
+    15e0:	80 c1       	mov55 $r6,$r1
+    15e2:	54 10 00 08 	andi $r1,$r0,#0x8
+    15e6:	c9 67       	bnez38 $r1,16b4 <__sflush_r+0xe2>
+    15e8:	a0 31       	lwi333 $r0,[$r6+#0x4]
+    15ea:	58 21 08 00 	ori $r2,$r2,#0x800
+    15ee:	ac b6       	shi333 $r2,[$r6+#0xc]
+    15f0:	4e 06 00 06 	bgtz $r0,15fc <__sflush_r+0x2a>
+    15f4:	04 03 00 0f 	lwi $r0,[$r6+#0x3c]
+    15f8:	4e 07 00 1d 	blez $r0,1632 <__sflush_r+0x60>
+    15fc:	04 43 00 0a 	lwi $r4,[$r6+#0x28]
+    1600:	c4 19       	beqz38 $r4,1632 <__sflush_r+0x60>
+    1602:	54 21 10 00 	andi $r2,$r2,#0x1000
+    1606:	84 00       	movi55 $r0,#0x0
+    1608:	96 91       	zeh33 $r2,$r2
+    160a:	bf 00       	lwi37 $r7,[$fp+#0x0]
+    160c:	b8 80       	swi37 $r0,[$fp+#0x0]
+    160e:	c2 04       	beqz38 $r2,1616 <__sflush_r+0x44>
+    1610:	04 23 00 14 	lwi $r2,[$r6+#0x50]
+    1614:	d5 11       	j8 1636 <__sflush_r+0x64>
+    1616:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1618:	a0 77       	lwi333 $r1,[$r6+#0x1c]
+    161a:	84 61       	movi55 $r3,#0x1
+    161c:	dd 24       	jral5 $r4
+    161e:	80 40       	mov55 $r2,$r0
+    1620:	5a 0f ff 0b 	bnec $r0,#-1,1636 <__sflush_r+0x64>
+    1624:	b8 00       	lwi37 $r0,[$fp+#0x0]
+    1626:	c0 08       	beqz38 $r0,1636 <__sflush_r+0x64>
+    1628:	5a 00 1d 04 	beqc $r0,#0x1d,1630 <__sflush_r+0x5e>
+    162c:	5a 08 16 52 	bnec $r0,#0x16,16d0 <__sflush_r+0xfe>
+    1630:	bf 80       	swi37 $r7,[$fp+#0x0]
+    1632:	84 00       	movi55 $r0,#0x0
+    1634:	d5 62       	j8 16f8 <__sflush_r+0x126>
+    1636:	a4 36       	lhi333 $r0,[$r6+#0xc]
+    1638:	96 16       	bmski33 $r0,#0x2
+    163a:	c0 09       	beqz38 $r0,164c <__sflush_r+0x7a>
+    163c:	a0 31       	lwi333 $r0,[$r6+#0x4]
+    163e:	8a 40       	sub45 $r2,$r0
+    1640:	04 03 00 0c 	lwi $r0,[$r6+#0x30]
+    1644:	c0 04       	beqz38 $r0,164c <__sflush_r+0x7a>
+    1646:	04 03 00 0f 	lwi $r0,[$r6+#0x3c]
+    164a:	8a 40       	sub45 $r2,$r0
+    164c:	04 43 00 0a 	lwi $r4,[$r6+#0x28]
+    1650:	a0 77       	lwi333 $r1,[$r6+#0x1c]
+    1652:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1654:	84 60       	movi55 $r3,#0x0
+    1656:	dd 24       	jral5 $r4
+    1658:	a4 76       	lhi333 $r1,[$r6+#0xc]
+    165a:	5a 0f ff 08 	bnec $r0,#-1,166a <__sflush_r+0x98>
+    165e:	ba 00       	lwi37 $r2,[$fp+#0x0]
+    1660:	c2 05       	beqz38 $r2,166a <__sflush_r+0x98>
+    1662:	5a 20 1d 04 	beqc $r2,#0x1d,166a <__sflush_r+0x98>
+    1666:	5a 28 16 23 	bnec $r2,#0x16,16ac <__sflush_r+0xda>
+    166a:	44 2f f7 ff 	movi $r2,#-2049
+    166e:	fe 56       	and33 $r1,$r2
+    1670:	84 40       	movi55 $r2,#0x0
+    1672:	96 4b       	seh33 $r1,$r1
+    1674:	a8 b1       	swi333 $r2,[$r6+#0x4]
+    1676:	a0 b4       	lwi333 $r2,[$r6+#0x10]
+    1678:	ac 76       	shi333 $r1,[$r6+#0xc]
+    167a:	54 10 90 00 	andi $r1,$r1,#0x1000
+    167e:	b6 46       	swi450 $r2,[$r6]
+    1680:	c1 07       	beqz38 $r1,168e <__sflush_r+0xbc>
+    1682:	5a 0f ff 04 	bnec $r0,#-1,168a <__sflush_r+0xb8>
+    1686:	b9 00       	lwi37 $r1,[$fp+#0x0]
+    1688:	c9 03       	bnez38 $r1,168e <__sflush_r+0xbc>
+    168a:	14 03 00 14 	swi $r0,[$r6+#0x50]
+    168e:	04 13 00 0c 	lwi $r1,[$r6+#0x30]
+    1692:	bf 80       	swi37 $r7,[$fp+#0x0]
+    1694:	c1 cf       	beqz38 $r1,1632 <__sflush_r+0x60>
+    1696:	50 03 00 40 	addi $r0,$r6,#0x40
+    169a:	4c 10 00 05 	beq $r1,$r0,16a4 <__sflush_r+0xd2>
+    169e:	f0 01       	lwi37.sp $r0,[+#0x4]
+    16a0:	49 00 03 66 	jal 1d6c <_free_r>
+    16a4:	84 00       	movi55 $r0,#0x0
+    16a6:	14 03 00 0c 	swi $r0,[$r6+#0x30]
+    16aa:	d5 27       	j8 16f8 <__sflush_r+0x126>
+    16ac:	58 10 80 40 	ori $r1,$r1,#0x40
+    16b0:	ac 76       	shi333 $r1,[$r6+#0xc]
+    16b2:	d5 23       	j8 16f8 <__sflush_r+0x126>
+    16b4:	04 93 00 04 	lwi $r9,[$r6+#0x10]
+    16b8:	4e 92 ff bd 	beqz $r9,1632 <__sflush_r+0x60>
+    16bc:	b4 e6       	lwi450 $r7,[$r6]
+    16be:	96 0f       	fexti33 $r0,#0x1
+    16c0:	8a e9       	sub45 $r7,$r9
+    16c2:	b7 26       	swi450 $r9,[$r6]
+    16c4:	c8 03       	bnez38 $r0,16ca <__sflush_r+0xf8>
+    16c6:	a0 35       	lwi333 $r0,[$r6+#0x14]
+    16c8:	d5 02       	j8 16cc <__sflush_r+0xfa>
+    16ca:	84 00       	movi55 $r0,#0x0
+    16cc:	a8 32       	swi333 $r0,[$r6+#0x8]
+    16ce:	d5 12       	j8 16f2 <__sflush_r+0x120>
+    16d0:	a4 36       	lhi333 $r0,[$r6+#0xc]
+    16d2:	58 00 00 40 	ori $r0,$r0,#0x40
+    16d6:	ac 36       	shi333 $r0,[$r6+#0xc]
+    16d8:	84 1f       	movi55 $r0,#-1
+    16da:	d5 0f       	j8 16f8 <__sflush_r+0x126>
+    16dc:	04 43 00 09 	lwi $r4,[$r6+#0x24]
+    16e0:	f0 01       	lwi37.sp $r0,[+#0x4]
+    16e2:	a0 77       	lwi333 $r1,[$r6+#0x1c]
+    16e4:	80 49       	mov55 $r2,$r9
+    16e6:	80 67       	mov55 $r3,$r7
+    16e8:	dd 24       	jral5 $r4
+    16ea:	4e 07 ff f3 	blez $r0,16d0 <__sflush_r+0xfe>
+    16ee:	89 20       	add45 $r9,$r0
+    16f0:	8a e0       	sub45 $r7,$r0
+    16f2:	4e 76 ff f5 	bgtz $r7,16dc <__sflush_r+0x10a>
+    16f6:	d5 9e       	j8 1632 <__sflush_r+0x60>
+    16f8:	fc c1       	pop25 $r10,#8    ! {$r6~$r10, $fp, $gp, $lp}
+
+000016fa <_fflush_r>:
+    16fa:	fc 01       	push25 $r6,#8    ! {$r6, $fp, $gp, $lp}
+    16fc:	3c 2d ff e2 	lwi.gp $r2,[+#-120]
+    1700:	b6 1f       	swi450 $r0,[$sp]
+    1702:	ca 05       	bnez38 $r2,170c <_fflush_r+0x12>
+    1704:	f1 81       	swi37.sp $r1,[+#0x4]
+    1706:	49 00 00 41 	jal 1788 <__sinit>
+    170a:	f1 01       	lwi37.sp $r1,[+#0x4]
+    170c:	22 00 80 06 	lhsi $r0,[$r1+#0xc]
+    1710:	c0 04       	beqz38 $r0,1718 <_fflush_r+0x1e>
+    1712:	b4 1f       	lwi450 $r0,[$sp]
+    1714:	49 ff ff 5f 	jal 15d2 <__sflush_r>
+    1718:	b6 1f       	swi450 $r0,[$sp]
+    171a:	b4 1f       	lwi450 $r0,[$sp]
+    171c:	fc 81       	pop25 $r6,#8    ! {$r6, $fp, $gp, $lp}
+
+0000171e <fflush>:
+    171e:	fc 01       	push25 $r6,#8    ! {$r6, $fp, $gp, $lp}
+    1720:	80 20       	mov55 $r1,$r0
+    1722:	c8 06       	bnez38 $r0,172e <fflush+0x10>
+    1724:	44 10 16 fa 	movi $r1,#0x16fa
+    1728:	49 00 02 71 	jal 1c0a <_fwalk_reent>
+    172c:	d5 04       	j8 1734 <fflush+0x16>
+    172e:	84 00       	movi55 $r0,#0x0
+    1730:	49 ff ff e5 	jal 16fa <_fflush_r>
+    1734:	f0 81       	swi37.sp $r0,[+#0x4]
+    1736:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1738:	fc 81       	pop25 $r6,#8    ! {$r6, $fp, $gp, $lp}
+
+0000173a <__fp_lock>:
+    173a:	84 00       	movi55 $r0,#0x0
+    173c:	dd 9e       	ret5 $lp
+
+0000173e <__fp_unlock>:
+    173e:	84 00       	movi55 $r0,#0x0
+    1740:	dd 9e       	ret5 $lp
+
+00001742 <_cleanup_r>:
+    1742:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    1744:	44 10 1f cc 	movi $r1,#0x1fcc
+    1748:	49 00 02 61 	jal 1c0a <_fwalk_reent>
+    174c:	fc 80       	pop25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+
+0000174e <__sfmoreglue>:
+    174e:	fc 40       	push25 $r10,#0    ! {$r6~$r10, $fp, $gp, $lp}
+    1750:	44 20 00 68 	movi $r2,#0x68
+    1754:	9f c9       	subi333 $r7,$r1,#0x1
+    1756:	ff d4       	mul33 $r7,$r2
+    1758:	81 21       	mov55 $r9,$r1
+    175a:	50 13 80 74 	addi $r1,$r7,#0x74
+    175e:	49 00 03 41 	jal 1de0 <_malloc_r>
+    1762:	80 c0       	mov55 $r6,$r0
+    1764:	c0 0b       	beqz38 $r0,177a <__sfmoreglue+0x2c>
+    1766:	84 20       	movi55 $r1,#0x0
+    1768:	b6 20       	swi450 $r1,[$r0]
+    176a:	14 90 00 01 	swi $r9,[$r0+#0x4]
+    176e:	8c 0c       	addi45 $r0,#0xc
+    1770:	a8 32       	swi333 $r0,[$r6+#0x8]
+    1772:	50 23 80 68 	addi $r2,$r7,#0x68
+    1776:	49 ff fa 17 	jal ba4 <memset>
+    177a:	80 06       	mov55 $r0,$r6
+    177c:	fc c0       	pop25 $r10,#0    ! {$r6~$r10, $fp, $gp, $lp}
+
+0000177e <_cleanup>:
+    177e:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    1780:	84 00       	movi55 $r0,#0x0
+    1782:	49 ff ff e0 	jal 1742 <_cleanup_r>
+    1786:	fc 80       	pop25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+
+00001788 <__sinit>:
+    1788:	fc 41       	push25 $r10,#8    ! {$r6~$r10, $fp, $gp, $lp}
+    178a:	3f cf ff 60 	addi.gp $fp,#-160
+    178e:	be 0a       	lwi37 $r6,[$fp+#0x28]
+    1790:	ce 68       	bnez38 $r6,1860 <__sinit+0xd8>
+    1792:	bf 02       	lwi37 $r7,[$fp+#0x8]
+    1794:	44 00 17 42 	movi $r0,#0x1742
+    1798:	b8 89       	swi37 $r0,[$fp+#0x24]
+    179a:	84 03       	movi55 $r0,#0x3
+    179c:	b8 84       	swi37 $r0,[$fp+#0x10]
+    179e:	84 04       	movi55 $r0,#0x4
+    17a0:	bf 85       	swi37 $r7,[$fp+#0x14]
+    17a2:	ac 3e       	shi333 $r0,[$r7+#0xc]
+    17a4:	be 83       	swi37 $r6,[$fp+#0xc]
+    17a6:	a9 b9       	swi333 $r6,[$r7+#0x4]
+    17a8:	b6 c7       	swi450 $r6,[$r7]
+    17aa:	a9 ba       	swi333 $r6,[$r7+#0x8]
+    17ac:	14 63 80 19 	swi $r6,[$r7+#0x64]
+    17b0:	ad bf       	shi333 $r6,[$r7+#0xe]
+    17b2:	a9 bc       	swi333 $r6,[$r7+#0x10]
+    17b4:	a9 bd       	swi333 $r6,[$r7+#0x14]
+    17b6:	a9 be       	swi333 $r6,[$r7+#0x18]
+    17b8:	50 03 80 5c 	addi $r0,$r7,#0x5c
+    17bc:	80 26       	mov55 $r1,$r6
+    17be:	84 48       	movi55 $r2,#0x8
+    17c0:	49 ff f9 f2 	jal ba4 <memset>
+    17c4:	44 80 1f 16 	movi $r8,#0x1f16
+    17c8:	44 30 1e ec 	movi $r3,#0x1eec
+    17cc:	44 a0 1f 4e 	movi $r10,#0x1f4e
+    17d0:	44 90 1f 76 	movi $r9,#0x1f76
+    17d4:	14 33 80 08 	swi $r3,[$r7+#0x20]
+    17d8:	a9 ff       	swi333 $r7,[$r7+#0x1c]
+    17da:	14 83 80 09 	swi $r8,[$r7+#0x24]
+    17de:	14 a3 80 0a 	swi $r10,[$r7+#0x28]
+    17e2:	14 93 80 0b 	swi $r9,[$r7+#0x2c]
+    17e6:	bf 01       	lwi37 $r7,[$fp+#0x4]
+    17e8:	84 09       	movi55 $r0,#0x9
+    17ea:	80 26       	mov55 $r1,$r6
+    17ec:	ac 3e       	shi333 $r0,[$r7+#0xc]
+    17ee:	84 01       	movi55 $r0,#0x1
+    17f0:	ac 3f       	shi333 $r0,[$r7+#0xe]
+    17f2:	b6 c7       	swi450 $r6,[$r7]
+    17f4:	a9 b9       	swi333 $r6,[$r7+#0x4]
+    17f6:	a9 ba       	swi333 $r6,[$r7+#0x8]
+    17f8:	14 63 80 19 	swi $r6,[$r7+#0x64]
+    17fc:	a9 bc       	swi333 $r6,[$r7+#0x10]
+    17fe:	a9 bd       	swi333 $r6,[$r7+#0x14]
+    1800:	a9 be       	swi333 $r6,[$r7+#0x18]
+    1802:	50 03 80 5c 	addi $r0,$r7,#0x5c
+    1806:	84 48       	movi55 $r2,#0x8
+    1808:	f3 81       	swi37.sp $r3,[+#0x4]
+    180a:	49 ff f9 cd 	jal ba4 <memset>
+    180e:	f3 01       	lwi37.sp $r3,[+#0x4]
+    1810:	a9 ff       	swi333 $r7,[$r7+#0x1c]
+    1812:	14 33 80 08 	swi $r3,[$r7+#0x20]
+    1816:	14 83 80 09 	swi $r8,[$r7+#0x24]
+    181a:	14 a3 80 0a 	swi $r10,[$r7+#0x28]
+    181e:	14 93 80 0b 	swi $r9,[$r7+#0x2c]
+    1822:	bf 00       	lwi37 $r7,[$fp+#0x0]
+    1824:	fa 02       	movpi45 $r0,#0x12
+    1826:	80 26       	mov55 $r1,$r6
+    1828:	ac 3e       	shi333 $r0,[$r7+#0xc]
+    182a:	84 02       	movi55 $r0,#0x2
+    182c:	ac 3f       	shi333 $r0,[$r7+#0xe]
+    182e:	b6 c7       	swi450 $r6,[$r7]
+    1830:	a9 b9       	swi333 $r6,[$r7+#0x4]
+    1832:	a9 ba       	swi333 $r6,[$r7+#0x8]
+    1834:	14 63 80 19 	swi $r6,[$r7+#0x64]
+    1838:	a9 bc       	swi333 $r6,[$r7+#0x10]
+    183a:	a9 bd       	swi333 $r6,[$r7+#0x14]
+    183c:	a9 be       	swi333 $r6,[$r7+#0x18]
+    183e:	50 03 80 5c 	addi $r0,$r7,#0x5c
+    1842:	84 48       	movi55 $r2,#0x8
+    1844:	49 ff f9 b0 	jal ba4 <memset>
+    1848:	f3 01       	lwi37.sp $r3,[+#0x4]
+    184a:	84 01       	movi55 $r0,#0x1
+    184c:	a9 ff       	swi333 $r7,[$r7+#0x1c]
+    184e:	14 33 80 08 	swi $r3,[$r7+#0x20]
+    1852:	14 83 80 09 	swi $r8,[$r7+#0x24]
+    1856:	14 a3 80 0a 	swi $r10,[$r7+#0x28]
+    185a:	14 93 80 0b 	swi $r9,[$r7+#0x2c]
+    185e:	b8 8a       	swi37 $r0,[$fp+#0x28]
+    1860:	fc c1       	pop25 $r10,#8    ! {$r6~$r10, $fp, $gp, $lp}
+
+00001862 <__sfp>:
+    1862:	fc 41       	push25 $r10,#8    ! {$r6~$r10, $fp, $gp, $lp}
+    1864:	f0 81       	swi37.sp $r0,[+#0x4]
+    1866:	3c 0d ff e2 	lwi.gp $r0,[+#-120]
+    186a:	c8 03       	bnez38 $r0,1870 <__sfp+0xe>
+    186c:	49 ff ff 8e 	jal 1788 <__sinit>
+    1870:	3e 9f ff 6c 	addi.gp $r9,#-148
+    1874:	80 29       	mov55 $r1,$r9
+    1876:	a1 8a       	lwi333 $r6,[$r1+#0x8]
+    1878:	a0 09       	lwi333 $r0,[$r1+#0x4]
+    187a:	8e 01       	subi45 $r0,#0x1
+    187c:	4e 05 00 08 	bltz $r0,188c <__sfp+0x2a>
+    1880:	22 73 00 06 	lhsi $r7,[$r6+#0xc]
+    1884:	c7 12       	beqz38 $r7,18a8 <__sfp+0x46>
+    1886:	50 63 00 68 	addi $r6,$r6,#0x68
+    188a:	d5 f8       	j8 187a <__sfp+0x18>
+    188c:	b4 09       	lwi450 $r0,[$r9]
+    188e:	c8 07       	bnez38 $r0,189c <__sfp+0x3a>
+    1890:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1892:	84 24       	movi55 $r1,#0x4
+    1894:	49 ff ff 5d 	jal 174e <__sfmoreglue>
+    1898:	b6 09       	swi450 $r0,[$r9]
+    189a:	c0 03       	beqz38 $r0,18a0 <__sfp+0x3e>
+    189c:	b5 29       	lwi450 $r9,[$r9]
+    189e:	d5 eb       	j8 1874 <__sfp+0x12>
+    18a0:	84 2c       	movi55 $r1,#0xc
+    18a2:	3c 1f ff e3 	swi.gp $r1,[+#-116]
+    18a6:	d5 18       	j8 18d6 <__sfp+0x74>
+    18a8:	83 86       	mov55 $fp,$r6
+    18aa:	84 1f       	movi55 $r0,#-1
+    18ac:	ac 37       	shi333 $r0,[$r6+#0xe]
+    18ae:	84 01       	movi55 $r0,#0x1
+    18b0:	ac 36       	shi333 $r0,[$r6+#0xc]
+    18b2:	80 27       	mov55 $r1,$r7
+    18b4:	bf 99       	swi37 $r7,[$fp+#0x64]
+    18b6:	50 03 00 5c 	addi $r0,$r6,#0x5c
+    18ba:	b6 e6       	swi450 $r7,[$r6]
+    18bc:	a9 f2       	swi333 $r7,[$r6+#0x8]
+    18be:	a9 f1       	swi333 $r7,[$r6+#0x4]
+    18c0:	a9 f4       	swi333 $r7,[$r6+#0x10]
+    18c2:	a9 f5       	swi333 $r7,[$r6+#0x14]
+    18c4:	a9 f6       	swi333 $r7,[$r6+#0x18]
+    18c6:	84 48       	movi55 $r2,#0x8
+    18c8:	49 ff f9 6e 	jal ba4 <memset>
+    18cc:	bf 8c       	swi37 $r7,[$fp+#0x30]
+    18ce:	bf 8d       	swi37 $r7,[$fp+#0x34]
+    18d0:	bf 91       	swi37 $r7,[$fp+#0x44]
+    18d2:	bf 92       	swi37 $r7,[$fp+#0x48]
+    18d4:	80 06       	mov55 $r0,$r6
+    18d6:	fc c1       	pop25 $r10,#8    ! {$r6~$r10, $fp, $gp, $lp}
+
+000018d8 <__sfp_lock_acquire>:
+    18d8:	dd 9e       	ret5 $lp
+
+000018da <__sfp_lock_release>:
+    18da:	dd 9e       	ret5 $lp
+
+000018dc <__sinit_lock_acquire>:
+    18dc:	dd 9e       	ret5 $lp
+
+000018de <__sinit_lock_release>:
+    18de:	dd 9e       	ret5 $lp
+
+000018e0 <__fp_lock_all>:
+    18e0:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    18e2:	44 10 17 3a 	movi $r1,#0x173a
+    18e6:	84 00       	movi55 $r0,#0x0
+    18e8:	49 00 01 74 	jal 1bd0 <_fwalk>
+    18ec:	fc 80       	pop25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+
+000018ee <__fp_unlock_all>:
+    18ee:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    18f0:	44 10 17 3e 	movi $r1,#0x173e
+    18f4:	84 00       	movi55 $r0,#0x0
+    18f6:	49 00 01 6d 	jal 1bd0 <_fwalk>
+    18fa:	fc 80       	pop25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+
+000018fc <__sfvwrite_r>:
+    18fc:	a0 d2       	lwi333 $r3,[$r2+#0x8]
+    18fe:	4e 32 01 67 	beqz $r3,1bcc <__sfvwrite_r+0x2d0>
+    1902:	fc 42       	push25 $r10,#16    ! {$r6~$r10, $fp, $gp, $lp}
+    1904:	b6 1f       	swi450 $r0,[$sp]
+    1906:	a4 0e       	lhi333 $r0,[$r1+#0xc]
+    1908:	f2 81       	swi37.sp $r2,[+#0x4]
+    190a:	96 1e       	bmski33 $r0,#0x3
+    190c:	81 41       	mov55 $r10,$r1
+    190e:	c0 12       	beqz38 $r0,1932 <__sfvwrite_r+0x36>
+    1910:	a0 0c       	lwi333 $r0,[$r1+#0x10]
+    1912:	c0 10       	beqz38 $r0,1932 <__sfvwrite_r+0x36>
+    1914:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1916:	02 65 00 06 	lhi $r6,[$r10+#0xc]
+    191a:	b5 20       	lwi450 $r9,[$r0]
+    191c:	54 03 00 02 	andi $r0,$r6,#0x2
+    1920:	96 01       	zeh33 $r0,$r0
+    1922:	c0 53       	beqz38 $r0,19c8 <__sfvwrite_r+0xcc>
+    1924:	84 e0       	movi55 $r7,#0x0
+    1926:	46 87 ff ff 	sethi $r8,#0x7ffff
+    192a:	80 c7       	mov55 $r6,$r7
+    192c:	50 84 0c 00 	addi $r8,$r8,#0xc00
+    1930:	d5 1c       	j8 1968 <__sfvwrite_r+0x6c>
+    1932:	b4 1f       	lwi450 $r0,[$sp]
+    1934:	80 2a       	mov55 $r1,$r10
+    1936:	49 ff fd f0 	jal 1516 <__swsetup_r>
+    193a:	c0 ed       	beqz38 $r0,1914 <__sfvwrite_r+0x18>
+    193c:	48 00 01 46 	j 1bc8 <__sfvwrite_r+0x2cc>
+    1940:	83 8a       	mov55 $fp,$r10
+    1942:	e3 06       	slt45 $r8,$r6
+    1944:	bd 09       	lwi37 $r5,[$fp+#0x24]
+    1946:	80 68       	mov55 $r3,$r8
+    1948:	b4 1f       	lwi450 $r0,[$sp]
+    194a:	b9 07       	lwi37 $r1,[$fp+#0x1c]
+    194c:	80 47       	mov55 $r2,$r7
+    194e:	40 33 3c 1a 	cmovz $r3,$r6,$r15
+    1952:	dd 25       	jral5 $r5
+    1954:	4e 07 01 34 	blez $r0,1bbc <__sfvwrite_r+0x2c0>
+    1958:	f1 01       	lwi37.sp $r1,[+#0x4]
+    195a:	88 e0       	add45 $r7,$r0
+    195c:	8a c0       	sub45 $r6,$r0
+    195e:	a0 4a       	lwi333 $r1,[$r1+#0x8]
+    1960:	9a 08       	sub333 $r0,$r1,$r0
+    1962:	f1 01       	lwi37.sp $r1,[+#0x4]
+    1964:	a8 0a       	swi333 $r0,[$r1+#0x8]
+    1966:	c0 2e       	beqz38 $r0,19c2 <__sfvwrite_r+0xc6>
+    1968:	ce ec       	bnez38 $r6,1940 <__sfvwrite_r+0x44>
+    196a:	b4 e9       	lwi450 $r7,[$r9]
+    196c:	04 64 80 01 	lwi $r6,[$r9+#0x4]
+    1970:	8d 28       	addi45 $r9,#0x8
+    1972:	d5 fb       	j8 1968 <__sfvwrite_r+0x6c>
+    1974:	02 45 00 06 	lhi $r4,[$r10+#0xc]
+    1978:	04 35 00 02 	lwi $r3,[$r10+#0x8]
+    197c:	54 02 02 00 	andi $r0,$r4,#0x200
+    1980:	4e 02 00 85 	beqz $r0,1a8a <__sfvwrite_r+0x18e>
+    1984:	e3 03       	slt45 $r8,$r3
+    1986:	4e f3 00 80 	bnez $r15,1a86 <__sfvwrite_r+0x18a>
+    198a:	54 02 04 80 	andi $r0,$r4,#0x480
+    198e:	c8 32       	bnez38 $r0,19f2 <__sfvwrite_r+0xf6>
+    1990:	e3 03       	slt45 $r8,$r3
+    1992:	e9 7a       	bnezs8 1a86 <__sfvwrite_r+0x18a>
+    1994:	80 26       	mov55 $r1,$r6
+    1996:	80 43       	mov55 $r2,$r3
+    1998:	b4 0a       	lwi450 $r0,[$r10]
+    199a:	f3 83       	swi37.sp $r3,[+#0xc]
+    199c:	49 00 01 d2 	jal 1d40 <memmove>
+    19a0:	80 2a       	mov55 $r1,$r10
+    19a2:	f3 03       	lwi37.sp $r3,[+#0xc]
+    19a4:	a0 0a       	lwi333 $r0,[$r1+#0x8]
+    19a6:	b4 ea       	lwi450 $r7,[$r10]
+    19a8:	8a 03       	sub45 $r0,$r3
+    19aa:	88 e3       	add45 $r7,$r3
+    19ac:	a8 0a       	swi333 $r0,[$r1+#0x8]
+    19ae:	b6 ea       	swi450 $r7,[$r10]
+    19b0:	80 e8       	mov55 $r7,$r8
+    19b2:	f0 01       	lwi37.sp $r0,[+#0x4]
+    19b4:	88 c7       	add45 $r6,$r7
+    19b6:	8b 07       	sub45 $r8,$r7
+    19b8:	a0 02       	lwi333 $r0,[$r0+#0x8]
+    19ba:	9b c7       	sub333 $r7,$r0,$r7
+    19bc:	f0 01       	lwi37.sp $r0,[+#0x4]
+    19be:	a9 c2       	swi333 $r7,[$r0+#0x8]
+    19c0:	cf 12       	bnez38 $r7,19e4 <__sfvwrite_r+0xe8>
+    19c2:	84 00       	movi55 $r0,#0x0
+    19c4:	48 00 01 03 	j 1bca <__sfvwrite_r+0x2ce>
+    19c8:	97 86       	bmski33 $r6,#0x0
+    19ca:	c6 07       	beqz38 $r6,19d8 <__sfvwrite_r+0xdc>
+    19cc:	83 80       	mov55 $fp,$r0
+    19ce:	f0 82       	swi37.sp $r0,[+#0x8]
+    19d0:	80 e0       	mov55 $r7,$r0
+    19d2:	80 c0       	mov55 $r6,$r0
+    19d4:	48 00 00 b8 	j 1b44 <__sfvwrite_r+0x248>
+    19d8:	47 c7 ff ff 	sethi $fp,#0x7ffff
+    19dc:	50 0e 0f ff 	addi $r0,$fp,#0xfff
+    19e0:	81 06       	mov55 $r8,$r6
+    19e2:	f0 82       	swi37.sp $r0,[+#0x8]
+    19e4:	4e 83 ff c8 	bnez $r8,1974 <__sfvwrite_r+0x78>
+    19e8:	b4 c9       	lwi450 $r6,[$r9]
+    19ea:	04 84 80 01 	lwi $r8,[$r9+#0x4]
+    19ee:	8d 28       	addi45 $r9,#0x8
+    19f0:	d5 fa       	j8 19e4 <__sfvwrite_r+0xe8>
+    19f2:	80 6a       	mov55 $r3,$r10
+    19f4:	b4 0a       	lwi450 $r0,[$r10]
+    19f6:	a0 5c       	lwi333 $r1,[$r3+#0x10]
+    19f8:	a0 9d       	lwi333 $r2,[$r3+#0x14]
+    19fa:	41 c0 04 01 	sub $fp,$r0,$r1
+    19fe:	84 03       	movi55 $r0,#0x3
+    1a00:	84 e2       	movi55 $r7,#0x2
+    1a02:	fe 84       	mul33 $r2,$r0
+    1a04:	40 01 1c 16 	divsr $r0,$r0,$r2,$r7
+    1a08:	50 7e 00 01 	addi $r7,$fp,#0x1
+    1a0c:	88 e8       	add45 $r7,$r8
+    1a0e:	e2 07       	slt45 $r0,$r7
+    1a10:	40 70 3c 1a 	cmovz $r7,$r0,$r15
+    1a14:	54 02 04 00 	andi $r0,$r4,#0x400
+    1a18:	c0 17       	beqz38 $r0,1a46 <__sfvwrite_r+0x14a>
+    1a1a:	b4 1f       	lwi450 $r0,[$sp]
+    1a1c:	80 27       	mov55 $r1,$r7
+    1a1e:	49 00 01 e1 	jal 1de0 <_malloc_r>
+    1a22:	c0 24       	beqz38 $r0,1a6a <__sfvwrite_r+0x16e>
+    1a24:	04 15 00 04 	lwi $r1,[$r10+#0x10]
+    1a28:	80 5c       	mov55 $r2,$fp
+    1a2a:	f0 83       	swi37.sp $r0,[+#0xc]
+    1a2c:	49 ff f8 b2 	jal b90 <memcpy>
+    1a30:	02 15 00 06 	lhi $r1,[$r10+#0xc]
+    1a34:	44 0f fb 7f 	movi $r0,#-1153
+    1a38:	fe 0e       	and33 $r0,$r1
+    1a3a:	58 00 00 80 	ori $r0,$r0,#0x80
+    1a3e:	12 05 00 06 	shi $r0,[$r10+#0xc]
+    1a42:	f3 03       	lwi37.sp $r3,[+#0xc]
+    1a44:	d5 18       	j8 1a74 <__sfvwrite_r+0x178>
+    1a46:	b4 1f       	lwi450 $r0,[$sp]
+    1a48:	80 47       	mov55 $r2,$r7
+    1a4a:	49 00 02 1e 	jal 1e86 <_realloc_r>
+    1a4e:	80 60       	mov55 $r3,$r0
+    1a50:	c8 12       	bnez38 $r0,1a74 <__sfvwrite_r+0x178>
+    1a52:	b4 1f       	lwi450 $r0,[$sp]
+    1a54:	04 15 00 04 	lwi $r1,[$r10+#0x10]
+    1a58:	49 00 01 8a 	jal 1d6c <_free_r>
+    1a5c:	02 15 00 06 	lhi $r1,[$r10+#0xc]
+    1a60:	44 0f ff 7f 	movi $r0,#-129
+    1a64:	fe 0e       	and33 $r0,$r1
+    1a66:	12 05 00 06 	shi $r0,[$r10+#0xc]
+    1a6a:	84 0c       	movi55 $r0,#0xc
+    1a6c:	3c 0f ff e3 	swi.gp $r0,[+#-116]
+    1a70:	48 00 00 a6 	j 1bbc <__sfvwrite_r+0x2c0>
+    1a74:	80 0a       	mov55 $r0,$r10
+    1a76:	a8 c4       	swi333 $r3,[$r0+#0x10]
+    1a78:	88 7c       	add45 $r3,$fp
+    1a7a:	b6 6a       	swi450 $r3,[$r10]
+    1a7c:	a9 c5       	swi333 $r7,[$r0+#0x14]
+    1a7e:	8a fc       	sub45 $r7,$fp
+    1a80:	80 68       	mov55 $r3,$r8
+    1a82:	a9 c2       	swi333 $r7,[$r0+#0x8]
+    1a84:	d5 86       	j8 1990 <__sfvwrite_r+0x94>
+    1a86:	80 68       	mov55 $r3,$r8
+    1a88:	d5 86       	j8 1994 <__sfvwrite_r+0x98>
+    1a8a:	b4 0a       	lwi450 $r0,[$r10]
+    1a8c:	04 15 00 04 	lwi $r1,[$r10+#0x10]
+    1a90:	e2 20       	slt45 $r1,$r0
+    1a92:	e9 05       	bnezs8 1a9c <__sfvwrite_r+0x1a0>
+    1a94:	04 75 00 05 	lwi $r7,[$r10+#0x14]
+    1a98:	e3 07       	slt45 $r8,$r7
+    1a9a:	e8 19       	beqzs8 1acc <__sfvwrite_r+0x1d0>
+    1a9c:	e2 68       	slt45 $r3,$r8
+    1a9e:	40 34 3c 1a 	cmovz $r3,$r8,$r15
+    1aa2:	80 26       	mov55 $r1,$r6
+    1aa4:	80 43       	mov55 $r2,$r3
+    1aa6:	80 e3       	mov55 $r7,$r3
+    1aa8:	49 00 01 4c 	jal 1d40 <memmove>
+    1aac:	80 2a       	mov55 $r1,$r10
+    1aae:	a0 0a       	lwi333 $r0,[$r1+#0x8]
+    1ab0:	8a 07       	sub45 $r0,$r7
+    1ab2:	a8 0a       	swi333 $r0,[$r1+#0x8]
+    1ab4:	b4 2a       	lwi450 $r1,[$r10]
+    1ab6:	88 27       	add45 $r1,$r7
+    1ab8:	b6 2a       	swi450 $r1,[$r10]
+    1aba:	4e 03 ff 7c 	bnez $r0,19b2 <__sfvwrite_r+0xb6>
+    1abe:	b4 1f       	lwi450 $r0,[$sp]
+    1ac0:	80 2a       	mov55 $r1,$r10
+    1ac2:	49 ff fe 1c 	jal 16fa <_fflush_r>
+    1ac6:	4e 02 ff 76 	beqz $r0,19b2 <__sfvwrite_r+0xb6>
+    1aca:	d5 79       	j8 1bbc <__sfvwrite_r+0x2c0>
+    1acc:	f0 02       	lwi37.sp $r0,[+#0x8]
+    1ace:	83 8a       	mov55 $fp,$r10
+    1ad0:	e2 08       	slt45 $r0,$r8
+    1ad2:	40 04 3c 1a 	cmovz $r0,$r8,$r15
+    1ad6:	bc 09       	lwi37 $r4,[$fp+#0x24]
+    1ad8:	40 30 1c 76 	divsr $r3,$r3,$r0,$r7
+    1adc:	fe fc       	mul33 $r3,$r7
+    1ade:	b4 1f       	lwi450 $r0,[$sp]
+    1ae0:	b9 07       	lwi37 $r1,[$fp+#0x1c]
+    1ae2:	80 46       	mov55 $r2,$r6
+    1ae4:	dd 24       	jral5 $r4
+    1ae6:	80 e0       	mov55 $r7,$r0
+    1ae8:	4e 06 ff 65 	bgtz $r0,19b2 <__sfvwrite_r+0xb6>
+    1aec:	d5 68       	j8 1bbc <__sfvwrite_r+0x2c0>
+    1aee:	f0 02       	lwi37.sp $r0,[+#0x8]
+    1af0:	c0 32       	beqz38 $r0,1b54 <__sfvwrite_r+0x258>
+    1af2:	80 4a       	mov55 $r2,$r10
+    1af4:	b4 0a       	lwi450 $r0,[$r10]
+    1af6:	a0 54       	lwi333 $r1,[$r2+#0x10]
+    1af8:	e2 dc       	slt45 $r6,$fp
+    1afa:	80 66       	mov55 $r3,$r6
+    1afc:	40 3e 3c 1a 	cmovz $r3,$fp,$r15
+    1b00:	e2 20       	slt45 $r1,$r0
+    1b02:	a1 52       	lwi333 $r5,[$r2+#0x8]
+    1b04:	a1 15       	lwi333 $r4,[$r2+#0x14]
+    1b06:	e8 36       	beqzs8 1b72 <__sfvwrite_r+0x276>
+    1b08:	40 82 90 00 	add $r8,$r5,$r4
+    1b0c:	e1 03       	slts45 $r8,$r3
+    1b0e:	e8 32       	beqzs8 1b72 <__sfvwrite_r+0x276>
+    1b10:	80 27       	mov55 $r1,$r7
+    1b12:	80 48       	mov55 $r2,$r8
+    1b14:	49 00 01 16 	jal 1d40 <memmove>
+    1b18:	b4 0a       	lwi450 $r0,[$r10]
+    1b1a:	80 2a       	mov55 $r1,$r10
+    1b1c:	88 08       	add45 $r0,$r8
+    1b1e:	b6 0a       	swi450 $r0,[$r10]
+    1b20:	b4 1f       	lwi450 $r0,[$sp]
+    1b22:	49 ff fd ec 	jal 16fa <_fflush_r>
+    1b26:	c8 4b       	bnez38 $r0,1bbc <__sfvwrite_r+0x2c0>
+    1b28:	41 ce 20 01 	sub $fp,$fp,$r8
+    1b2c:	4f c2 00 40 	beqz $fp,1bac <__sfvwrite_r+0x2b0>
+    1b30:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1b32:	88 e8       	add45 $r7,$r8
+    1b34:	8a c8       	sub45 $r6,$r8
+    1b36:	a0 02       	lwi333 $r0,[$r0+#0x8]
+    1b38:	40 50 20 01 	sub $r5,$r0,$r8
+    1b3c:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1b3e:	a9 42       	swi333 $r5,[$r0+#0x8]
+    1b40:	4e 52 ff 41 	beqz $r5,19c2 <__sfvwrite_r+0xc6>
+    1b44:	ce d5       	bnez38 $r6,1aee <__sfvwrite_r+0x1f2>
+    1b46:	84 00       	movi55 $r0,#0x0
+    1b48:	b4 e9       	lwi450 $r7,[$r9]
+    1b4a:	04 64 80 01 	lwi $r6,[$r9+#0x4]
+    1b4e:	f0 82       	swi37.sp $r0,[+#0x8]
+    1b50:	8d 28       	addi45 $r9,#0x8
+    1b52:	d5 f9       	j8 1b44 <__sfvwrite_r+0x248>
+    1b54:	80 07       	mov55 $r0,$r7
+    1b56:	84 2a       	movi55 $r1,#0xa
+    1b58:	80 46       	mov55 $r2,$r6
+    1b5a:	49 00 00 e7 	jal 1d28 <memchr>
+    1b5e:	c0 05       	beqz38 $r0,1b68 <__sfvwrite_r+0x26c>
+    1b60:	8c 01       	addi45 $r0,#0x1
+    1b62:	41 c0 1c 01 	sub $fp,$r0,$r7
+    1b66:	d5 03       	j8 1b6c <__sfvwrite_r+0x270>
+    1b68:	51 c3 00 01 	addi $fp,$r6,#0x1
+    1b6c:	84 01       	movi55 $r0,#0x1
+    1b6e:	f0 82       	swi37.sp $r0,[+#0x8]
+    1b70:	d5 c1       	j8 1af2 <__sfvwrite_r+0x1f6>
+    1b72:	e0 64       	slts45 $r3,$r4
+    1b74:	e9 0d       	bnezs8 1b8e <__sfvwrite_r+0x292>
+    1b76:	04 55 00 09 	lwi $r5,[$r10+#0x24]
+    1b7a:	b4 1f       	lwi450 $r0,[$sp]
+    1b7c:	04 15 00 07 	lwi $r1,[$r10+#0x1c]
+    1b80:	80 47       	mov55 $r2,$r7
+    1b82:	80 64       	mov55 $r3,$r4
+    1b84:	dd 25       	jral5 $r5
+    1b86:	81 00       	mov55 $r8,$r0
+    1b88:	4e 06 ff d0 	bgtz $r0,1b28 <__sfvwrite_r+0x22c>
+    1b8c:	d5 18       	j8 1bbc <__sfvwrite_r+0x2c0>
+    1b8e:	80 27       	mov55 $r1,$r7
+    1b90:	80 43       	mov55 $r2,$r3
+    1b92:	f3 83       	swi37.sp $r3,[+#0xc]
+    1b94:	49 00 00 d6 	jal 1d40 <memmove>
+    1b98:	80 2a       	mov55 $r1,$r10
+    1b9a:	f3 03       	lwi37.sp $r3,[+#0xc]
+    1b9c:	a0 0a       	lwi333 $r0,[$r1+#0x8]
+    1b9e:	81 03       	mov55 $r8,$r3
+    1ba0:	8a 03       	sub45 $r0,$r3
+    1ba2:	a8 0a       	swi333 $r0,[$r1+#0x8]
+    1ba4:	b4 0a       	lwi450 $r0,[$r10]
+    1ba6:	88 03       	add45 $r0,$r3
+    1ba8:	b6 0a       	swi450 $r0,[$r10]
+    1baa:	d5 bf       	j8 1b28 <__sfvwrite_r+0x22c>
+    1bac:	b4 1f       	lwi450 $r0,[$sp]
+    1bae:	80 2a       	mov55 $r1,$r10
+    1bb0:	49 ff fd a5 	jal 16fa <_fflush_r>
+    1bb4:	c8 04       	bnez38 $r0,1bbc <__sfvwrite_r+0x2c0>
+    1bb6:	15 cf 80 02 	swi $fp,[$sp+#0x8]
+    1bba:	d5 bb       	j8 1b30 <__sfvwrite_r+0x234>
+    1bbc:	02 05 00 06 	lhi $r0,[$r10+#0xc]
+    1bc0:	58 00 00 40 	ori $r0,$r0,#0x40
+    1bc4:	12 05 00 06 	shi $r0,[$r10+#0xc]
+    1bc8:	84 1f       	movi55 $r0,#-1
+    1bca:	fc c2       	pop25 $r10,#16    ! {$r6~$r10, $fp, $gp, $lp}
+    1bcc:	84 00       	movi55 $r0,#0x0
+    1bce:	dd 9e       	ret5 $lp
+
+00001bd0 <_fwalk>:
+    1bd0:	fc 40       	push25 $r10,#0    ! {$r6~$r10, $fp, $gp, $lp}
+    1bd2:	3e 6f ff 6c 	addi.gp $r6,#-148
+    1bd6:	81 01       	mov55 $r8,$r1
+    1bd8:	85 20       	movi55 $r9,#0x0
+    1bda:	a1 f2       	lwi333 $r7,[$r6+#0x8]
+    1bdc:	04 a3 00 01 	lwi $r10,[$r6+#0x4]
+    1be0:	8f 41       	subi45 $r10,#0x1
+    1be2:	4e a5 00 10 	bltz $r10,1c02 <_fwalk+0x32>
+    1be6:	a4 3e       	lhi333 $r0,[$r7+#0xc]
+    1be8:	e6 02       	slti45 $r0,#0x2
+    1bea:	e9 09       	bnezs8 1bfc <_fwalk+0x2c>
+    1bec:	22 03 80 07 	lhsi $r0,[$r7+#0xe]
+    1bf0:	5a 07 ff 06 	beqc $r0,#-1,1bfc <_fwalk+0x2c>
+    1bf4:	80 07       	mov55 $r0,$r7
+    1bf6:	dd 28       	jral5 $r8
+    1bf8:	40 94 80 04 	or $r9,$r9,$r0
+    1bfc:	50 73 80 68 	addi $r7,$r7,#0x68
+    1c00:	d5 f0       	j8 1be0 <_fwalk+0x10>
+    1c02:	b4 c6       	lwi450 $r6,[$r6]
+    1c04:	ce eb       	bnez38 $r6,1bda <_fwalk+0xa>
+    1c06:	80 09       	mov55 $r0,$r9
+    1c08:	fc c0       	pop25 $r10,#0    ! {$r6~$r10, $fp, $gp, $lp}
+
+00001c0a <_fwalk_reent>:
+    1c0a:	fc 41       	push25 $r10,#8    ! {$r6~$r10, $fp, $gp, $lp}
+    1c0c:	3e 6f ff 6c 	addi.gp $r6,#-148
+    1c10:	f0 81       	swi37.sp $r0,[+#0x4]
+    1c12:	81 01       	mov55 $r8,$r1
+    1c14:	85 20       	movi55 $r9,#0x0
+    1c16:	a1 f2       	lwi333 $r7,[$r6+#0x8]
+    1c18:	04 a3 00 01 	lwi $r10,[$r6+#0x4]
+    1c1c:	8f 41       	subi45 $r10,#0x1
+    1c1e:	4e a5 00 11 	bltz $r10,1c40 <_fwalk_reent+0x36>
+    1c22:	a4 3e       	lhi333 $r0,[$r7+#0xc]
+    1c24:	e6 02       	slti45 $r0,#0x2
+    1c26:	e9 0a       	bnezs8 1c3a <_fwalk_reent+0x30>
+    1c28:	22 03 80 07 	lhsi $r0,[$r7+#0xe]
+    1c2c:	5a 07 ff 07 	beqc $r0,#-1,1c3a <_fwalk_reent+0x30>
+    1c30:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1c32:	80 27       	mov55 $r1,$r7
+    1c34:	dd 28       	jral5 $r8
+    1c36:	40 94 80 04 	or $r9,$r9,$r0
+    1c3a:	50 73 80 68 	addi $r7,$r7,#0x68
+    1c3e:	d5 ef       	j8 1c1c <_fwalk_reent+0x12>
+    1c40:	b4 c6       	lwi450 $r6,[$r6]
+    1c42:	ce ea       	bnez38 $r6,1c16 <_fwalk_reent+0xc>
+    1c44:	80 09       	mov55 $r0,$r9
+    1c46:	fc c1       	pop25 $r10,#8    ! {$r6~$r10, $fp, $gp, $lp}
+
+00001c48 <__smakebuf_r>:
+    1c48:	a4 8e       	lhi333 $r2,[$r1+#0xc]
+    1c4a:	96 8e       	bmski33 $r2,#0x1
+    1c4c:	c2 08       	beqz38 $r2,1c5c <__smakebuf_r+0x14>
+    1c4e:	50 00 80 43 	addi $r0,$r1,#0x43
+    1c52:	b6 01       	swi450 $r0,[$r1]
+    1c54:	a8 0c       	swi333 $r0,[$r1+#0x10]
+    1c56:	84 01       	movi55 $r0,#0x1
+    1c58:	a8 0d       	swi333 $r0,[$r1+#0x14]
+    1c5a:	dd 9e       	ret5 $lp
+    1c5c:	fc 49       	push25 $r10,#72    ! {$r6~$r10, $fp, $gp, $lp}
+    1c5e:	80 c1       	mov55 $r6,$r1
+    1c60:	22 10 80 07 	lhsi $r1,[$r1+#0xe]
+    1c64:	f0 81       	swi37.sp $r0,[+#0x4]
+    1c66:	4e 14 00 0a 	bgez $r1,1c7a <__smakebuf_r+0x32>
+    1c6a:	22 03 00 06 	lhsi $r0,[$r6+#0xc]
+    1c6e:	54 10 00 80 	andi $r1,$r0,#0x80
+    1c72:	c9 0a       	bnez38 $r1,1c86 <__smakebuf_r+0x3e>
+    1c74:	44 70 04 00 	movi $r7,#0x400
+    1c78:	d5 09       	j8 1c8a <__smakebuf_r+0x42>
+    1c7a:	b0 83       	addri36.sp $r2,#0xc
+    1c7c:	49 00 01 f2 	jal 2060 <_fstat_r>
+    1c80:	4e 04 00 0a 	bgez $r0,1c94 <__smakebuf_r+0x4c>
+    1c84:	d5 f3       	j8 1c6a <__smakebuf_r+0x22>
+    1c86:	44 70 00 40 	movi $r7,#0x40
+    1c8a:	58 00 08 00 	ori $r0,$r0,#0x800
+    1c8e:	ac 36       	shi333 $r0,[$r6+#0xc]
+    1c90:	85 20       	movi55 $r9,#0x0
+    1c92:	d5 1f       	j8 1cd0 <__smakebuf_r+0x88>
+    1c94:	f5 04       	lwi37.sp $r5,[+#0x10]
+    1c96:	44 00 f0 00 	movi $r0,#0xf000
+    1c9a:	ff 46       	and33 $r5,$r0
+    1c9c:	50 92 e0 00 	addi $r9,$r5,#-8192
+    1ca0:	44 10 80 00 	movi $r1,#0x8000
+    1ca4:	5c 94 80 01 	slti $r9,$r9,#0x1
+    1ca8:	a4 36       	lhi333 $r0,[$r6+#0xc]
+    1caa:	d9 0e       	bnes38 $r1,1cc6 <__smakebuf_r+0x7e>
+    1cac:	04 53 00 0a 	lwi $r5,[$r6+#0x28]
+    1cb0:	44 10 1f 4e 	movi $r1,#0x1f4e
+    1cb4:	d9 09       	bnes38 $r1,1cc6 <__smakebuf_r+0x7e>
+    1cb6:	58 00 04 00 	ori $r0,$r0,#0x400
+    1cba:	44 70 04 00 	movi $r7,#0x400
+    1cbe:	ac 36       	shi333 $r0,[$r6+#0xc]
+    1cc0:	14 73 00 13 	swi $r7,[$r6+#0x4c]
+    1cc4:	d5 06       	j8 1cd0 <__smakebuf_r+0x88>
+    1cc6:	58 00 08 00 	ori $r0,$r0,#0x800
+    1cca:	ac 36       	shi333 $r0,[$r6+#0xc]
+    1ccc:	44 70 04 00 	movi $r7,#0x400
+    1cd0:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1cd2:	80 27       	mov55 $r1,$r7
+    1cd4:	49 00 00 86 	jal 1de0 <_malloc_r>
+    1cd8:	c8 10       	bnez38 $r0,1cf8 <__smakebuf_r+0xb0>
+    1cda:	22 03 00 06 	lhsi $r0,[$r6+#0xc]
+    1cde:	54 10 02 00 	andi $r1,$r0,#0x200
+    1ce2:	c9 22       	bnez38 $r1,1d26 <__smakebuf_r+0xde>
+    1ce4:	58 00 00 02 	ori $r0,$r0,#0x2
+    1ce8:	ac 36       	shi333 $r0,[$r6+#0xc]
+    1cea:	50 03 00 43 	addi $r0,$r6,#0x43
+    1cee:	b6 06       	swi450 $r0,[$r6]
+    1cf0:	a8 34       	swi333 $r0,[$r6+#0x10]
+    1cf2:	84 01       	movi55 $r0,#0x1
+    1cf4:	a8 35       	swi333 $r0,[$r6+#0x14]
+    1cf6:	d5 18       	j8 1d26 <__smakebuf_r+0xde>
+    1cf8:	44 10 17 42 	movi $r1,#0x1742
+    1cfc:	3c 1f ff e1 	swi.gp $r1,[+#-124]
+    1d00:	a4 76       	lhi333 $r1,[$r6+#0xc]
+    1d02:	b6 06       	swi450 $r0,[$r6]
+    1d04:	58 10 80 80 	ori $r1,$r1,#0x80
+    1d08:	ac 76       	shi333 $r1,[$r6+#0xc]
+    1d0a:	a8 34       	swi333 $r0,[$r6+#0x10]
+    1d0c:	a9 f5       	swi333 $r7,[$r6+#0x14]
+    1d0e:	4e 92 00 0c 	beqz $r9,1d26 <__smakebuf_r+0xde>
+    1d12:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1d14:	22 13 00 07 	lhsi $r1,[$r6+#0xe]
+    1d18:	49 00 01 b3 	jal 207e <_isatty_r>
+    1d1c:	c0 05       	beqz38 $r0,1d26 <__smakebuf_r+0xde>
+    1d1e:	a4 36       	lhi333 $r0,[$r6+#0xc]
+    1d20:	58 00 00 01 	ori $r0,$r0,#0x1
+    1d24:	ac 36       	shi333 $r0,[$r6+#0xc]
+    1d26:	fc c9       	pop25 $r10,#72    ! {$r6~$r10, $fp, $gp, $lp}
+
+00001d28 <memchr>:
+    1d28:	96 48       	zeb33 $r1,$r1
+    1d2a:	99 42       	add333 $r5,$r0,$r2
+    1d2c:	d0 07       	beqs38 $r0,1d3a <memchr+0x12>
+    1d2e:	08 40 00 01 	lbi.bi $r4,[$r0],#0x1
+    1d32:	4c 40 ff fd 	bne $r4,$r1,1d2c <memchr+0x4>
+    1d36:	9e 01       	subi333 $r0,$r0,#0x1
+    1d38:	dd 9e       	ret5 $lp
+    1d3a:	84 00       	movi55 $r0,#0x0
+    1d3c:	dd 9e       	ret5 $lp
+    1d3e:	92 00       	nop16
+
+00001d40 <memmove>:
+    1d40:	c2 14       	beqz38 $r2,1d68 <memmove+0x28>
+    1d42:	80 60       	mov55 $r3,$r0
+    1d44:	e2 20       	slt45 $r1,$r0
+    1d46:	e8 0b       	beqzs8 1d5c <memmove+0x1c>
+    1d48:	9e 91       	subi333 $r2,$r2,#0x1
+    1d4a:	98 da       	add333 $r3,$r3,$r2
+    1d4c:	99 4a       	add333 $r5,$r1,$r2
+    1d4e:	9e 49       	subi333 $r1,$r1,#0x1
+    1d50:	08 42 ff ff 	lbi.bi $r4,[$r5],#-1
+    1d54:	18 41 ff ff 	sbi.bi $r4,[$r3],#-1
+    1d58:	d9 fc       	bnes38 $r1,1d50 <memmove+0x10>
+    1d5a:	dd 9e       	ret5 $lp
+    1d5c:	99 4a       	add333 $r5,$r1,$r2
+    1d5e:	08 40 80 01 	lbi.bi $r4,[$r1],#0x1
+    1d62:	18 41 80 01 	sbi.bi $r4,[$r3],#0x1
+    1d66:	d9 fc       	bnes38 $r1,1d5e <memmove+0x1e>
+    1d68:	dd 9e       	ret5 $lp
+    1d6a:	92 00       	nop16
+
+00001d6c <_free_r>:
+    1d6c:	c1 39       	beqz38 $r1,1dde <_free_r+0x72>
+    1d6e:	9e 0c       	subi333 $r0,$r1,#0x4
+    1d70:	04 10 ff ff 	lwi $r1,[$r1+#-4]
+    1d74:	4e 14 00 03 	bgez $r1,1d7a <_free_r+0xe>
+    1d78:	88 01       	add45 $r0,$r1
+    1d7a:	3c 1d ff e6 	lwi.gp $r1,[+#-104]
+    1d7e:	c1 0a       	beqz38 $r1,1d92 <_free_r+0x26>
+    1d80:	e2 01       	slt45 $r0,$r1
+    1d82:	e8 0f       	beqzs8 1da0 <_free_r+0x34>
+    1d84:	b4 40       	lwi450 $r2,[$r0]
+    1d86:	99 42       	add333 $r5,$r0,$r2
+    1d88:	d9 05       	bnes38 $r1,1d92 <_free_r+0x26>
+    1d8a:	b4 25       	lwi450 $r1,[$r5]
+    1d8c:	88 22       	add45 $r1,$r2
+    1d8e:	b6 20       	swi450 $r1,[$r0]
+    1d90:	a0 69       	lwi333 $r1,[$r5+#0x4]
+    1d92:	a8 41       	swi333 $r1,[$r0+#0x4]
+    1d94:	3c 0f ff e6 	swi.gp $r0,[+#-104]
+    1d98:	dd 9e       	ret5 $lp
+    1d9a:	e2 02       	slt45 $r0,$r2
+    1d9c:	e9 04       	bnezs8 1da4 <_free_r+0x38>
+    1d9e:	80 22       	mov55 $r1,$r2
+    1da0:	a0 89       	lwi333 $r2,[$r1+#0x4]
+    1da2:	ca fc       	bnez38 $r2,1d9a <_free_r+0x2e>
+    1da4:	b4 61       	lwi450 $r3,[$r1]
+    1da6:	99 4b       	add333 $r5,$r1,$r3
+    1da8:	d8 0c       	bnes38 $r0,1dc0 <_free_r+0x54>
+    1daa:	b4 00       	lwi450 $r0,[$r0]
+    1dac:	80 a1       	mov55 $r5,$r1
+    1dae:	88 03       	add45 $r0,$r3
+    1db0:	38 02 80 0e 	sw.bi $r0,[$r5],$r0<<#0x0
+    1db4:	da 15       	bnes38 $r2,1dde <_free_r+0x72>
+    1db6:	b4 62       	lwi450 $r3,[$r2]
+    1db8:	88 03       	add45 $r0,$r3
+    1dba:	b6 01       	swi450 $r0,[$r1]
+    1dbc:	a0 11       	lwi333 $r0,[$r2+#0x4]
+    1dbe:	d5 0f       	j8 1ddc <_free_r+0x70>
+    1dc0:	e2 05       	slt45 $r0,$r5
+    1dc2:	e8 05       	beqzs8 1dcc <_free_r+0x60>
+    1dc4:	84 0c       	movi55 $r0,#0xc
+    1dc6:	3c 0f ff e3 	swi.gp $r0,[+#-116]
+    1dca:	dd 9e       	ret5 $lp
+    1dcc:	b4 80       	lwi450 $r4,[$r0]
+    1dce:	99 44       	add333 $r5,$r0,$r4
+    1dd0:	da 05       	bnes38 $r2,1dda <_free_r+0x6e>
+    1dd2:	b4 62       	lwi450 $r3,[$r2]
+    1dd4:	a0 91       	lwi333 $r2,[$r2+#0x4]
+    1dd6:	88 64       	add45 $r3,$r4
+    1dd8:	b6 60       	swi450 $r3,[$r0]
+    1dda:	a8 81       	swi333 $r2,[$r0+#0x4]
+    1ddc:	a8 09       	swi333 $r0,[$r1+#0x4]
+    1dde:	dd 9e       	ret5 $lp
+
+00001de0 <_malloc_r>:
+    1de0:	fc 21       	push25 $r8,#8    ! {$r6~$r8, $fp, $gp, $lp}
+    1de2:	3f cf ff 8c 	addi.gp $fp,#-116
+    1de6:	9d 8b       	addi333 $r6,$r1,#0x3
+    1de8:	84 5c       	movi55 $r2,#-4
+    1dea:	ff 96       	and33 $r6,$r2
+    1dec:	8c c8       	addi45 $r6,#0x8
+    1dee:	e6 cc       	slti45 $r6,#0xc
+    1df0:	e8 03       	beqzs8 1df6 <_malloc_r+0x16>
+    1df2:	84 cc       	movi55 $r6,#0xc
+    1df4:	d5 07       	j8 1e02 <_malloc_r+0x22>
+    1df6:	4e 64 00 06 	bgez $r6,1e02 <_malloc_r+0x22>
+    1dfa:	84 0c       	movi55 $r0,#0xc
+    1dfc:	b8 80       	swi37 $r0,[$fp+#0x0]
+    1dfe:	84 00       	movi55 $r0,#0x0
+    1e00:	d5 42       	j8 1e84 <_malloc_r+0xa4>
+    1e02:	e2 c1       	slt45 $r6,$r1
+    1e04:	e9 fb       	bnezs8 1dfa <_malloc_r+0x1a>
+    1e06:	bd 03       	lwi37 $r5,[$fp+#0xc]
+    1e08:	80 25       	mov55 $r1,$r5
+    1e0a:	c1 16       	beqz38 $r1,1e36 <_malloc_r+0x56>
+    1e0c:	b4 41       	lwi450 $r2,[$r1]
+    1e0e:	8a 46       	sub45 $r2,$r6
+    1e10:	4e 25 00 10 	bltz $r2,1e30 <_malloc_r+0x50>
+    1e14:	e6 4c       	slti45 $r2,#0xc
+    1e16:	e9 05       	bnezs8 1e20 <_malloc_r+0x40>
+    1e18:	80 a1       	mov55 $r5,$r1
+    1e1a:	38 22 88 0e 	sw.bi $r2,[$r5],$r2<<#0x0
+    1e1e:	d5 1f       	j8 1e5c <_malloc_r+0x7c>
+    1e20:	d9 04       	bnes38 $r1,1e28 <_malloc_r+0x48>
+    1e22:	a0 29       	lwi333 $r0,[$r5+#0x4]
+    1e24:	b8 83       	swi37 $r0,[$fp+#0xc]
+    1e26:	d5 1c       	j8 1e5e <_malloc_r+0x7e>
+    1e28:	a0 09       	lwi333 $r0,[$r1+#0x4]
+    1e2a:	a8 29       	swi333 $r0,[$r5+#0x4]
+    1e2c:	80 a1       	mov55 $r5,$r1
+    1e2e:	d5 18       	j8 1e5e <_malloc_r+0x7e>
+    1e30:	80 a1       	mov55 $r5,$r1
+    1e32:	a0 49       	lwi333 $r1,[$r1+#0x4]
+    1e34:	d5 eb       	j8 1e0a <_malloc_r+0x2a>
+    1e36:	f0 81       	swi37.sp $r0,[+#0x4]
+    1e38:	b8 02       	lwi37 $r0,[$fp+#0x8]
+    1e3a:	c8 05       	bnez38 $r0,1e44 <_malloc_r+0x64>
+    1e3c:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1e3e:	49 00 00 49 	jal 1ed0 <_sbrk_r>
+    1e42:	b8 82       	swi37 $r0,[$fp+#0x8]
+    1e44:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1e46:	80 26       	mov55 $r1,$r6
+    1e48:	49 00 00 44 	jal 1ed0 <_sbrk_r>
+    1e4c:	80 a0       	mov55 $r5,$r0
+    1e4e:	5a 07 ff d6 	beqc $r0,#-1,1dfa <_malloc_r+0x1a>
+    1e52:	9d c3       	addi333 $r7,$r0,#0x3
+    1e54:	84 1c       	movi55 $r0,#-4
+    1e56:	ff c6       	and33 $r7,$r0
+    1e58:	4c 72 c0 0e 	bne $r7,$r5,1e74 <_malloc_r+0x94>
+    1e5c:	b6 c5       	swi450 $r6,[$r5]
+    1e5e:	50 22 80 0b 	addi $r2,$r5,#0xb
+    1e62:	84 18       	movi55 $r0,#-8
+    1e64:	9c 6c       	addi333 $r1,$r5,#0x4
+    1e66:	fe 16       	and33 $r0,$r2
+    1e68:	9a 41       	sub333 $r1,$r0,$r1
+    1e6a:	c1 0d       	beqz38 $r1,1e84 <_malloc_r+0xa4>
+    1e6c:	fe 8a       	neg33 $r2,$r1
+    1e6e:	38 22 84 0a 	sw $r2,[$r5+($r1<<#0x0)]
+    1e72:	d5 09       	j8 1e84 <_malloc_r+0xa4>
+    1e74:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1e76:	9a 7d       	sub333 $r1,$r7,$r5
+    1e78:	49 00 00 2c 	jal 1ed0 <_sbrk_r>
+    1e7c:	5a 07 ff bf 	beqc $r0,#-1,1dfa <_malloc_r+0x1a>
+    1e80:	80 a7       	mov55 $r5,$r7
+    1e82:	d5 ed       	j8 1e5c <_malloc_r+0x7c>
+    1e84:	fc a1       	pop25 $r8,#8    ! {$r6~$r8, $fp, $gp, $lp}
+
+00001e86 <_realloc_r>:
+    1e86:	fc 41       	push25 $r10,#8    ! {$r6~$r10, $fp, $gp, $lp}
+    1e88:	f0 81       	swi37.sp $r0,[+#0x4]
+    1e8a:	81 21       	mov55 $r9,$r1
+    1e8c:	80 e2       	mov55 $r7,$r2
+    1e8e:	c9 05       	bnez38 $r1,1e98 <_realloc_r+0x12>
+    1e90:	80 22       	mov55 $r1,$r2
+    1e92:	49 ff ff a7 	jal 1de0 <_malloc_r>
+    1e96:	d5 1c       	j8 1ece <_realloc_r+0x48>
+    1e98:	ca 05       	bnez38 $r2,1ea2 <_realloc_r+0x1c>
+    1e9a:	49 ff ff 69 	jal 1d6c <_free_r>
+    1e9e:	80 07       	mov55 $r0,$r7
+    1ea0:	d5 17       	j8 1ece <_realloc_r+0x48>
+    1ea2:	49 00 01 0c 	jal 20ba <_malloc_usable_size_r>
+    1ea6:	e2 07       	slt45 $r0,$r7
+    1ea8:	e8 10       	beqzs8 1ec8 <_realloc_r+0x42>
+    1eaa:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1eac:	80 27       	mov55 $r1,$r7
+    1eae:	49 ff ff 99 	jal 1de0 <_malloc_r>
+    1eb2:	80 c0       	mov55 $r6,$r0
+    1eb4:	c0 0c       	beqz38 $r0,1ecc <_realloc_r+0x46>
+    1eb6:	80 29       	mov55 $r1,$r9
+    1eb8:	80 47       	mov55 $r2,$r7
+    1eba:	49 ff f6 6b 	jal b90 <memcpy>
+    1ebe:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1ec0:	80 29       	mov55 $r1,$r9
+    1ec2:	49 ff ff 55 	jal 1d6c <_free_r>
+    1ec6:	d5 03       	j8 1ecc <_realloc_r+0x46>
+    1ec8:	80 09       	mov55 $r0,$r9
+    1eca:	d5 02       	j8 1ece <_realloc_r+0x48>
+    1ecc:	80 06       	mov55 $r0,$r6
+    1ece:	fc c1       	pop25 $r10,#8    ! {$r6~$r10, $fp, $gp, $lp}
+
+00001ed0 <_sbrk_r>:
+    1ed0:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    1ed2:	3f cf ff 8c 	addi.gp $fp,#-116
+    1ed6:	84 00       	movi55 $r0,#0x0
+    1ed8:	b8 e1       	swi37 $r0,[$fp+#0x184]
+    1eda:	80 01       	mov55 $r0,$r1
+    1edc:	49 00 01 2c 	jal 2134 <_sbrk>
+    1ee0:	5a 0f ff 05 	bnec $r0,#-1,1eea <_sbrk_r+0x1a>
+    1ee4:	b9 61       	lwi37 $r1,[$fp+#0x184]
+    1ee6:	c1 02       	beqz38 $r1,1eea <_sbrk_r+0x1a>
+    1ee8:	b9 80       	swi37 $r1,[$fp+#0x0]
+    1eea:	fc 80       	pop25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+
+00001eec <__sread>:
+    1eec:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    1eee:	80 c1       	mov55 $r6,$r1
+    1ef0:	22 10 80 07 	lhsi $r1,[$r1+#0xe]
+    1ef4:	49 00 00 ed 	jal 20ce <_read_r>
+    1ef8:	4e 05 00 07 	bltz $r0,1f06 <__sread+0x1a>
+    1efc:	83 86       	mov55 $fp,$r6
+    1efe:	b9 14       	lwi37 $r1,[$fp+#0x50]
+    1f00:	88 20       	add45 $r1,$r0
+    1f02:	b9 94       	swi37 $r1,[$fp+#0x50]
+    1f04:	d5 06       	j8 1f10 <__sread+0x24>
+    1f06:	a4 b6       	lhi333 $r2,[$r6+#0xc]
+    1f08:	44 1f ef ff 	movi $r1,#-4097
+    1f0c:	fe 56       	and33 $r1,$r2
+    1f0e:	ac 76       	shi333 $r1,[$r6+#0xc]
+    1f10:	fc 80       	pop25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+
+00001f12 <__seofread>:
+    1f12:	84 00       	movi55 $r0,#0x0
+    1f14:	dd 9e       	ret5 $lp
+
+00001f16 <__swrite>:
+    1f16:	fc 02       	push25 $r6,#16    ! {$r6, $fp, $gp, $lp}
+    1f18:	80 c1       	mov55 $r6,$r1
+    1f1a:	a4 4e       	lhi333 $r1,[$r1+#0xc]
+    1f1c:	f0 81       	swi37.sp $r0,[+#0x4]
+    1f1e:	54 10 81 00 	andi $r1,$r1,#0x100
+    1f22:	f2 82       	swi37.sp $r2,[+#0x8]
+    1f24:	f3 83       	swi37.sp $r3,[+#0xc]
+    1f26:	c1 07       	beqz38 $r1,1f34 <__swrite+0x1e>
+    1f28:	22 13 00 07 	lhsi $r1,[$r6+#0xe]
+    1f2c:	84 40       	movi55 $r2,#0x0
+    1f2e:	84 62       	movi55 $r3,#0x2
+    1f30:	49 00 00 b5 	jal 209a <_lseek_r>
+    1f34:	a4 76       	lhi333 $r1,[$r6+#0xc]
+    1f36:	44 0f ef ff 	movi $r0,#-4097
+    1f3a:	fe 0e       	and33 $r0,$r1
+    1f3c:	ac 36       	shi333 $r0,[$r6+#0xc]
+    1f3e:	22 13 00 07 	lhsi $r1,[$r6+#0xe]
+    1f42:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1f44:	f2 02       	lwi37.sp $r2,[+#0x8]
+    1f46:	f3 03       	lwi37.sp $r3,[+#0xc]
+    1f48:	49 00 00 24 	jal 1f90 <_write_r>
+    1f4c:	fc 82       	pop25 $r6,#16    ! {$r6, $fp, $gp, $lp}
+
+00001f4e <__sseek>:
+    1f4e:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    1f50:	80 c1       	mov55 $r6,$r1
+    1f52:	22 10 80 07 	lhsi $r1,[$r1+#0xe]
+    1f56:	49 00 00 a2 	jal 209a <_lseek_r>
+    1f5a:	a4 76       	lhi333 $r1,[$r6+#0xc]
+    1f5c:	5a 0f ff 07 	bnec $r0,#-1,1f6a <__sseek+0x1c>
+    1f60:	44 2f ef ff 	movi $r2,#-4097
+    1f64:	fe 56       	and33 $r1,$r2
+    1f66:	ac 76       	shi333 $r1,[$r6+#0xc]
+    1f68:	d5 06       	j8 1f74 <__sseek+0x26>
+    1f6a:	58 10 90 00 	ori $r1,$r1,#0x1000
+    1f6e:	ac 76       	shi333 $r1,[$r6+#0xc]
+    1f70:	14 03 00 14 	swi $r0,[$r6+#0x50]
+    1f74:	fc 80       	pop25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+
+00001f76 <__sclose>:
+    1f76:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    1f78:	22 10 80 07 	lhsi $r1,[$r1+#0xe]
+    1f7c:	49 00 00 1a 	jal 1fb0 <_close_r>
+    1f80:	fc 80       	pop25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+	...
+
+00001f84 <strlen>:
+    1f84:	9d 41       	addi333 $r5,$r0,#0x1
+    1f86:	28 20 00 01 	lbsi.bi $r2,[$r0],#0x1
+    1f8a:	ca fe       	bnez38 $r2,1f86 <strlen+0x2>
+    1f8c:	9a 05       	sub333 $r0,$r0,$r5
+    1f8e:	dd 9e       	ret5 $lp
+
+00001f90 <_write_r>:
+    1f90:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    1f92:	3f cf ff 8c 	addi.gp $fp,#-116
+    1f96:	84 00       	movi55 $r0,#0x0
+    1f98:	b8 e1       	swi37 $r0,[$fp+#0x184]
+    1f9a:	80 01       	mov55 $r0,$r1
+    1f9c:	80 22       	mov55 $r1,$r2
+    1f9e:	80 43       	mov55 $r2,$r3
+    1fa0:	49 00 00 b4 	jal 2108 <_write>
+    1fa4:	5a 0f ff 05 	bnec $r0,#-1,1fae <_write_r+0x1e>
+    1fa8:	b9 61       	lwi37 $r1,[$fp+#0x184]
+    1faa:	c1 02       	beqz38 $r1,1fae <_write_r+0x1e>
+    1fac:	b9 80       	swi37 $r1,[$fp+#0x0]
+    1fae:	fc 80       	pop25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+
+00001fb0 <_close_r>:
+    1fb0:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    1fb2:	3f cf ff 8c 	addi.gp $fp,#-116
+    1fb6:	84 00       	movi55 $r0,#0x0
+    1fb8:	b8 e1       	swi37 $r0,[$fp+#0x184]
+    1fba:	80 01       	mov55 $r0,$r1
+    1fbc:	49 00 00 9e 	jal 20f8 <_close>
+    1fc0:	5a 0f ff 05 	bnec $r0,#-1,1fca <_close_r+0x1a>
+    1fc4:	b9 61       	lwi37 $r1,[$fp+#0x184]
+    1fc6:	c1 02       	beqz38 $r1,1fca <_close_r+0x1a>
+    1fc8:	b9 80       	swi37 $r1,[$fp+#0x0]
+    1fca:	fc 80       	pop25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+
+00001fcc <_fclose_r>:
+    1fcc:	c1 41       	beqz38 $r1,204e <_fclose_r+0x82>
+    1fce:	fc 21       	push25 $r8,#8    ! {$r6~$r8, $fp, $gp, $lp}
+    1fd0:	80 c1       	mov55 $r6,$r1
+    1fd2:	3c 1d ff e2 	lwi.gp $r1,[+#-120]
+    1fd6:	f0 81       	swi37.sp $r0,[+#0x4]
+    1fd8:	c9 03       	bnez38 $r1,1fde <_fclose_r+0x12>
+    1fda:	49 ff fb d7 	jal 1788 <__sinit>
+    1fde:	22 03 00 06 	lhsi $r0,[$r6+#0xc]
+    1fe2:	c8 03       	bnez38 $r0,1fe8 <_fclose_r+0x1c>
+    1fe4:	84 00       	movi55 $r0,#0x0
+    1fe6:	d5 33       	j8 204c <_fclose_r+0x80>
+    1fe8:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1fea:	80 26       	mov55 $r1,$r6
+    1fec:	49 ff fa f3 	jal 15d2 <__sflush_r>
+    1ff0:	04 23 00 0b 	lwi $r2,[$r6+#0x2c]
+    1ff4:	80 e0       	mov55 $r7,$r0
+    1ff6:	c2 07       	beqz38 $r2,2004 <_fclose_r+0x38>
+    1ff8:	f0 01       	lwi37.sp $r0,[+#0x4]
+    1ffa:	a0 77       	lwi333 $r1,[$r6+#0x1c]
+    1ffc:	dd 22       	jral5 $r2
+    1ffe:	4e 04 00 03 	bgez $r0,2004 <_fclose_r+0x38>
+    2002:	84 ff       	movi55 $r7,#-1
+    2004:	a4 36       	lhi333 $r0,[$r6+#0xc]
+    2006:	96 3e       	bmski33 $r0,#0x7
+    2008:	c0 05       	beqz38 $r0,2012 <_fclose_r+0x46>
+    200a:	f0 01       	lwi37.sp $r0,[+#0x4]
+    200c:	a0 74       	lwi333 $r1,[$r6+#0x10]
+    200e:	49 ff fe af 	jal 1d6c <_free_r>
+    2012:	04 13 00 0c 	lwi $r1,[$r6+#0x30]
+    2016:	c1 0b       	beqz38 $r1,202c <_fclose_r+0x60>
+    2018:	50 03 00 40 	addi $r0,$r6,#0x40
+    201c:	4c 10 00 05 	beq $r1,$r0,2026 <_fclose_r+0x5a>
+    2020:	f0 01       	lwi37.sp $r0,[+#0x4]
+    2022:	49 ff fe a5 	jal 1d6c <_free_r>
+    2026:	84 00       	movi55 $r0,#0x0
+    2028:	14 03 00 0c 	swi $r0,[$r6+#0x30]
+    202c:	04 13 00 11 	lwi $r1,[$r6+#0x44]
+    2030:	c1 07       	beqz38 $r1,203e <_fclose_r+0x72>
+    2032:	f0 01       	lwi37.sp $r0,[+#0x4]
+    2034:	49 ff fe 9c 	jal 1d6c <_free_r>
+    2038:	84 00       	movi55 $r0,#0x0
+    203a:	14 03 00 11 	swi $r0,[$r6+#0x44]
+    203e:	49 ff fc 4d 	jal 18d8 <__sfp_lock_acquire>
+    2042:	84 00       	movi55 $r0,#0x0
+    2044:	ac 36       	shi333 $r0,[$r6+#0xc]
+    2046:	49 ff fc 4a 	jal 18da <__sfp_lock_release>
+    204a:	80 07       	mov55 $r0,$r7
+    204c:	fc a1       	pop25 $r8,#8    ! {$r6~$r8, $fp, $gp, $lp}
+    204e:	84 00       	movi55 $r0,#0x0
+    2050:	dd 9e       	ret5 $lp
+
+00002052 <fclose>:
+    2052:	fc 01       	push25 $r6,#8    ! {$r6, $fp, $gp, $lp}
+    2054:	f0 81       	swi37.sp $r0,[+#0x4]
+    2056:	f1 01       	lwi37.sp $r1,[+#0x4]
+    2058:	84 00       	movi55 $r0,#0x0
+    205a:	49 ff ff b9 	jal 1fcc <_fclose_r>
+    205e:	fc 81       	pop25 $r6,#8    ! {$r6, $fp, $gp, $lp}
+
+00002060 <_fstat_r>:
+    2060:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    2062:	3f cf ff 8c 	addi.gp $fp,#-116
+    2066:	84 00       	movi55 $r0,#0x0
+    2068:	b8 e1       	swi37 $r0,[$fp+#0x184]
+    206a:	80 01       	mov55 $r0,$r1
+    206c:	80 22       	mov55 $r1,$r2
+    206e:	49 00 00 55 	jal 2118 <_fstat>
+    2072:	5a 0f ff 05 	bnec $r0,#-1,207c <_fstat_r+0x1c>
+    2076:	b9 61       	lwi37 $r1,[$fp+#0x184]
+    2078:	c1 02       	beqz38 $r1,207c <_fstat_r+0x1c>
+    207a:	b9 80       	swi37 $r1,[$fp+#0x0]
+    207c:	fc 80       	pop25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+
+0000207e <_isatty_r>:
+    207e:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    2080:	3f cf ff 8c 	addi.gp $fp,#-116
+    2084:	84 00       	movi55 $r0,#0x0
+    2086:	b8 e1       	swi37 $r0,[$fp+#0x184]
+    2088:	80 01       	mov55 $r0,$r1
+    208a:	49 00 00 4b 	jal 2120 <_isatty>
+    208e:	5a 0f ff 05 	bnec $r0,#-1,2098 <_isatty_r+0x1a>
+    2092:	b9 61       	lwi37 $r1,[$fp+#0x184]
+    2094:	c1 02       	beqz38 $r1,2098 <_isatty_r+0x1a>
+    2096:	b9 80       	swi37 $r1,[$fp+#0x0]
+    2098:	fc 80       	pop25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+
+0000209a <_lseek_r>:
+    209a:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    209c:	3f cf ff 8c 	addi.gp $fp,#-116
+    20a0:	84 00       	movi55 $r0,#0x0
+    20a2:	b8 e1       	swi37 $r0,[$fp+#0x184]
+    20a4:	80 01       	mov55 $r0,$r1
+    20a6:	80 22       	mov55 $r1,$r2
+    20a8:	80 43       	mov55 $r2,$r3
+    20aa:	49 00 00 33 	jal 2110 <_lseek>
+    20ae:	5a 0f ff 05 	bnec $r0,#-1,20b8 <_lseek_r+0x1e>
+    20b2:	b9 61       	lwi37 $r1,[$fp+#0x184]
+    20b4:	c1 02       	beqz38 $r1,20b8 <_lseek_r+0x1e>
+    20b6:	b9 80       	swi37 $r1,[$fp+#0x0]
+    20b8:	fc 80       	pop25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+
+000020ba <_malloc_usable_size_r>:
+    20ba:	04 00 ff ff 	lwi $r0,[$r1+#-4]
+    20be:	4e 04 00 06 	bgez $r0,20ca <_malloc_usable_size_r+0x10>
+    20c2:	88 20       	add45 $r1,$r0
+    20c4:	04 10 ff ff 	lwi $r1,[$r1+#-4]
+    20c8:	88 01       	add45 $r0,$r1
+    20ca:	8e 04       	subi45 $r0,#0x4
+    20cc:	dd 9e       	ret5 $lp
+
+000020ce <_read_r>:
+    20ce:	fc 00       	push25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+    20d0:	3f cf ff 8c 	addi.gp $fp,#-116
+    20d4:	84 00       	movi55 $r0,#0x0
+    20d6:	b8 e1       	swi37 $r0,[$fp+#0x184]
+    20d8:	80 01       	mov55 $r0,$r1
+    20da:	80 22       	mov55 $r1,$r2
+    20dc:	80 43       	mov55 $r2,$r3
+    20de:	49 00 00 11 	jal 2100 <_read>
+    20e2:	5a 0f ff 05 	bnec $r0,#-1,20ec <_read_r+0x1e>
+    20e6:	b9 61       	lwi37 $r1,[$fp+#0x184]
+    20e8:	c1 02       	beqz38 $r1,20ec <_read_r+0x1e>
+    20ea:	b9 80       	swi37 $r1,[$fp+#0x0]
+    20ec:	fc 80       	pop25 $r6,#0    ! {$r6, $fp, $gp, $lp}
+	...
+
+000020f0 <_exit>:
+    20f0:	64 00 00 2b 	syscall #0x1
+    20f4:	d5 00       	j8 20f4 <_exit+0x4>
+    20f6:	92 00       	nop16
+
+000020f8 <_close>:
+    20f8:	64 00 00 6b 	syscall #0x3
+    20fc:	48 00 00 34 	j 2164 <__syscall_error_handler>
+
+00002100 <_read>:
+    2100:	64 00 00 8b 	syscall #0x4
+    2104:	48 00 00 30 	j 2164 <__syscall_error_handler>
+
+00002108 <_write>:
+    2108:	64 00 00 ab 	syscall #0x5
+    210c:	48 00 00 2c 	j 2164 <__syscall_error_handler>
+
+00002110 <_lseek>:
+    2110:	64 00 00 cb 	syscall #0x6
+    2114:	48 00 00 28 	j 2164 <__syscall_error_handler>
+
+00002118 <_fstat>:
+    2118:	64 00 01 4b 	syscall #0xa
+    211c:	48 00 00 24 	j 2164 <__syscall_error_handler>
+
+00002120 <_isatty>:
+    2120:	64 01 77 4b 	syscall #0xbba
+    2124:	c8 06       	bnez38 $r0,2130 <_isatty+0x10>
+    2126:	64 02 ee 2b 	syscall #0x1771
+    212a:	3c 0f ff e3 	swi.gp $r0,[+#-116]
+    212e:	84 00       	movi55 $r0,#0x0
+    2130:	dd 9e       	ret5 $lp
+    2132:	92 00       	nop16
+
+00002134 <_sbrk>:
+    2134:	3c 1d ff e7 	lwi.gp $r1,[+#-100]
+    2138:	c9 05       	bnez38 $r1,2142 <_sbrk+0xe>
+    213a:	3e 18 05 10 	addi.gp $r1,#0x510
+    213e:	3c 1f ff e7 	swi.gp $r1,[+#-100]
+    2142:	9c 07       	addi333 $r0,$r0,#0x7
+    2144:	92 03       	srli45 $r0,#0x3
+    2146:	94 03       	slli333 $r0,$r0,#0x3
+    2148:	98 08       	add333 $r0,$r1,$r0
+    214a:	40 2f 80 06 	slt $r2,$sp,$r0
+    214e:	ca 05       	bnez38 $r2,2158 <_sbrk+0x24>
+    2150:	3c 0f ff e7 	swi.gp $r0,[+#-100]
+    2154:	80 01       	mov55 $r0,$r1
+    2156:	dd 9e       	ret5 $lp
+    2158:	84 0c       	movi55 $r0,#0xc
+    215a:	3c 0f ff e3 	swi.gp $r0,[+#-116]
+    215e:	84 1f       	movi55 $r0,#-1
+    2160:	dd 9e       	ret5 $lp
+    2162:	92 00       	nop16
+
+00002164 <__syscall_error_handler>:
+    2164:	9c 41       	addi333 $r1,$r0,#0x1
+    2166:	c9 06       	bnez38 $r1,2172 <__syscall_error_handler+0xe>
+    2168:	64 02 ee 2b 	syscall #0x1771
+    216c:	3c 0f ff e3 	swi.gp $r0,[+#-116]
+    2170:	84 1f       	movi55 $r0,#-1
+    2172:	dd 9e       	ret5 $lp
+
+00002174 <__udivdi3>:
+    2174:	84 80       	movi55 $r4,#0x0
+    2176:	d5 2d       	j8 21d0 <__udivmoddi4>
+
+00002178 <fudiv_qrnnd>:
+    2178:	40 a1 40 09 	srli $r10,$r2,#0x10
+    217c:	97 41       	zeh33 $r5,$r0
+    217e:	92 10       	srli45 $r0,#0x10
+    2180:	40 40 a8 37 	divr $r4,$r1,$r1,$r10
+    2184:	96 d1       	zeh33 $r3,$r2
+    2186:	40 10 c0 08 	slli $r1,$r1,#0x10
+    218a:	fe 47       	or33 $r1,$r0
+    218c:	42 02 0c 24 	mul $r0,$r4,$r3
+    2190:	e2 20       	slt45 $r1,$r0
+    2192:	e8 09       	beqzs8 21a4 <fudiv_qrnnd+0x2c>
+    2194:	9f 21       	subi333 $r4,$r4,#0x1
+    2196:	98 4a       	add333 $r1,$r1,$r2
+    2198:	e2 22       	slt45 $r1,$r2
+    219a:	e9 05       	bnezs8 21a4 <fudiv_qrnnd+0x2c>
+    219c:	e2 20       	slt45 $r1,$r0
+    219e:	e8 03       	beqzs8 21a4 <fudiv_qrnnd+0x2c>
+    21a0:	9f 21       	subi333 $r4,$r4,#0x1
+    21a2:	98 4a       	add333 $r1,$r1,$r2
+    21a4:	9a 48       	sub333 $r1,$r1,$r0
+    21a6:	40 10 a8 17 	divr $r1,$r0,$r1,$r10
+    21aa:	40 00 40 08 	slli $r0,$r0,#0x10
+    21ae:	fe 2f       	or33 $r0,$r5
+    21b0:	fe cc       	mul33 $r3,$r1
+    21b2:	e2 03       	slt45 $r0,$r3
+    21b4:	e8 09       	beqzs8 21c6 <fudiv_qrnnd+0x4e>
+    21b6:	98 02       	add333 $r0,$r0,$r2
+    21b8:	9e 49       	subi333 $r1,$r1,#0x1
+    21ba:	e2 02       	slt45 $r0,$r2
+    21bc:	e9 05       	bnezs8 21c6 <fudiv_qrnnd+0x4e>
+    21be:	e2 03       	slt45 $r0,$r3
+    21c0:	e8 03       	beqzs8 21c6 <fudiv_qrnnd+0x4e>
+    21c2:	98 02       	add333 $r0,$r0,$r2
+    21c4:	9e 49       	subi333 $r1,$r1,#0x1
+    21c6:	9a 03       	sub333 $r0,$r0,$r3
+    21c8:	40 42 40 08 	slli $r4,$r4,#0x10
+    21cc:	fe 67       	or33 $r1,$r4
+    21ce:	dd 9e       	ret5 $lp
+
+000021d0 <__udivmoddi4>:
+    21d0:	ef d8       	addi10.sp #-40
+    21d2:	3a 6f aa a0 	smw.bi $r6,[$sp],$r10,#0xa    ! {$r6~$r10, $fp, $lp}
+    21d6:	fd 30       	movd44 $r6,$r0
+    21d8:	fd 41       	movd44 $r8,$r2
+    21da:	83 84       	mov55 $fp,$r4
+    21dc:	cb 51       	bnez38 $r3,227e <__udivmoddi4+0xae>
+    21de:	e2 e8       	slt45 $r7,$r8
+    21e0:	e8 1a       	beqzs8 2214 <__udivmoddi4+0x44>
+    21e2:	80 08       	mov55 $r0,$r8
+    21e4:	49 00 00 b8 	jal 2354 <__clzsi2>
+    21e8:	f0 87       	swi37.sp $r0,[+#0x1c]
+    21ea:	c0 0c       	beqz38 $r0,2202 <__udivmoddi4+0x32>
+    21ec:	40 84 00 0c 	sll $r8,$r8,$r0
+    21f0:	52 50 00 20 	subri $r5,$r0,#0x20
+    21f4:	40 53 14 0d 	srl $r5,$r6,$r5
+    21f8:	40 73 80 0c 	sll $r7,$r7,$r0
+    21fc:	ff ef       	or33 $r7,$r5
+    21fe:	40 63 00 0c 	sll $r6,$r6,$r0
+    2202:	fd 03       	movd44 $r0,$r6
+    2204:	80 48       	mov55 $r2,$r8
+    2206:	49 ff ff b9 	jal 2178 <fudiv_qrnnd>
+    220a:	f1 88       	swi37.sp $r1,[+#0x20]
+    220c:	80 c0       	mov55 $r6,$r0
+    220e:	84 a0       	movi55 $r5,#0x0
+    2210:	f5 89       	swi37.sp $r5,[+#0x24]
+    2212:	d5 25       	j8 225c <__udivmoddi4+0x8c>
+    2214:	c2 2c       	beqz38 $r2,226c <__udivmoddi4+0x9c>
+    2216:	80 08       	mov55 $r0,$r8
+    2218:	49 00 00 9e 	jal 2354 <__clzsi2>
+    221c:	f0 87       	swi37.sp $r0,[+#0x1c]
+    221e:	c8 05       	bnez38 $r0,2228 <__udivmoddi4+0x58>
+    2220:	8a e8       	sub45 $r7,$r8
+    2222:	84 a1       	movi55 $r5,#0x1
+    2224:	f5 89       	swi37.sp $r5,[+#0x24]
+    2226:	d5 14       	j8 224e <__udivmoddi4+0x7e>
+    2228:	52 f0 00 20 	subri $r15,$r0,#0x20
+    222c:	40 84 00 0c 	sll $r8,$r8,$r0
+    2230:	80 48       	mov55 $r2,$r8
+    2232:	40 43 3c 0d 	srl $r4,$r6,$r15
+    2236:	40 53 80 0c 	sll $r5,$r7,$r0
+    223a:	40 63 00 0c 	sll $r6,$r6,$r0
+    223e:	40 02 90 04 	or $r0,$r5,$r4
+    2242:	40 13 bc 0d 	srl $r1,$r7,$r15
+    2246:	49 ff ff 99 	jal 2178 <fudiv_qrnnd>
+    224a:	f1 89       	swi37.sp $r1,[+#0x24]
+    224c:	80 e0       	mov55 $r7,$r0
+    224e:	fd 03       	movd44 $r0,$r6
+    2250:	80 48       	mov55 $r2,$r8
+    2252:	49 ff ff 93 	jal 2178 <fudiv_qrnnd>
+    2256:	f1 88       	swi37.sp $r1,[+#0x20]
+    2258:	50 60 00 00 	addi $r6,$r0,#0x0
+    225c:	4f c2 00 55 	beqz $fp,2306 <__udivmoddi4+0x136>
+    2260:	f3 07       	lwi37.sp $r3,[+#0x1c]
+    2262:	44 70 00 00 	movi $r7,#0x0
+    2266:	40 63 0c 0d 	srl $r6,$r6,$r3
+    226a:	d5 4c       	j8 2302 <__udivmoddi4+0x132>
+    226c:	40 74 20 d7 	divr $r7,$r6,$r8,$r8
+    2270:	84 20       	movi55 $r1,#0x0
+    2272:	84 00       	movi55 $r0,#0x0
+    2274:	4f c2 00 4c 	beqz $fp,230c <__udivmoddi4+0x13c>
+    2278:	b6 dc       	swi450 $r6,[$fp]
+    227a:	bf 81       	swi37 $r7,[$fp+#0x4]
+    227c:	d5 48       	j8 230c <__udivmoddi4+0x13c>
+    227e:	e2 e9       	slt45 $r7,$r9
+    2280:	e9 f8       	bnezs8 2270 <__udivmoddi4+0xa0>
+    2282:	80 09       	mov55 $r0,$r9
+    2284:	49 00 00 68 	jal 2354 <__clzsi2>
+    2288:	f0 87       	swi37.sp $r0,[+#0x1c]
+    228a:	c0 45       	beqz38 $r0,2314 <__udivmoddi4+0x144>
+    228c:	52 40 00 20 	subri $r4,$r0,#0x20
+    2290:	40 54 10 0d 	srl $r5,$r8,$r4
+    2294:	40 24 80 0c 	sll $r2,$r9,$r0
+    2298:	fe af       	or33 $r2,$r5
+    229a:	81 22       	mov55 $r9,$r2
+    229c:	40 84 00 0c 	sll $r8,$r8,$r0
+    22a0:	40 33 10 0d 	srl $r3,$r6,$r4
+    22a4:	40 63 00 0c 	sll $r6,$r6,$r0
+    22a8:	40 03 80 0c 	sll $r0,$r7,$r0
+    22ac:	40 13 90 0d 	srl $r1,$r7,$r4
+    22b0:	fe 1f       	or33 $r0,$r3
+    22b2:	49 ff ff 63 	jal 2178 <fudiv_qrnnd>
+    22b6:	f1 88       	swi37.sp $r1,[+#0x20]
+    22b8:	80 e0       	mov55 $r7,$r0
+    22ba:	80 08       	mov55 $r0,$r8
+    22bc:	49 00 00 5c 	jal 2374 <umul_ppmm>
+    22c0:	e2 e1       	slt45 $r7,$r1
+    22c2:	e9 05       	bnezs8 22cc <__udivmoddi4+0xfc>
+    22c4:	4c 13 c0 0d 	bne $r1,$r7,22de <__udivmoddi4+0x10e>
+    22c8:	e2 c0       	slt45 $r6,$r0
+    22ca:	e8 0a       	beqzs8 22de <__udivmoddi4+0x10e>
+    22cc:	f3 08       	lwi37.sp $r3,[+#0x20]
+    22ce:	8a 29       	sub45 $r1,$r9
+    22d0:	9e d9       	subi333 $r3,$r3,#0x1
+    22d2:	f3 88       	swi37.sp $r3,[+#0x20]
+    22d4:	40 30 20 01 	sub $r3,$r0,$r8
+    22d8:	e2 03       	slt45 $r0,$r3
+    22da:	8a 2f       	sub45 $r1,$r15
+    22dc:	80 03       	mov55 $r0,$r3
+    22de:	84 60       	movi55 $r3,#0x0
+    22e0:	f3 89       	swi37.sp $r3,[+#0x24]
+    22e2:	4f c2 00 12 	beqz $fp,2306 <__udivmoddi4+0x136>
+    22e6:	9a 30       	sub333 $r0,$r6,$r0
+    22e8:	9a 79       	sub333 $r1,$r7,$r1
+    22ea:	e2 c0       	slt45 $r6,$r0
+    22ec:	8a 2f       	sub45 $r1,$r15
+    22ee:	f3 07       	lwi37.sp $r3,[+#0x1c]
+    22f0:	52 41 80 20 	subri $r4,$r3,#0x20
+    22f4:	40 70 90 0c 	sll $r7,$r1,$r4
+    22f8:	40 60 0c 0d 	srl $r6,$r0,$r3
+    22fc:	ff bf       	or33 $r6,$r7
+    22fe:	40 70 8c 0d 	srl $r7,$r1,$r3
+    2302:	b6 dc       	swi450 $r6,[$fp]
+    2304:	bf 81       	swi37 $r7,[$fp+#0x4]
+    2306:	f0 08       	lwi37.sp $r0,[+#0x20]
+    2308:	04 1f 80 09 	lwi $r1,[$sp+#0x24]
+    230c:	3a 6f aa 80 	lmw.bi $r6,[$sp],$r10,#0xa    ! {$r6~$r10, $fp, $lp}
+    2310:	ec 28       	addi10.sp #0x28
+    2312:	dd 9e       	ret5 $lp
+    2314:	84 60       	movi55 $r3,#0x0
+    2316:	e3 27       	slt45 $r9,$r7
+    2318:	e9 03       	bnezs8 231e <__udivmoddi4+0x14e>
+    231a:	e2 c8       	slt45 $r6,$r8
+    231c:	e9 0a       	bnezs8 2330 <__udivmoddi4+0x160>
+    231e:	84 a1       	movi55 $r5,#0x1
+    2320:	f5 88       	swi37.sp $r5,[+#0x20]
+    2322:	40 43 20 01 	sub $r4,$r6,$r8
+    2326:	8a e9       	sub45 $r7,$r9
+    2328:	e2 c4       	slt45 $r6,$r4
+    232a:	8a ef       	sub45 $r7,$r15
+    232c:	80 c4       	mov55 $r6,$r4
+    232e:	d5 02       	j8 2332 <__udivmoddi4+0x162>
+    2330:	f3 88       	swi37.sp $r3,[+#0x20]
+    2332:	f3 89       	swi37.sp $r3,[+#0x24]
+    2334:	4f c3 ff e7 	bnez $fp,2302 <__udivmoddi4+0x132>
+    2338:	d5 e7       	j8 2306 <__udivmoddi4+0x136>
+    233a:	92 00       	nop16
+
+0000233c <__umoddi3>:
+    233c:	ef f4       	addi10.sp #-12
+    233e:	15 ef 80 00 	swi $lp,[$sp+#0x0]
+    2342:	b1 01       	addri36.sp $r4,#0x4
+    2344:	49 ff ff 46 	jal 21d0 <__udivmoddi4>
+    2348:	f0 01       	lwi37.sp $r0,[+#0x4]
+    234a:	f1 02       	lwi37.sp $r1,[+#0x8]
+    234c:	0d ef 80 03 	lwi.bi $lp,[$sp],#0xc
+    2350:	dd 9e       	ret5 $lp
+    2352:	92 00       	nop16
+
+00002354 <__clzsi2>:
+    2354:	c0 0e       	beqz38 $r0,2370 <__clzsi2+0x1c>
+    2356:	fa 20       	movpi45 $r1,#0x10
+    2358:	fa 6f       	movpi45 $r3,#0x1f
+    235a:	9b 19       	sub333 $r4,$r3,$r1
+    235c:	40 20 04 0d 	srl $r2,$r0,$r1
+    2360:	40 32 08 1b 	cmovn $r3,$r4,$r2
+    2364:	40 01 08 1b 	cmovn $r0,$r2,$r2
+    2368:	92 21       	srli45 $r1,#0x1
+    236a:	c9 f8       	bnez38 $r1,235a <__clzsi2+0x6>
+    236c:	80 03       	mov55 $r0,$r3
+    236e:	dd 9e       	ret5 $lp
+    2370:	fa 10       	movpi45 $r0,#0x20
+    2372:	dd 9e       	ret5 $lp
+
+00002374 <umul_ppmm>:
+    2374:	96 81       	zeh33 $r2,$r0
+    2376:	40 30 40 09 	srli $r3,$r0,#0x10
+    237a:	96 09       	zeh33 $r0,$r1
+    237c:	92 30       	srli45 $r1,#0x10
+    237e:	42 51 04 24 	mul $r5,$r2,$r1
+    2382:	fe 84       	mul33 $r2,$r0
+    2384:	fe 1c       	mul33 $r0,$r3
+    2386:	99 68       	add333 $r5,$r5,$r0
+    2388:	e2 a0       	slt45 $r5,$r0
+    238a:	40 f7 c0 08 	slli $r15,$r15,#0x10
+    238e:	42 f1 84 73 	maddr32 $r15,$r3,$r1
+    2392:	40 12 c0 09 	srli $r1,$r5,#0x10
+    2396:	88 2f       	add45 $r1,$r15
+    2398:	40 02 c0 08 	slli $r0,$r5,#0x10
+    239c:	98 02       	add333 $r0,$r0,$r2
+    239e:	e2 02       	slt45 $r0,$r2
+    23a0:	88 2f       	add45 $r1,$r15
+    23a2:	dd 9e       	ret5 $lp
