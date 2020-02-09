@@ -1,0 +1,107 @@
+00000000 W _RELAX_END_
+00000000 T _nds32_vector_00
+00000010 W _nds32_vector_01	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid01.S:40
+00000020 W _nds32_vector_02	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid02.S:40
+00000030 W _nds32_vector_03	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid03.S:40
+00000040 W _nds32_vector_04	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid04.S:40
+00000050 W _nds32_vector_05	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid05.S:40
+00000060 W _nds32_vector_06	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid06.S:40
+00000070 W _nds32_vector_07	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid07.S:40
+00000080 T _nds32_vector_08
+00000090 T _nds32_vector_09
+000000a0 T _nds32_vector_10
+000000b0 W _nds32_vector_11	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid11.S:40
+000000c0 W _nds32_vector_12	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid12.S:40
+000000d0 W _nds32_vector_13	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid13.S:40
+000000e0 W _nds32_vector_14	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/vec_vid14.S:40
+000000f0 T _nds32_vector_15
+00000100 R _nds32_nmih
+00000104 R _nds32_wrh
+00000108 R _nds32_jmptbl_00
+0000010c V _nds32_jmptbl_01
+00000110 V _nds32_jmptbl_02
+00000114 V _nds32_jmptbl_03
+00000118 V _nds32_jmptbl_04
+0000011c V _nds32_jmptbl_05
+00000120 V _nds32_jmptbl_06
+00000124 V _nds32_jmptbl_07
+00000128 R _nds32_jmptbl_08
+0000012c R _nds32_jmptbl_09
+00000130 R _nds32_jmptbl_10
+00000134 V _nds32_jmptbl_11
+00000138 V _nds32_jmptbl_12
+0000013c V _nds32_jmptbl_13
+00000140 V _nds32_jmptbl_14
+00000144 R _nds32_jmptbl_15
+00000148 T _nds32_e_sa_nr	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/excp_isr.S:101
+0000018a T _nds32_i_ps_nn	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/intr_isr.S:116
+000001a0 T _nds32_reset	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/reset.S:36
+000001a0 T _start	/home/sqa/build-ast211/build-2015-08-21/source-packages/gcc-4.9.2-bsp-v4_0_2-branch/libgcc/config/nds32/isr-library/reset.S:36
+00000220 t Default_Handler	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../init-default.c:17
+00000220 W HW2_ISR	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../init-default.c:19
+00000220 W HW3_ISR	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../init-default.c:19
+00000220 W HW4_ISR	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../init-default.c:19
+00000220 W HW5_ISR	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../init-default.c:19
+00000220 W error_exception_handler	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../init-default.c:19
+00000220 W tlb_exception_handler	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../init-default.c:19
+00000222 T __null_function	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../init-default.c:22
+00000224 T __c_init	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../init-default.c:26
+0000025c T __cpu_init	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../init-default.c:49
+0000028e T _nds32_init_mem	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../init-soc.c:19
+0000029e T __soc_init	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../init-soc.c:26
+000002a0 T nmi_handler	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../interrupt-c-ext.c:5
+000002a8 T GIE_ENABLE	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../interrupt-c-ext.c:9
+000002ae T GIE_DISABLE	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../interrupt-c-ext.c:14
+000002b8 T gen_swi	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../interrupt-c-ext.c:21
+000002d8 T initIntr_standby	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../interrupt-c-ext.c:31
+000002e0 T clear_swi	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../interrupt-c-ext.c:40
+000002f4 T reset_handler	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../interrupt-c-ext.c:59
+00000312 T syscall_handler	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../interrupt-c-ext.c:71
+0000031c T HW0_ISR	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../interrupt-c-ext.c:85
+0000031e T HW1_ISR	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../interrupt-c-ext.c:94
+00000328 T SW0_ISR	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../interrupt-c-ext.c:102
+00000340 T delay1	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:7
+0000035c T DRV_EnableHWInt	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:33
+00000376 T DRV_BlockIntDisable	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:43
+000003c0 T DRV_IntInitial	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:54
+000003d6 T DRV_SysXtal	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:69
+000003fa T OS_PowerOnDriverInitial	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:95
+00000412 T DRV_PutChar	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:181
+00000470 T DRV_PutStr	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:203
+000004a2 T DRV_IntToStr	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:218
+00000668 T DRV_Printf	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:304
+0000083c T led	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:351
+00000852 T dip_read	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:357
+00000862 T dip_check	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:362
+0000088c T rrot	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:367
+000008a2 T one2three	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:393
+00000954 T four	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:425
+00000aea T five	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:493
+00000eca T init	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:624
+00000f8e T main	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:651
+00000fa8 T memcpy
+00000fbc T memset
+0000104c A __data_lmastart
+00100200 D __data_start
+00100200 D index_7LED	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:373
+00100220 D num	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:384
+00100268 B __bss_start
+00100268 B _edata
+00100268 B _lmaend
+00100268 B ans_tmp	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:388
+0010026c B ans	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:389
+00100270 W _FP_BASE_
+00100270 W _SDA_BASE_
+00100270 B state	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:390
+00100274 B v1	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:422
+00100278 B v0	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:422
+0010027c B v12	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:423
+00100280 B v02	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:423
+00100284 B idxcnt	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:489
+00100288 B pre	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:490
+0010028c B flag	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:491
+00100290 B buffer	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:488
+001002b0 B frame	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:487
+001002d0 B u8TxdBuf	/cygdrive/c/WorkSpace/AndeSight/SEG7EX/Debug/../main.c:179
+001002e8 B _end
+00103000 A _stack
